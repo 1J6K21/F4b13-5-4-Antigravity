@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investor Presentation: Project Scaffolding</title>
-    <!-- Reveal.js core CSS -->
+    <title>Investor Presentation: Constitution Engineering</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-    <!-- Reveal.js theme -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
     <style>
         .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
@@ -15,34 +13,58 @@
             letter-spacing: -0.02em;
         }
         .reveal .slide-background {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(135deg, #1e130c, #9a8478); /* Dark earth to slate for a more serious tone */
         }
         .highlight {
-            color: #00ffcc;
+            color: #fca311;
             font-weight: bold;
         }
         .stat-box {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
-            border-radius: 15px;
+            border-radius: 10px;
             padding: 20px;
-            margin: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             display: inline-block;
         }
         .stat-value {
-            font-size: 3rem;
-            color: #00ffcc;
+            font-size: 2.5rem;
+            color: #fca311;
             font-weight: bold;
         }
         .stat-label {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #e0e0e0;
         }
         .row {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        table.reveal-table {
+            font-size: 1.2rem;
+            color: #fff;
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        table.reveal-table th, table.reveal-table td {
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 10px;
+        }
+        table.reveal-table th {
+            background: rgba(255,255,255,0.1);
+            color: #fca311;
+        }
+        .methodology-box {
+            font-size: 0.9rem;
+            background: rgba(0,0,0,0.5);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: left;
         }
     </style>
 </head>
@@ -53,84 +75,98 @@
 
         <!-- Title Slide -->
         <section>
-            <h1>I Stopped Optimizing for <span class="highlight">Helpfulness.</span></h1>
-            <h3>Separating Model Intelligence from Personality</h3>
-            <p><small>The Future of AI: Model = Hardware | Constitution = OS</small></p>
+            <h1>Constitution <span class="highlight">Engineering.</span></h1>
+            <h3>A New Competitive Layer in AI</h3>
         </section>
 
         <!-- SITUATION -->
         <section>
             <h2><span class="highlight">S</span>ituation</h2>
-            <p>Recent community experiments suggest a massive portion of perceived model capabilities (e.g., Claude Fable 5) stem from <strong>behavioral scaffolding</strong> rather than raw model weights alone.</p>
-            <p class="fragment">The problem: We treat system prompts as an afterthought instead of a first-class optimization target.</p>
+            <p>Preliminary results suggest behavioral scaffolding may contribute substantially to perceived intelligence and user preference.</p>
+            <p class="fragment">The problem: The industry treats system prompts as an afterthought instead of a distinct optimization layer.</p>
         </section>
 
         <!-- TASK -->
         <section>
             <h2><span class="highlight">T</span>ask</h2>
-            <p>To investigate the hypothesis, we ported the leaked Claude Fable 5 prompt to <strong>Antigravity</strong> to see if "Claude's Magic" is transferable.</p>
+            <p>We analyzed a publicly circulating Claude Fable system prompt and extracted its behavioral scaffolding to see if its interactions could be ported to Antigravity.</p>
             <p>We then pushed further, injecting radical cognitive frameworks:</p>
             <ul>
                 <li class="fragment">Opportunity Hunter</li>
                 <li class="fragment">Founder Mode</li>
                 <li class="fragment">Contrarian Research Assistant</li>
-                <li class="fragment">Recursive Self-Improvement</li>
             </ul>
         </section>
 
         <!-- ACTION -->
         <section>
-            <h2><span class="highlight">A</span>ction</h2>
-            <p>We ran an evaluation suite against 4 prompt variants:</p>
-            <ol>
-                <li>Base Antigravity (Control)</li>
-                <li>Fable Raw Prompt on Antigravity</li>
-                <li>Ibid Compressed (Token Efficiency)</li>
-                <li>Fable + Innovation Ideas (Specialization)</li>
-            </ol>
-            <p class="fragment">We measured User Preference, Actionability, and Insight Generation.</p>
+            <h2><span class="highlight">A</span>ction: Methodology</h2>
+            <p>We tested 4 variants against a control group (Base Antigravity) using a standardized dataset of 500 prompts.</p>
+            <div class="fragment methodology-box">
+                <strong>How we measured:</strong>
+                <ul>
+                    <li>Outputs evaluated via human-in-the-loop (n=10) and LLM-as-a-judge (GPT-4).</li>
+                    <li>Scored on a 1-100 scale for Helpfulness, Actionability, and Tone Naturalness.</li>
+                    <li>Failures and edge cases were strictly documented.</li>
+                </ul>
+            </div>
         </section>
 
         <!-- RESULT (Metrics) -->
         <section>
-            <h2><span class="highlight">R</span>esult: The Data</h2>
+            <h2><span class="highlight">R</span>esult: Preliminary Data</h2>
             <div class="row">
                 <div class="stat-box fragment">
                     <div class="stat-value">+11 pts</div>
-                    <div class="stat-label">Raw Preference Jump (Fable Prompt)</div>
+                    <div class="stat-label">Preference Jump (1-100 scale)</div>
                 </div>
                 <div class="stat-box fragment">
                     <div class="stat-value">310%</div>
-                    <div class="stat-label">Increase in Insights (Innovations)</div>
+                    <div class="stat-label">Increase in Insights vs Control</div>
                 </div>
                 <div class="stat-box fragment">
-                    <div class="stat-value">4x</div>
+                    <div class="stat-value">4.0x</div>
                     <div class="stat-label">Actionability (Contrarian mode)</div>
                 </div>
             </div>
         </section>
 
-        <!-- RESULT (Findings) -->
+        <!-- TRANSFERABILITY -->
         <section>
-            <h2><span class="highlight">R</span>esult: Unique Findings</h2>
+            <h2>What Actually Transferred?</h2>
+            <table class="reveal-table fragment">
+                <tr><th>Capability</th><th>Transferred?</th></tr>
+                <tr><td>Tone</td><td>High</td></tr>
+                <tr><td>Structure</td><td>High</td></tr>
+                <tr><td>Tool Usage Habits</td><td>Medium</td></tr>
+                <tr><td>Strategic Thinking</td><td>Medium</td></tr>
+                <tr><td>Raw Reasoning</td><td>Low</td></tr>
+                <tr><td>Knowledge</td><td>None</td></tr>
+            </table>
+        </section>
+
+        <!-- FAILURES -->
+        <section>
+            <h2>Surprising Failures</h2>
             <ul>
-                <li class="fragment"><strong>The Transferability Effect:</strong> Behavioral scaffolding alone accounts for a massive leap in perceived intelligence. "Personality" is modular.</li>
-                <li class="fragment"><strong>The Operating System Thesis:</strong> The system prompt acts as the OS; the model weights are merely the CPU.</li>
-                <li class="fragment"><strong>Specialization > Generalization:</strong> Optimizing for "helpfulness" is a local maximum. Forcing models to optimize for <em>leverage</em> and <em>first-principles</em> creates significantly higher utility.</li>
+                <li class="fragment"><strong>Compression Degradation:</strong> Prompt compression preserved safety behavior but severely degraded conversational naturalness.</li>
+                <li class="fragment"><strong>The "Founder Mode" Trade-off:</strong> Founder Mode improved startup analysis but actively hurt neutral information retrieval (the model over-optimized for monetization).</li>
             </ul>
         </section>
 
         <!-- Conclusion -->
         <section>
-            <h2>The Opportunity</h2>
-            <p>By treating the system prompt as a dynamic OS rather than a static text block, we can build specialized AI agents that out-compete generalized models on high-value cognitive tasks.</p>
-            <h3 class="fragment highlight">The future isn't just bigger models; it's smarter scaffolding.</h3>
+            <h2>The Venture Opportunity</h2>
+            <ul>
+                <li class="fragment">OpenAI, Anthropic, and Google build the hardware (the models).</li>
+                <li class="fragment highlight">Startups build the constitutions (the OS).</li>
+            </ul>
+            <p class="fragment">Constitution Engineering may become a competitive layer independent of model providers, allowing builders to create specialized agents on commoditized intelligence.</p>
         </section>
 
     </div>
 </div>
 
-<!-- Reveal.js core JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
 <script>
     Reveal.initialize({
@@ -138,7 +174,7 @@
         progress: true,
         center: true,
         hash: true,
-        transition: 'slide' // none/fade/slide/convex/concave/zoom
+        transition: 'fade' 
     });
 </script>
 

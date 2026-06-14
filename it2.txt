@@ -1,0 +1,139 @@
+Avoid copy pasting from pitch the text like claims, context, 'libido'
+
+If these files are supposed to represent the final public-facing research output, I'd be careful.
+
+They're **good as mockups**, but right now they read more like a pitch deck than research.
+
+A skeptical AI researcher, founder, or investor is immediately going to ask:
+
+> Where did the numbers come from?
+
+For example:
+
+* "+11 pts User Preference"
+* "310% Increase in Insights"
+* "4x Actionability"
+
+appear as hard results in both documents, but I don't see any methodology explaining how those metrics were measured.  
+
+If those are placeholders, label them as placeholders.
+
+---
+
+### What I would change
+
+#### Replace certainty with investigation
+
+Current:
+
+> Behavioral scaffolding alone accounts for a massive leap in perceived intelligence. 
+
+Stronger:
+
+> Preliminary results suggest behavioral scaffolding may contribute substantially to perceived intelligence and user preference.
+
+This sounds more credible.
+
+---
+
+#### Avoid "leaked Claude prompt" as the centerpiece
+
+Current deck:
+
+> We ported the leaked Claude Fable 5 prompt... 
+
+I'd instead say:
+
+> We analyzed a publicly circulating Claude Fable system prompt and extracted its behavioral scaffolding.
+
+That sounds like research.
+
+---
+
+#### Add a missing slide
+
+The biggest omission is:
+
+### "What Actually Transferred?"
+
+A table like:
+
+| Capability         | Transferred? |
+| ------------------ | ------------ |
+| Tone               | High         |
+| Structure          | High         |
+| Tool Usage Habits  | Medium       |
+| Strategic Thinking | Medium       |
+| Raw Reasoning      | Low          |
+| Knowledge          | None         |
+
+That's the finding people actually care about.
+
+---
+
+#### Add a surprising failure
+
+Real research has failures.
+
+Example:
+
+> Compression preserved safety behavior but degraded conversational naturalness.
+
+or
+
+> Founder Mode improved startup analysis but hurt neutral information retrieval.
+
+People trust research more when it includes negative findings.
+
+---
+
+### The biggest opportunity
+
+Right now the deck's thesis is:
+
+> System Prompt = OS
+
+That's good.
+
+The stronger thesis is:
+
+> Constitution Engineering may become a competitive layer independent of model providers.
+
+In other words:
+
+* OpenAI builds hardware.
+* Anthropic builds hardware.
+* Google builds hardware.
+
+But:
+
+* Startups build constitutions.
+
+That's a venture-scale idea.
+
+---
+
+### Overall rating
+
+For a hackathon/demo:
+**8.5/10**
+
+For a serious public research release:
+**6/10**
+
+For attracting attention on X:
+**9/10**
+
+For convincing technical people:
+Needs:
+
+1. Real benchmarks
+2. Control groups
+3. Failure cases
+4. Transferability analysis
+5. Fewer absolute claims
+
+The experiment itself is interesting. The presentation should evolve from "look at these huge results" into "here is evidence that constitutions are a distinct optimization layer." That's the claim sophisticated readers will find compelling.
+
+
+This is my reputation after all, I dont want to be scrutinized for claims untested. It's important you show how the numbers came to attention, you may use graphs and figures, and show HOW and that YOU DID test benchmarks rather than claiming +, x, etc.
