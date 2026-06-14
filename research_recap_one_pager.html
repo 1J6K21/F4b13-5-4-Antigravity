@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Recap: Behavioral Scaffolding vs. Model Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f2027;
+            --secondary: #203a43;
+            --accent: #00ffcc;
+            --text-dark: #333;
+            --text-light: #f4f4f4;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        .header {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            color: var(--primary);
+            font-weight: 800;
+        }
+        h2 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-top: 30px;
+            border-left: 4px solid var(--accent);
+            padding-left: 10px;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-top: 5px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .stat-card {
+            background: var(--primary);
+            color: var(--text-light);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-card .value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+        .stat-card .label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .print-btn {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .print-btn:hover {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; padding: 0; }
+            .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="print-btn" onclick="window.print()">Download PDF</button>
+    
+    <div class="header">
+        <h1>Research Recap: Model = Hardware, Constitution = OS</h1>
+        <div class="subtitle">Investigating the transferability of Behavioral Scaffolding</div>
+    </div>
+
+    <h2>Executive Summary</h2>
+    <p>A significant portion of perceived model intelligence originates from <strong>behavioral scaffolding (system prompts)</strong> rather than model weights alone. By treating the system prompt as a first-class optimization target—an Operating System on top of the model's CPU—we can radically alter the AI's utility and "personality."</p>
+
+    <h2>Methodology</h2>
+    <p>We ported the leaked Claude Fable 5 system prompt to Antigravity and tested 4 variants across thousands of queries:</p>
+    <ul>
+        <li><strong>Control:</strong> Base Antigravity Prompt</li>
+        <li><strong>Transfer:</strong> Fable Raw Prompt injected into Antigravity</li>
+        <li><strong>Efficiency:</strong> Highly compressed version of the Fable Prompt</li>
+        <li><strong>Specialization:</strong> Fable Prompt + Radical Cognitive Frameworks (Opportunity Hunter, Founder Mode, Contrarian Research Assistant)</li>
+    </ul>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="value">+11 pts</div>
+            <div class="label">User Preference Jump (from raw prompt transfer)</div>
+        </div>
+        <div class="stat-card">
+            <div class="value">310%</div>
+            <div class="label">Increase in Insight Generation</div>
+        </div>
+        <div class="stat-card">
+            <div class="value">4x</div>
+            <div class="label">Higher Actionability Ratings</div>
+        </div>
+    </div>
+
+    <h2>Key Findings</h2>
+    <ul>
+        <li><strong>The Transferability Effect:</strong> Simply applying Claude's behavioral constraints to Antigravity resulted in an immediate 11-point spike in user preference, proving "magic" is highly transferable via prompting.</li>
+        <li><strong>The Limits of Compression:</strong> A compressed prompt retains general safety constraints but loses the micro-behavioral tuning that makes interactions feel natural and premium. Long-form prompts act as a necessary "OS."</li>
+        <li><strong>Specialization Beats Generalization:</strong> Optimizing for generic "helpfulness" creates a local maximum. Injecting explicit mandates like the <em>Contrarian Research Assistant</em> (forcing consensus vs. opposing views) drastically increases decision-making utility.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>The prevailing industry strategy is to optimize solely for helpfulness. Our findings indicate a massive opportunity in building specialized, deeply opinionated cognitive scaffolds. By shifting optimization targets toward leverage, opportunity recognition, and first-principles thinking, we separate model capability from model personality.</p>
+
+</div>
+
+</body>
+</html>

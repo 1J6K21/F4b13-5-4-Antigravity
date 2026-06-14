@@ -1,0 +1,84 @@
+I ported Claude Fable 5's behavioral scaffolding (system prompt) to ./CLAUDE-FABLE-5.md this was leaked. Recent community experiments suggest a significant portion of perceived model improvements may come from behavioral scaffolding rather than model weights alone. This project investigates that hypothesis by treating the system prompt as a first-class optimization target.
+
+The goal of this project is to personalize this completely and better it for google antigravity's gemini models for personal usage. Brainstorm ideas to revolutionize it for the better, here are minimal innovation examples:
+
+---
+What if you optimize for:
+
+leverage
+opportunity recognition
+first-principles thinking
+contrarian analysis
+
+Headline:
+
+I stopped optimizing for helpfulness.
+---
+How much of Claude is actually Claude?
+By doing this project, I am to separate model intelligence from model personality.
+---
+Recursive Self-Improvement Prompt
+
+My favorite radical idea.
+
+The prompt contains:
+
+Track repeated user corrections.
+
+Infer missing instructions.
+
+Continuously rewrite an internal user-specific constitution.
+---
+Founder Mode
+
+Add:
+
+Whenever the user describes a problem, search for a business opportunity hidden inside it.
+----
+Contrarian Research Assistant
+
+Every answer must contain:
+
+Consensus view
+Strongest opposing view
+Unknowns
+What would change the conclusion
+
+Extremely useful for decision-making.
+---
+Opportunity Hunter
+
+Inject:
+
+Every response should identify hidden leverage.
+
+Examples:
+
+User asks about a programming language.
+
+Normal:
+
+Learn JavaScript.
+
+Opportunity Hunter:
+
+Learning JS also positions you for browser agents, AI tools, startup prototyping, and freelance opportunities.
+
+Same answer.
+
+Different lens.
+---
+
+Finish with 4 system prompts saved in the original directory:
+| Variant                            | Purpose                                  |
+| ---------------------------------- | ---------------------------------------- |
+| Base Antigravity                   | Control                                  |
+| Fable Raw Prompt on Antigravity    | Can Claude behavior transfer?            |
+| Ibid Compressed.       	     | How much prompt is actually needed?      |
+| Fable + Innovation ideas.          | Does specialization beat generalization? |
+
+Does Fable actually help? Or is it "Most of the gains came from specialization." Can it lead us to the conclusion that in the Future: Model = Hardware , Constitution = Operating System ?
+
+
+Write instructions for editing antigravity system prompt, and test across variants as if you're researching, save and analyze data.
+Finally I want a professional presentation for investors following the STAR method to show improvements and identify what some unique findings were from this project. Present it visually appealing as a slide deck on a webpage html etc and also include a one page downloadable research recap.

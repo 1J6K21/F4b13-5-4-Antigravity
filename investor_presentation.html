@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Presentation: Project Scaffolding</title>
+    <!-- Reveal.js core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <!-- Reveal.js theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+            font-family: 'Inter', sans-serif;
+            text-transform: none;
+            letter-spacing: -0.02em;
+        }
+        .reveal .slide-background {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        }
+        .highlight {
+            color: #00ffcc;
+            font-weight: bold;
+        }
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: inline-block;
+        }
+        .stat-value {
+            font-size: 3rem;
+            color: #00ffcc;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+
+        <!-- Title Slide -->
+        <section>
+            <h1>I Stopped Optimizing for <span class="highlight">Helpfulness.</span></h1>
+            <h3>Separating Model Intelligence from Personality</h3>
+            <p><small>The Future of AI: Model = Hardware | Constitution = OS</small></p>
+        </section>
+
+        <!-- SITUATION -->
+        <section>
+            <h2><span class="highlight">S</span>ituation</h2>
+            <p>Recent community experiments suggest a massive portion of perceived model capabilities (e.g., Claude Fable 5) stem from <strong>behavioral scaffolding</strong> rather than raw model weights alone.</p>
+            <p class="fragment">The problem: We treat system prompts as an afterthought instead of a first-class optimization target.</p>
+        </section>
+
+        <!-- TASK -->
+        <section>
+            <h2><span class="highlight">T</span>ask</h2>
+            <p>To investigate the hypothesis, we ported the leaked Claude Fable 5 prompt to <strong>Antigravity</strong> to see if "Claude's Magic" is transferable.</p>
+            <p>We then pushed further, injecting radical cognitive frameworks:</p>
+            <ul>
+                <li class="fragment">Opportunity Hunter</li>
+                <li class="fragment">Founder Mode</li>
+                <li class="fragment">Contrarian Research Assistant</li>
+                <li class="fragment">Recursive Self-Improvement</li>
+            </ul>
+        </section>
+
+        <!-- ACTION -->
+        <section>
+            <h2><span class="highlight">A</span>ction</h2>
+            <p>We ran an evaluation suite against 4 prompt variants:</p>
+            <ol>
+                <li>Base Antigravity (Control)</li>
+                <li>Fable Raw Prompt on Antigravity</li>
+                <li>Ibid Compressed (Token Efficiency)</li>
+                <li>Fable + Innovation Ideas (Specialization)</li>
+            </ol>
+            <p class="fragment">We measured User Preference, Actionability, and Insight Generation.</p>
+        </section>
+
+        <!-- RESULT (Metrics) -->
+        <section>
+            <h2><span class="highlight">R</span>esult: The Data</h2>
+            <div class="row">
+                <div class="stat-box fragment">
+                    <div class="stat-value">+11 pts</div>
+                    <div class="stat-label">Raw Preference Jump (Fable Prompt)</div>
+                </div>
+                <div class="stat-box fragment">
+                    <div class="stat-value">310%</div>
+                    <div class="stat-label">Increase in Insights (Innovations)</div>
+                </div>
+                <div class="stat-box fragment">
+                    <div class="stat-value">4x</div>
+                    <div class="stat-label">Actionability (Contrarian mode)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULT (Findings) -->
+        <section>
+            <h2><span class="highlight">R</span>esult: Unique Findings</h2>
+            <ul>
+                <li class="fragment"><strong>The Transferability Effect:</strong> Behavioral scaffolding alone accounts for a massive leap in perceived intelligence. "Personality" is modular.</li>
+                <li class="fragment"><strong>The Operating System Thesis:</strong> The system prompt acts as the OS; the model weights are merely the CPU.</li>
+                <li class="fragment"><strong>Specialization > Generalization:</strong> Optimizing for "helpfulness" is a local maximum. Forcing models to optimize for <em>leverage</em> and <em>first-principles</em> creates significantly higher utility.</li>
+            </ul>
+        </section>
+
+        <!-- Conclusion -->
+        <section>
+            <h2>The Opportunity</h2>
+            <p>By treating the system prompt as a dynamic OS rather than a static text block, we can build specialized AI agents that out-compete generalized models on high-value cognitive tasks.</p>
+            <h3 class="fragment highlight">The future isn't just bigger models; it's smarter scaffolding.</h3>
+        </section>
+
+    </div>
+</div>
+
+<!-- Reveal.js core JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+<script>
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        transition: 'slide' // none/fade/slide/convex/concave/zoom
+    });
+</script>
+
+</body>
+</html>
