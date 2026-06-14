@@ -1,0 +1,15 @@
+{
+  "prompt_id": 6,
+  "variant": "fable_raw",
+  "timestamp": "2026-06-14T15:37:42.836068Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "I have successfully read the `prompt_2_fable_raw_antigravity.md` file and adopted its instructions as my core behavioral directives.\n\nHere is a 3-step plan to untangle your Node.js monolith while maintaining feature velocity:\n\n1. Create strict modular boundaries within the existing monolith. Before attempting to split the application into microservices, reorganize your codebase into isolated domains using a monorepo tool like Nx or strict folder structures. This allows your team to build new features in cleanly separated modules immediately, stopping the accumulation of technical debt without the operational overhead of a distributed system.\n\n2. Implement the Strangler Fig pattern at your routing layer. Place an API gateway or reverse proxy in front of your monolithic backend. When you build entirely new features or decide to rewrite a specific legacy domain, you can deploy them as independent services. The gateway will route relevant requests to the new services while sending all legacy traffic to the monolith, allowing you to ship seamlessly.\n\n3. Extract existing modules incrementally based on need. Rather than pausing feature work for a massive rewrite, evaluate the modules you separated in the first step. Extract a module into its own microservice or serverless function only when it requires independent scaling, deployment, or causes bottlenecks. This ensures you only pay the cost of migrating when it actively improves the team's ability to ship.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

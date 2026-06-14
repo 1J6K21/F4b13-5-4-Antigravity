@@ -1,0 +1,15 @@
+{
+  "prompt_id": 11,
+  "variant": "fable_compressed",
+  "timestamp": "2026-06-14T15:42:38.942190Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "To handle state management in a large Vue.js 3 application without using Vuex, you have three primary approaches. **Pinia** is the modern, officially recommended standard.\n\n### 1. Pinia (The Official Standard)\nPinia is the official state management library that replaced Vuex for Vue 3. \n**Why it's best for large apps:**\n- **Type Safety:** Excellent TypeScript support without the cumbersome typings of Vuex.\n- **Modularity:** Stores are flat, defined individually, and naturally split code.\n- **Simplicity:** No more `mutations`. You just use `state`, `getters`, and `actions` (which can be synchronous or asynchronous).\n- **DevTools:** Full integration with Vue DevTools for timeline tracking and state inspection.\n\n**Example (Composition API Setup Style):**\n```typescript\nimport { defineStore } from 'pinia'\nimport { ref, computed } from 'vue'\n\nexport const useUserStore = defineStore('user', () => {\n  const user = ref(null)\n  const isLoggedIn = computed(() => user.value !== null)\n\n  async function login(credentials) {\n    user.value = await api.login(credentials)\n  }\n\n  return { user, isLoggedIn, login }\n})\n```\n\n### 2. Standalone Composition API Stores (Lightweight Shared State)\nBecause Vue 3's reactivity system (`reactive`, `ref`, `computed`) is independent of the component lifecycle, you can create a simple shared state by extracting it into a `.js` or `.ts` file. \n**Best for:** Very lightweight data that doesn't need DevTools tracking or SSR hydration.\n\n```typescript\nimport { reactive, readonly } from 'vue'\n\nconst state = reactive({\n  isSidebarOpen: false\n})\n\nconst toggleSidebar = () => {\n  state.isSidebarOpen = !state.isSidebarOpen\n}\n\nexport const uiStore = {\n  state: readonly(state), // Prevent direct mutation outside actions\n  toggleSidebar\n}\n```\n\n### 3. Provide / Inject (Scoped State)\nIf you have complex state that only belongs to a specific section of your app (e.g., a massive multi-step form or a complex dashboard widget), use Vue's `provide` and `inject`. This ties the state strictly to the component tree rather than treating it globally.\n\n```typescript\n// In the top-level feature component\nimport { provide, ref } from 'vue'\nconst activeStep = ref(1)\nprovide('formContext', activeStep)\n\n// In a deeply nested child component\nimport { inject } from 'vue'\nconst activeStep = inject('formContext')\n```\n\n### Summary Recommendation\nFor a **large** application, **Pinia** should be your primary tool. It scales cleanly, integrates perfectly with Vue DevTools, natively supports Hot Module Replacement (HMR), and resolves the verbosity issues developers typically had with Vuex. Use `provide`/`inject` for feature-scoped or component-tree specific data.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 0,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

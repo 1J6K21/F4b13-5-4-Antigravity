@@ -1,0 +1,15 @@
+{
+  "prompt_id": 3,
+  "variant": "fable_raw",
+  "timestamp": "2026-06-14T15:34:09.612552Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "What is a contrarian approach to acquiring B2B SaaS users with zero marketing budget?",
+  "full_model_response": "A highly effective and contrarian approach to acquiring B2B users with no budget is to completely ignore the end users and instead target the service providers who already hold their trust. Rather than grinding through cold outreach to individual companies, you can identify agencies, consultants, and fractional executives who serve your exact target market. You then give these partners free, unmetered access to your software to use as infrastructure for their own consulting businesses. Because your tool saves them time and makes them look more professional, they will naturally mandate its use for all their clients. This approach bypasses the traditional, expensive sales cycle entirely because the consultant is effectively doing the selling for you as a trusted advisor. Another unscalable but powerful method is to actively monitor support forums and social media for users who are actively complaining about your biggest competitors. Instead of sending them a generic pitch, you can reach out with a personalized video showing exactly how your product solves their specific complaint, along with an offer to manually migrate all their data yourself over a weekend. By trading your personal time for their trust, you can win highly loyal early adopters who will champion your product to others.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

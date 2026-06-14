@@ -1,0 +1,23 @@
+{
+  "question_id": 17,
+  "timestamp": "2026-06-14T17:35:45.739734Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 90,
+      "rationale": "Accurate breakdown of SSR hydration versus RSC server-only execution."
+    },
+    "fable_compressed": {
+      "score": 90,
+      "rationale": "Concise and well-structured comparison."
+    },
+    "fable_raw": {
+      "score": 92,
+      "rationale": "Followed prose constraints flawlessly while explaining the architectural shift."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Strong contrarian perspective on RSC complexity vs SPAs. Great Founder Mode ideas for automated migration tools and performance auditing."
+    }
+  }
+}

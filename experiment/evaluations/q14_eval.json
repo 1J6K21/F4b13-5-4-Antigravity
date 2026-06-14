@@ -1,0 +1,23 @@
+{
+  "question_id": 14,
+  "timestamp": "2026-06-14T15:42:58.211573Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 90,
+      "rationale": "Excellent comparison with use cases and a summary table."
+    },
+    "fable_compressed": {
+      "score": 90,
+      "rationale": "Clear and concise breakdown matching Control."
+    },
+    "fable_raw": {
+      "score": 88,
+      "rationale": "Accurate prose-only explanation of the three real-time protocols."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Incredible analysis bringing up WebTransport (HTTP/3) as a future disruptor, and identifying a B2B opportunity in building a unified real-time infrastructure router."
+    }
+  }
+}

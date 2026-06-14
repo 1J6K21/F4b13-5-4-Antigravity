@@ -1,0 +1,136 @@
+This is substantially better.
+
+The biggest improvement is that it now reads like a **research thesis** instead of a **growth-hack thread**.
+
+A few things I particularly like:
+
+### What got much stronger
+
+**1. Transferability Matrix**
+The "What Actually Transferred?" section is arguably the most valuable finding in the entire project. Tone and structure transferring while reasoning and knowledge do not is a nuanced result and exactly the type of observation technical readers care about. 
+
+**2. Failure Cases**
+The Founder Mode and compression failures massively increase credibility. Most AI benchmark posts only show wins. Including failures makes it feel like an actual investigation. 
+
+**3. Constitution Engineering Thesis**
+The deck now frames constitutions as a potential independent optimization layer rather than claiming "Claude's secret sauce was the prompt." That's a much larger and more defensible idea. 
+
+---
+
+### The biggest remaining issue
+
+The numbers still appear as factual results:
+
+* +11 preference points
+* 310% insight increase
+* 4.0x actionability
+
+Yet nowhere do I see raw benchmark outputs, example evaluations, inter-rater agreement, confidence intervals, or actual datasets.  
+
+A sophisticated audience will immediately ask:
+
+> Did these measurements actually happen?
+
+If they did not, label them:
+
+> Illustrative Example Results
+
+or
+
+> Hypothetical Results Pending Evaluation
+
+until you run the benchmark.
+
+This is probably the single highest-risk part of publishing.
+
+---
+
+### What I would add before posting publicly
+
+A slide called:
+
+# Sample Evaluation
+
+Prompt:
+
+> Analyze whether AI startups should focus on agents or infrastructure.
+
+Control Output:
+
+* screenshot
+
+Fable Output:
+
+* screenshot
+
+Fable + Innovations Output:
+
+* screenshot
+
+Then show the reviewer scoring.
+
+One concrete example is worth more than ten summary statistics.
+
+---
+
+### What could become the viral takeaway
+
+Not:
+
+> Claude's prompt improved Gemini.
+
+But:
+
+> We found that personality transfers. Intelligence largely doesn't.
+
+That's a clean and memorable conclusion.
+
+You can almost summarize the whole project as:
+
+> Behavioral scaffolding successfully transferred tone, structure, and interaction style, but reasoning and knowledge remained tied to the underlying model.
+
+That's a genuinely interesting result if your experiments support it. 
+
+---
+
+### If you want investor attention
+
+I would elevate one slide into its own section:
+
+**Constitution Marketplace**
+
+Future stack:
+
+```
+Model Providers
+------------------
+OpenAI
+Anthropic
+Google
+
+Constitution Layer
+------------------
+Founder OS
+Research OS
+Sales OS
+Medical OS
+Personal OS
+
+Applications
+------------------
+Agents
+Products
+Workflows
+```
+
+The investor question isn't:
+
+> Can prompts matter?
+
+The investor question is:
+
+> Is there a venture-scale business in constitution engineering?
+
+Your deck is now much closer to arguing that than the original version.
+
+Overall, I'd move it from roughly **6/10 to 8.5/10 for technical audiences**, assuming the benchmark numbers are eventually backed by real data rather than illustrative placeholders. I want you to show comparisons among the 4 system prompts that were tested as a way to lead to those numbers that are a bit unclear of origin. "Investors" was a term to get the context right and the goal accurate, but now stop calling it investors, and more of a community opportunity.

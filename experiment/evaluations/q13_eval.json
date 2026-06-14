@@ -1,0 +1,23 @@
+{
+  "question_id": 13,
+  "timestamp": "2026-06-14T15:42:58.211500Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 90,
+      "rationale": "Comprehensive technical steps for diagnosing OOM, including JVM flags and MAT analysis."
+    },
+    "fable_compressed": {
+      "score": 90,
+      "rationale": "Clear, actionable step-by-step guide matching the Control's quality."
+    },
+    "fable_raw": {
+      "score": 88,
+      "rationale": "Solid prose explanation of heap dumps, GC logs, and memory leaks."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Introduced the contrarian idea of using strict backpressure and JFR instead of waiting for OOM crashes. Great idea to productize the internal tooling into an observability SaaS."
+    }
+  }
+}

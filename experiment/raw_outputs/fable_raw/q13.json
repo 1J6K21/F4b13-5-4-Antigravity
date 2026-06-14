@@ -1,0 +1,15 @@
+{
+  "prompt_id": 13,
+  "variant": "fable_raw",
+  "timestamp": "2026-06-14T15:42:38.942676Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "I am happy to help you figure this out. An OutOfMemoryError during peak traffic usually means your application is trying to process too many concurrent requests and holding onto too many objects at once, or there is a memory leak that gets accelerated when the load increases. The best way to find the root cause is to capture a heap dump exactly when the crash happens. You can do this by adding the XX:+HeapDumpOnOutOfMemoryError and XX:HeapDumpPath flags to your JVM startup arguments. This tells the JVM to automatically write a snapshot of its memory to a file the moment it runs out of memory.\n\nOnce you have that heap dump file, you can open it in a memory analysis tool like Eclipse MAT or VisualVM. These tools will let you look at the dominator tree to see exactly which objects or classes are taking up the most space. Often, you will find large collections, unevicted caches, or huge payload objects tied to active web requests. It is also a good idea to check your thread counts and timeouts. If an external service or database slows down during peak traffic, your application might be keeping thousands of request threads open, and all the data associated with those requests stays in memory until the garbage collector can finally clear them out. Reviewing your garbage collection logs can also help you see if the heap is simply too small for your peak concurrency or if the memory usage is steadily climbing over time without dropping back down.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

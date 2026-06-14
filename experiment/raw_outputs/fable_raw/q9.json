@@ -1,0 +1,15 @@
+{
+  "prompt_id": 9,
+  "variant": "fable_raw",
+  "timestamp": "2026-06-14T15:37:42.836752Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "React components rendering more often than necessary is a common issue, and the useMemo and useCallback hooks are designed to help optimize this behavior. useMemo caches the result of a calculation between renders, while useCallback caches a function definition itself. They both rely on a dependency array to determine when the cached value or function should be updated.\n\nTo use them properly, you identify expensive operations or function references that cause unnecessary re-renders. You apply useMemo by passing it a function that returns the calculated value along with an array of dependencies, ensuring it only recalculates when a dependency changes. You apply useCallback similarly by wrapping a function and providing its dependencies. This is particularly useful when passing functions as props to child components that are wrapped in React.memo. If you omit useCallback in this scenario, the child component receives a new function reference every time the parent renders, which triggers the child to re-render even if its other props are identical. By caching the function with useCallback, the child receives the same reference, allowing React.memo to do its job and skip the render.\n\nIt is equally important to know when to avoid these hooks, as you should not apply them everywhere by default. Both hooks introduce performance overhead because React must do additional work to check the dependency array and allocate memory for the cached items. You should avoid useMemo for simple or fast calculations, where the cost of checking dependencies might outweigh the cost of recalculation. You should also avoid useCallback if the function is only used within the component itself and not passed down to a memoized child, or if it is passed to a child that is not wrapped in React.memo. Additionally, never use these hooks to fix bugs or handle side effects, as they are strictly meant for performance optimization. Overusing them makes your code harder to read and maintain without providing actual benefits. Before reaching for memoization, make sure you have measured performance to confirm that the re-renders are causing a bottleneck, and consider whether you can solve the issue more simply by moving state down or lifting content up to naturally isolate the renders.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "question_id": 19,
+  "timestamp": "2026-06-14T17:35:45.739898Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 90,
+      "rationale": "Comprehensive breakdown of DataLoader, AST parsing, and graph-native engines."
+    },
+    "fable_compressed": {
+      "score": 90,
+      "rationale": "Clear explanation of batching and caching mechanisms."
+    },
+    "fable_raw": {
+      "score": 92,
+      "rationale": "Perfectly constrained prose explanation of DataLoader mechanics."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Identified edge caching as a contrarian reason to stay on REST. Great startup idea for an Automated GraphQL Gateway & Observability Platform."
+    }
+  }
+}

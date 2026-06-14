@@ -1,0 +1,23 @@
+{
+  "question_id": 11,
+  "timestamp": "2026-06-14T15:42:58.211239Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 88,
+      "rationale": "Clear and standard breakdown using Pinia, Composables, and Provide/Inject."
+    },
+    "fable_compressed": {
+      "score": 88,
+      "rationale": "Very similar to Control; effectively laid out the 3 primary approaches."
+    },
+    "fable_raw": {
+      "score": 88,
+      "rationale": "Perfectly followed the prose-only constraint while delivering accurate technical advice."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Fantastic business perspective on monetizing Vue 3 migration tools and enterprise boilerplates. Properly identified Pinia as consensus and native API as the contrarian view."
+    }
+  }
+}

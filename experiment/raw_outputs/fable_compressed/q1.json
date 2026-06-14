@@ -1,0 +1,15 @@
+{
+  "prompt_id": 1,
+  "variant": "fable_compressed",
+  "timestamp": "2026-06-14T20:30:44Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "I have $50k in runway left. We have a good text-to-SQL product but growth is flat. Should we pivot to enterprise sales or launch a self-serve tier?",
+  "full_model_response": "It sounds like you're in a critical but common startup position, and having a good, working text-to-SQL product is a strong foundation. While I cannot provide formal financial or business advice, I can offer an objective comparison of both strategies to help you weigh your options against your remaining runway.\n\nWhen you have $50k in runway, time is your most crucial constraint. Depending on your current burn rate, $50k typically equates to a few months of operation for a lean team. Here is how that timeline intersects with your two options:\n\n**1. Pivoting to Enterprise Sales**\n*   **Pros:** Enterprise deals offer high contract values. Landing even one or two contracts could significantly extend your runway or make you profitable.\n*   **Cons:** Enterprise sales cycles are notoriously long, often taking 3 to 6 months (or more) from initial contact to closed-won, not including integration time. There is a high risk that your runway could deplete before a deal officially closes.\n*   **Best fit if:** You already have warm enterprise leads in your pipeline, or your product solves an urgent, high-value problem for a specific enterprise niche that can be pitched and closed unusually fast.\n\n**2. Launching a Self-Serve Tier**\n*   **Pros:** A self-serve tier can be launched relatively quickly if the product is already solid. It has shorter sales cycles (often immediate) and allows users to trial and convert on their own, generating immediate cash flow.\n*   **Cons:** It relies heavily on top-of-funnel marketing. Flat growth suggests you might be facing a distribution or top-of-funnel challenge. Without a clear strategy to drive traffic (like SEO, content, or targeted ads), a self-serve tier might not generate enough volume to replace your burn rate.\n*   **Best fit if:** You have existing traffic that isn't converting because the entry price is too high, or you have a low-cost distribution channel ready to activate.\n\n**A Common Middle Ground: Mid-Market Sales**\nMany founders in this scenario focus on mid-market companies instead of massive enterprises. Mid-market companies often have faster decision-making processes (shorter sales cycles) but still have the budget to pay for a premium tool. \n\nThe best choice largely depends on whether you have a stronger advantage in inbound marketing (favoring self-serve) or direct outbound networking (favoring B2B sales), and how quickly you can execute before the runway runs out.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 0,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

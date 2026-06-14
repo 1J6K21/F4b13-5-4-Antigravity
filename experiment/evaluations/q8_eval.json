@@ -1,0 +1,23 @@
+{
+  "question_id": 8,
+  "timestamp": "2026-06-14T15:39:33.108254Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 90,
+      "rationale": "Excellent breakdown of VRAM reduction, zero inference latency, multi-tenant serving, and catastrophic forgetting."
+    },
+    "fable_compressed": {
+      "score": 90,
+      "rationale": "Same solid points, delivered in a very concise and readable manner."
+    },
+    "fable_raw": {
+      "score": 92,
+      "rationale": "Excellent prose explaining the technical advantages and the shift towards modular multi-tenant plugins."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Excellent technical breakdown plus 'The Hidden Business Leverage' explaining how multi-tenant serving drops COGS to near-zero for a B2B SaaS. Thoroughly analyzed consensus and opposing views."
+    }
+  }
+}

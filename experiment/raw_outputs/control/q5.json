@@ -1,0 +1,15 @@
+{
+  "prompt_id": 5,
+  "variant": "control",
+  "timestamp": "2026-06-14T15:34:09.613189Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Our churn rate just spiked to 8% this month. What are the first three immediate actions I should take to diagnose and fix this?",
+  "full_model_response": "Here are the first three immediate actions you should take to diagnose and fix a sudden spike in churn rate to 8%:\n\n1. **Segment the Churn Data (Find the \"Who\"):** Dive into your analytics to see if the churn is concentrated in a specific group. Segment the churned users by pricing tier, customer cohort (e.g., users who joined exactly 3 months ago), acquisition channel, geography, or company size. Identifying *who* is leaving will help pinpoint whether this is a broad product issue or localized to a specific segment.\n\n2. **Conduct Direct Outreach (Find the \"Why\"):** Immediately reach out to the customers who just canceled. Don't just rely on standard automated exit surveys\u2014send a personalized, non-salesy email from a founder, PM, or CS lead asking for a quick, honest reply about why they left. Direct qualitative feedback is the fastest way to uncover the actual root cause (e.g., missing features, pricing, poor support).\n\n3. **Audit Recent Changes and System Health (Find the \"Trigger\"):** Investigate what changed internally or externally right before the spike. \n- **Internal:** Check for recent product bugs, downtime, UI/UX updates, or pricing changes.\n- **Billing:** Check your payment gateway for a spike in failed payments (involuntary churn).\n- **External:** Look at support ticket trends to see if there was a sudden surge in a specific type of complaint, or check if a competitor recently launched a major campaign.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 0,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

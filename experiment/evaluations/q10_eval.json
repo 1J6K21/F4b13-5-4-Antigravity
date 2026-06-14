@@ -1,0 +1,23 @@
+{
+  "question_id": 10,
+  "timestamp": "2026-06-14T15:39:33.108511Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 90,
+      "rationale": "Thorough comparison of RLS vs Separated Schemas. Provided a comprehensive SQL DDL with RLS policies."
+    },
+    "fable_compressed": {
+      "score": 90,
+      "rationale": "Clear pros and cons, strong recommendation, and full SQL DDL with RLS."
+    },
+    "fable_raw": {
+      "score": 90,
+      "rationale": "Great prose explanation balancing the architectural trade-offs, accompanied by a complete SQL script."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Provided the SQL script with RLS, but then delivered exceptional value with Research Analysis, Opportunity Hunter (pgvector for cross-tenant AI), and Founder Mode (upselling a dedicated infrastructure tier)."
+    }
+  }
+}

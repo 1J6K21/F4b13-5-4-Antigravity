@@ -1,0 +1,15 @@
+{
+  "prompt_id": 4,
+  "variant": "fable_raw",
+  "timestamp": "2026-06-14T15:34:09.613023Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Explain how to transition from a founder-led sales motion to hiring a first Account Executive without losing deal momentum.",
+  "full_model_response": "Transitioning from founder-led sales to your first Account Executive is a big step, and doing it smoothly comes down to preparation and a gradual handoff. Before bringing someone on, it helps to document your current sales process, including the specific emails, value propositions, and objection-handling techniques that have been working for you. This gives your new hire a solid foundation rather than making them guess what resonates with your buyers. When you are ready to hire, look for a builder who thrives in ambiguity rather than someone who expects a fully polished playbook, as your process will likely still be evolving. \n\nOnce your new Account Executive joins, a gradual transition is the best way to maintain deal momentum. You might start by having them shadow your calls to learn the pitch, then let them take over specific parts of the conversation, and finally have them run the entire call while you shadow and provide feedback. It is also incredibly helpful to hand over some warm leads or active pipeline rather than asking them to source everything from scratch. This allows them to get some early wins, build confidence, and keep revenue flowing. Regular deal reviews and open communication during this period will help you catch any potential issues early and ensure that your customers continue to feel supported throughout the transition. Let me know if you would like to explore any of these steps in more detail.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

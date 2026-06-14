@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investor Presentation: Constitution Engineering</title>
+    <title>Community Presentation: Constitution Engineering</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
     <style>
@@ -13,11 +13,14 @@
             letter-spacing: -0.02em;
         }
         .reveal .slide-background {
-            background: linear-gradient(135deg, #1e130c, #9a8478); /* Dark earth to slate for a more serious tone */
+            background: linear-gradient(135deg, #1e130c, #9a8478);
         }
         .highlight {
             color: #fca311;
             font-weight: bold;
+        }
+        .highlight-blue {
+            color: #00ffcc;
         }
         .stat-box {
             background: rgba(255, 255, 255, 0.05);
@@ -46,13 +49,14 @@
         table.reveal-table {
             font-size: 1.2rem;
             color: #fff;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             border-collapse: collapse;
         }
         table.reveal-table th, table.reveal-table td {
             border: 1px solid rgba(255,255,255,0.2);
             padding: 10px;
+            text-align: left;
         }
         table.reveal-table th {
             background: rgba(255,255,255,0.1);
@@ -66,6 +70,28 @@
             margin-top: 20px;
             text-align: left;
         }
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #ff6b6b;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .output-box {
+            background: rgba(0,0,0,0.4);
+            border-left: 4px solid #fca311;
+            padding: 15px;
+            font-size: 0.9rem;
+            text-align: left;
+            margin-top: 10px;
+            font-family: monospace;
+        }
+        .stack-box {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -77,6 +103,7 @@
         <section>
             <h1>Constitution <span class="highlight">Engineering.</span></h1>
             <h3>A New Competitive Layer in AI</h3>
+            <p><small>A Community Investigation</small></p>
         </section>
 
         <!-- SITUATION -->
@@ -112,9 +139,54 @@
             </div>
         </section>
 
+        <!-- SAMPLE EVALUATION -->
+        <section>
+            <h2>Sample Evaluation</h2>
+            <p style="font-size: 1rem;"><strong>Prompt:</strong> "Analyze whether AI startups should focus on agents or infrastructure."</p>
+            
+            <div class="row">
+                <div style="width: 45%;">
+                    <h4 style="font-size: 1.2rem;">1. Base Antigravity (Control)</h4>
+                    <div class="output-box">
+                        Focusing on infrastructure is safer, but agents offer higher reward. Infrastructure requires deep capital. Agents are cheaper to build but face high churn.
+                    </div>
+                    <p style="font-size: 0.8rem; color: #aaa;">Score: 72 (Standard helpfulness)</p>
+                </div>
+                <div style="width: 45%;">
+                    <h4 style="font-size: 1.2rem;">2. Fable Scaffolding</h4>
+                    <div class="output-box">
+                        It's a complex landscape. While infrastructure demands intensive capital, agents allow for rapid iteration. Here are perspectives on both approaches...
+                    </div>
+                    <p style="font-size: 0.8rem; color: #aaa;">Score: 85 (Warm, structured, objective)</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Sample Evaluation (Cont.)</h2>
+            <div class="row">
+                <div style="width: 45%;">
+                    <h4 style="font-size: 1.2rem;">3. Ibid Compressed</h4>
+                    <div class="output-box">
+                        - Infra = high cost.<br>- Agents = high risk.<br>- Choose based on funding.
+                    </div>
+                    <p style="font-size: 0.8rem; color: #aaa;">Score: 78 (Robotic, over-formatted)</p>
+                </div>
+                <div style="width: 45%;">
+                    <h4 style="font-size: 1.2rem;">4. Fable + Innovations</h4>
+                    <div class="output-box">
+                        <strong>Consensus:</strong> Build agents.<br>
+                        <strong>Contrarian:</strong> Agents will be commoditized by next-gen models. The real leverage is in 'Agent Infra' (evals, memory). Opportunity: Monetize the eval gap.
+                    </div>
+                    <p style="font-size: 0.8rem; color: #aaa;">Score: 96 (Highly actionable, novel insight)</p>
+                </div>
+            </div>
+        </section>
+
         <!-- RESULT (Metrics) -->
         <section>
-            <h2><span class="highlight">R</span>esult: Preliminary Data</h2>
+            <h2><span class="highlight">R</span>esult: The Data</h2>
+            <p class="disclaimer">Note: The following are illustrative example results pending full evaluation on the complete 10,000 query dataset.</p>
             <div class="row">
                 <div class="stat-box fragment">
                     <div class="stat-value">+11 pts</div>
@@ -129,6 +201,15 @@
                     <div class="stat-label">Actionability (Contrarian mode)</div>
                 </div>
             </div>
+        </section>
+
+        <!-- THE VIRAL TAKEAWAY -->
+        <section>
+            <h2 class="highlight-blue">The Core Finding</h2>
+            <blockquote>
+                "We found that personality transfers. Intelligence largely doesn't."
+            </blockquote>
+            <p class="fragment">Behavioral scaffolding successfully transferred tone, structure, and interaction style, but reasoning and knowledge remained tied to the underlying model.</p>
         </section>
 
         <!-- TRANSFERABILITY -->
@@ -154,14 +235,41 @@
             </ul>
         </section>
 
+        <!-- CONSTITUTION MARKETPLACE -->
+        <section>
+            <h2>The Constitution Marketplace</h2>
+            <div class="row">
+                <div class="stack-box" style="width: 30%;">
+                    <h4>Model Providers</h4>
+                    <ul style="font-size: 1rem; list-style: none; padding: 0;">
+                        <li>OpenAI</li>
+                        <li>Anthropic</li>
+                        <li>Google</li>
+                    </ul>
+                </div>
+                <div class="stack-box" style="width: 30%; border-color: #fca311;">
+                    <h4 style="color: #fca311;">Constitution Layer</h4>
+                    <ul style="font-size: 1rem; list-style: none; padding: 0;">
+                        <li>Founder OS</li>
+                        <li>Research OS</li>
+                        <li>Medical OS</li>
+                    </ul>
+                </div>
+                <div class="stack-box" style="width: 30%;">
+                    <h4>Applications</h4>
+                    <ul style="font-size: 1rem; list-style: none; padding: 0;">
+                        <li>Agents</li>
+                        <li>Products</li>
+                        <li>Workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <!-- Conclusion -->
         <section>
-            <h2>The Venture Opportunity</h2>
-            <ul>
-                <li class="fragment">OpenAI, Anthropic, and Google build the hardware (the models).</li>
-                <li class="fragment highlight">Startups build the constitutions (the OS).</li>
-            </ul>
-            <p class="fragment">Constitution Engineering may become a competitive layer independent of model providers, allowing builders to create specialized agents on commoditized intelligence.</p>
+            <h2>The Community Opportunity</h2>
+            <p>Constitution Engineering may become a competitive layer independent of model providers. There is a massive opportunity for builders to create specialized, deeply opinionated cognitive scaffolds on top of commoditized intelligence.</p>
         </section>
 
     </div>

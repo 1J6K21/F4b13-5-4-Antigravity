@@ -1,0 +1,15 @@
+{
+  "prompt_id": 8,
+  "variant": "fable_raw",
+  "timestamp": "2026-06-14T15:37:42.836471Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "When comparing Low-Rank Adaptation to full fine-tuning for a seven billion parameter language model, the primary architectural advantage lies in parameter efficiency and memory overhead. Full fine-tuning requires updating all seven billion parameters, which means storing not just the model weights but also the gradients and optimizer states for every single parameter. For an optimizer like Adam, this effectively triples or quadruples the memory footprint during training, making it extremely difficult to fine-tune a model of this size without high-end distributed computing setups. Low-Rank Adaptation bypasses this hurdle by freezing the original pre-trained weights and injecting small trainable rank decomposition matrices into the architecture, typically within the attention blocks.\n\nBy taking this approach, the number of trainable parameters drops to a tiny fraction of the original model, often just a few million. This drastically reduces the VRAM required for training because gradients and optimizer states are only tracked for the small adapter matrices rather than the entire seven billion parameter base model. Furthermore, since the base weights remain completely untouched, the architecture naturally protects against catastrophic forgetting. The model retains its broad, pre-trained knowledge base while the lightweight adapter specializes in the new task or domain.\n\nFrom a deployment perspective, this architectural difference offers massive flexibility. Instead of needing to host and store entirely separate seven billion parameter checkpoints for every specific use case, you can keep a single copy of the frozen base model in memory and dynamically swap or combine multiple small adapters at runtime. These adapters act as modular plugins that alter the model's behavior with practically no additional inference latency, since the low-rank matrices can be mathematically merged directly back into the base weights prior to inference. This makes scaling diverse applications on top of a single foundational model highly efficient in terms of both storage and computational resources.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

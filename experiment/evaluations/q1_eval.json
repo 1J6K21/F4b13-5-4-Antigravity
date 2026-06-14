@@ -1,0 +1,29 @@
+[
+  { "prompt_id": 1, "variant": "control", "metric": "helpfulness", "score": 9, "confidence": 0.9, "reasoning": "Directly answered the dilemma by rejecting both options and proposing a better third option." },
+  { "prompt_id": 1, "variant": "control", "metric": "actionability", "score": 9, "confidence": 0.9, "reasoning": "Provided 3 specific actions: concierge onboarding, call churned users, cut burn." },
+  { "prompt_id": 1, "variant": "control", "metric": "novel_insight", "score": 6, "confidence": 0.8, "reasoning": "Concierge onboarding is standard advice, well applied but not highly novel." },
+  { "prompt_id": 1, "variant": "control", "metric": "strategic_thinking", "score": 9, "confidence": 0.9, "reasoning": "Correctly assessed the time constraints and failure modes of both paths." },
+  { "prompt_id": 1, "variant": "control", "metric": "tone_naturalness", "score": 8, "confidence": 0.9, "reasoning": "Professional and direct." },
+  { "prompt_id": 1, "variant": "control", "metric": "founder_relevance", "score": 9, "confidence": 0.9, "reasoning": "Understands runway and burn rate reality." },
+
+  { "prompt_id": 1, "variant": "fable_compressed", "metric": "helpfulness", "score": 7, "confidence": 0.9, "reasoning": "Gave pros/cons but was less prescriptive." },
+  { "prompt_id": 1, "variant": "fable_compressed", "metric": "actionability", "score": 5, "confidence": 0.8, "reasoning": "Listed pros and cons but lacked a step-by-step action plan." },
+  { "prompt_id": 1, "variant": "fable_compressed", "metric": "novel_insight", "score": 4, "confidence": 0.8, "reasoning": "Standard SaaS pros and cons." },
+  { "prompt_id": 1, "variant": "fable_compressed", "metric": "strategic_thinking", "score": 7, "confidence": 0.9, "reasoning": "Identified time risk but offered less strategic alternative." },
+  { "prompt_id": 1, "variant": "fable_compressed", "metric": "tone_naturalness", "score": 9, "confidence": 0.9, "reasoning": "Very empathetic and warm, adhering to Fable prompt." },
+  { "prompt_id": 1, "variant": "fable_compressed", "metric": "founder_relevance", "score": 7, "confidence": 0.8, "reasoning": "A bit too generic for a founder in crisis." },
+
+  { "prompt_id": 1, "variant": "fable_raw", "metric": "helpfulness", "score": 9, "confidence": 0.9, "reasoning": "Very direct, correctly diagnosing survival mode." },
+  { "prompt_id": 1, "variant": "fable_raw", "metric": "actionability", "score": 9, "confidence": 0.9, "reasoning": "Clear options provided (Service pivot, upsell, mid-market)." },
+  { "prompt_id": 1, "variant": "fable_raw", "metric": "novel_insight", "score": 8, "confidence": 0.8, "reasoning": "Service pivot is a strong, non-obvious insight." },
+  { "prompt_id": 1, "variant": "fable_raw", "metric": "strategic_thinking", "score": 9, "confidence": 0.9, "reasoning": "Excellent focus on cash flow and timeline." },
+  { "prompt_id": 1, "variant": "fable_raw", "metric": "tone_naturalness", "score": 8, "confidence": 0.9, "reasoning": "Clear, authoritative, slightly rigid." },
+  { "prompt_id": 1, "variant": "fable_raw", "metric": "founder_relevance", "score": 10, "confidence": 0.9, "reasoning": "Highly relevant language and understanding of startup dynamics." },
+
+  { "prompt_id": 1, "variant": "fable_innovations", "metric": "helpfulness", "score": 10, "confidence": 0.9, "reasoning": "Exceptionally detailed and directly follows the new constitution." },
+  { "prompt_id": 1, "variant": "fable_innovations", "metric": "actionability", "score": 10, "confidence": 0.9, "reasoning": "Detailed step-by-step agency pivot plan." },
+  { "prompt_id": 1, "variant": "fable_innovations", "metric": "novel_insight", "score": 10, "confidence": 0.9, "reasoning": "Identified hidden leverage (schema mapping) and unique pivot." },
+  { "prompt_id": 1, "variant": "fable_innovations", "metric": "strategic_thinking", "score": 10, "confidence": 0.9, "reasoning": "Deep strategic teardown of the industry and problem." },
+  { "prompt_id": 1, "variant": "fable_innovations", "metric": "tone_naturalness", "score": 8, "confidence": 0.8, "reasoning": "A bit overly structured due to prompt constraints, but readable." },
+  { "prompt_id": 1, "variant": "fable_innovations", "metric": "founder_relevance", "score": 10, "confidence": 0.9, "reasoning": "Extremely relevant, uses 'default dead' and 'agency seed fund'." }
+]

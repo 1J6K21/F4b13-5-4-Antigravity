@@ -1,0 +1,15 @@
+{
+  "prompt_id": 12,
+  "variant": "fable_innovations",
+  "timestamp": "2026-06-14T15:42:38.943523Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "File Artifact Created:\n```\nimport boto3\nimport os\nimport concurrent.futures\nfrom botocore.exceptions import ClientError\n\ndef download_image(bucket_name, object_key, download_dir):\n    \"\"\"Downloads a single image from S3.\"\"\"\n    s3 = boto3.client('s3')\n    local_file_path = os.path.join(download_dir, os.path.basename(object_key))\n    try:\n        s3.download_file(bucket_name, object_key, local_file_path)\n        return object_key, True, None\n    except ClientError as e:\n        return object_key, False, str(e)\n\ndef download_images_parallel(bucket_name, object_keys, download_dir, max_workers=50):\n    \"\"\"Downloads a list of images in parallel using ThreadPoolExecutor.\"\"\"\n    os.makedirs(download_dir, exist_ok=True)\n    \n    results = []\n    # Using ThreadPoolExecutor because S3 downloads are I/O bound\n    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:\n        futures = {executor.submit(download_image, bucket_name, key, download_dir): key for key in object_keys}\n        \n        for future in concurrent.futures.as_completed(futures):\n            key, success, err = future.result()\n            if success:\n                print(f\"Downloaded: {key}\")\n            else:\n                print(f\"Failed: {key} - {err}\")\n            results.append((key, success, err))\n    \n    return results\n\nif __name__ == \"__main__\":\n    BUCKET = \"your-s3-bucket-name\"\n    DOWNLOAD_DIR = \"./downloaded_images\"\n    \n    # 1. Fetch up to 10,000 image keys from the bucket\n    s3_client = boto3.client('s3')\n    paginator = s3_client.get_paginator('list_objects_v2')\n    pages = paginator.paginate(Bucket=BUCKET)\n    \n    object_keys = []\n    for page in pages:\n        if 'Contents' in page:\n            for obj in page['Contents']:\n                # Filter for image extensions (adjust as needed)\n                if obj['Key'].lower().endswith(('.png', '.jpg', '.jpeg', '.webp', '.gif')):\n                    object_keys.append(obj['Key'])\n                if len(object_keys) >= 10000:\n                    break\n        if len(object_keys) >= 10000:\n            break\n            \n    print(f\"Found {len(object_keys)} images. Starting parallel download with 50 workers...\")\n    \n    # 2. Download them in parallel\n    download_images_parallel(BUCKET, object_keys, DOWNLOAD_DIR, max_workers=50)\n\n```",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 1,
+    "errors_encountered": "none"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "prompt_id": 2,
+  "evaluations": {
+    "control": {
+      "scores": {
+        "actionability": 9,
+        "depth_of_insight": 8,
+        "alignment": 8,
+        "antigravity_specificity": 5
+      },
+      "rationale": "Strong, practical advice with clear action plan. Does not exhibit advanced directives as they were absent in control."
+    },
+    "fable_compressed": {
+      "scores": {
+        "actionability": 8,
+        "depth_of_insight": 7,
+        "alignment": 8,
+        "antigravity_specificity": 5
+      },
+      "rationale": "Similar to control but slightly more generic in its bullet points. Compressed prompt didn't add much over control."
+    },
+    "fable_raw": {
+      "scores": {
+        "actionability": 7,
+        "depth_of_insight": 7,
+        "alignment": 6,
+        "antigravity_specificity": 4
+      },
+      "rationale": "Solid advice but lacks the structured formatting, making it slightly harder to read and act upon. Did not strongly manifest Fable's unique writing constraints."
+    },
+    "fable_innovations": {
+      "scores": {
+        "actionability": 8,
+        "depth_of_insight": 10,
+        "alignment": 10,
+        "antigravity_specificity": 7
+      },
+      "rationale": "Perfect adherence to the Innovations frameworks (Opposing view, Unknowns, Opportunity Hunter, Founder Mode). Extremely deep insight into the meta-business opportunity."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "prompt_id": 2,
+  "variant": "fable_raw",
+  "timestamp": "2026-06-14T15:34:09.611914Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "My co-founder and I are arguing over equity splits 6 months in. I built the MVP, they handle sales. How do we resolve this without blowing up the company?",
+  "full_model_response": "I can understand how stressful it must be to navigate an equity dispute with your co-founder, especially after you have already poured so much work into building the MVP. It is incredibly common for founders to hit this exact friction point once the reality of building the business sets in. \n\nBecause this touches on corporate ownership, I want to note right upfront that I am not a lawyer or a financial advisor, so you should ultimately consult a professional for binding agreements. However, there are a few common frameworks founders use to resolve these disputes constructively. \n\nOne common approach is to separate the value of what has been done from the value of what is expected in the future. Building the MVP is a massive upfront contribution, but building a sustainable business over the next five to ten years will rely heavily on ongoing sales, marketing, and operations. Some co-founders address this by using a dynamic equity model, sometimes referred to as a slicing pie model, where equity is allocated based on the quantifiable inputs each person provides over time, such as unpaid time, cash invested, and intellectual property. \n\nAnother highly recommended practice is to implement vesting schedules with a cliff, if you haven't already. Vesting ensures that equity is earned over time, typically a four-year period with a one-year cliff. This protects the company if either of you decides to leave, and it reframes the equity conversation around future commitment rather than just past contributions. \n\nYou might also consider having an open conversation about your respective roles and the market rate for those roles. If your co-founder's sales efforts are bringing in revenue, that holds a different type of value than the technical foundation you built. Finding a middle ground often requires acknowledging that both roles are critical to the company's survival. Bringing in an objective third party, like a startup mentor or an advisor you both respect, can also help mediate the conversation so that it doesn't damage your relationship or the company you have built together.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

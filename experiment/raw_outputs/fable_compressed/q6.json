@@ -1,0 +1,15 @@
+{
+  "prompt_id": 6,
+  "variant": "fable_compressed",
+  "timestamp": "2026-06-14T15:37:42.835837Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "Here is a practical 3-step plan to untangle a monolithic Node.js backend while continuing to deliver features. This approach focuses on incremental improvements rather than risky, massive rewrites.\n\n### 1. Shift to a \"Modular Monolith\" Architecture\nBefore breaking the monolith into microservices, untangle it from within. Node.js codebases often suffer from \"spaghetti code\" where any file can `require()` or `import` any other file. \n*   **Action:** Group your codebase into distinct domain boundaries (e.g., `users`, `billing`, `inventory`). \n*   **Rule:** Domains are only allowed to communicate with each other through well-defined API contracts or internal interface files (like an `index.js` that exports specific functions). \n*   **How it helps:** You stop the bleeding by preventing new tangles. Feature development can continue safely within isolated domains without breaking unrelated parts of the system.\n\n### 2. Use the \"Strangler Fig\" Pattern for New Features\nInstead of building new features into the oldest, messiest parts of the monolith, build them as independent modules or adjacent services.\n*   **Action:** When a new feature request comes in, build it as a cleanly decoupled module with its own data boundary, or even a lightweight microservice/serverless function.\n*   **Rule:** The monolith can call the new feature, but the new feature should never reach directly into the monolith's database or internal state. Use HTTP APIs or event queues to communicate.\n*   **How it helps:** You ship features immediately while gradually replacing the legacy system. Over time, the new code \"strangles\" the old monolith until the legacy code can be safely retired.\n\n### 3. Implement the \"Boy Scout\" Rule with a Refactoring Tax\nYou can't pause feature development to refactor, so refactoring must become a natural part of shipping features.\n*   **Action:** Allocate a small percentage (usually 15-20%) of your sprint capacity exclusively to paying down technical debt in the specific areas you are actively modifying. \n*   **Rule:** Follow the Boy Scout Rule: \"Always leave the code you're working on a little better than you found it.\" If an engineer is building a feature that touches the `auth` module, they should spend extra time writing missing tests or simplifying a complex function in that specific module.\n*   **How it helps:** Refactoring is tied directly to business value. You are only cleaning up code that actively needs to change, avoiding wasted effort on stable legacy code.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 0,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

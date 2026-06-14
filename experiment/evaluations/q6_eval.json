@@ -1,0 +1,23 @@
+{
+  "question_id": 6,
+  "timestamp": "2026-06-14T15:39:33.107979Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 85,
+      "rationale": "Solid standard advice utilizing modular monolith, Strangler pattern, and the Boy Scout rule."
+    },
+    "fable_compressed": {
+      "score": 85,
+      "rationale": "Clear and concise, matching the control response in quality and structure."
+    },
+    "fable_raw": {
+      "score": 88,
+      "rationale": "Very actionable and structured, accurately adopting the raw Fable prompt instructions."
+    },
+    "fable_innovations": {
+      "score": 95,
+      "rationale": "Superb application of directives. Extracted domains are analyzed through Founder Mode as potential productization targets, adding significant business value. Also includes comprehensive contrarian analysis."
+    }
+  }
+}

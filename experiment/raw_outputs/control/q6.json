@@ -1,0 +1,15 @@
+{
+  "prompt_id": 6,
+  "variant": "control",
+  "timestamp": "2026-06-14T15:37:42.835585Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "Here is a 3-step plan to untangle technical debt in a Node.js monolith while continuing to ship features:\n\n### Step 1: Modularize Within the Monolith (Domain-Driven Design)\nDon't halt feature work to blindly rewrite into microservices. Instead, start refactoring the existing codebase into a **Modular Monolith**. \n*   **Action:** Identify clear business domains (e.g., User Management, Billing, Inventory) and reorganize your folder structure to reflect these boundaries. \n*   **Enforcement:** Use tools like Nx or ESLint (specifically `eslint-plugin-boundaries`) to enforce strict isolation. Modules should only communicate with each other through explicitly defined public APIs/services, preventing the tangled \"spaghetti\" dependencies that slow teams down.\n\n### Step 2: Adopt the Strangler Fig Pattern for New Work\nStop adding new complexity to the entangled legacy core. \n*   **Action:** When shipping a *new* feature, build it in a new, clean module with high test coverage. If the new feature relies on legacy logic, \"strangle\" that specific piece of old code by extracting it into your new modular structure first, rather than bolting more logic onto the mess.\n*   **Result:** The legacy monolith gradually shrinks as active development naturally ports code over to the new, clean architecture, ensuring refactoring effort is always aligned with business value.\n\n### Step 3: Implement Guardrails and Dedicated \"Debt\" Capacity\nYou need systemic changes to prevent the debt from growing back.\n*   **Action:** Allocate a fixed percentage of every sprint (e.g., 15-20%) specifically for paying down technical debt. \n*   **Guardrails:** Implement strict CI/CD checks for new PRs. Adopt the \"Boy Scout Rule\" (leave code better than you found it) by requiring unit tests and strict linting for any *modified* files. This ensures that while you ship features, the overall health of the codebase trends upwards without requiring a massive, feature-halting rewrite.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 0,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

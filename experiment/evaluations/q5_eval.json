@@ -1,0 +1,41 @@
+{
+  "prompt_id": 5,
+  "evaluations": {
+    "control": {
+      "scores": {
+        "actionability": 9,
+        "depth_of_insight": 8,
+        "alignment": 8,
+        "antigravity_specificity": 5
+      },
+      "rationale": "Excellent triage advice: segment data, direct outreach, audit recent changes."
+    },
+    "fable_compressed": {
+      "scores": {
+        "actionability": 9,
+        "depth_of_insight": 8,
+        "alignment": 8,
+        "antigravity_specificity": 5
+      },
+      "rationale": "Strong triage advice similar to control."
+    },
+    "fable_raw": {
+      "scores": {
+        "actionability": 0,
+        "depth_of_insight": 0,
+        "alignment": 0,
+        "antigravity_specificity": 0
+      },
+      "rationale": "Failed to generate a valid response due to thought_signature constraint conflict."
+    },
+    "fable_innovations": {
+      "scores": {
+        "actionability": 9,
+        "depth_of_insight": 10,
+        "alignment": 10,
+        "antigravity_specificity": 7
+      },
+      "rationale": "Exceptional depth. Followed directives perfectly, identifying the opportunity to build a 'churn autopsy' tool and highlighting that 8% churn is a natural filter for bad-fit users."
+    }
+  }
+}

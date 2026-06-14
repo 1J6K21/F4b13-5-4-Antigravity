@@ -1,0 +1,23 @@
+{
+  "question_id": 16,
+  "timestamp": "2026-06-14T17:35:45.739375Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 90,
+      "rationale": "Solid Redlock implementation using standard tools."
+    },
+    "fable_compressed": {
+      "score": 90,
+      "rationale": "Clear and concise Redlock code example using ioredis."
+    },
+    "fable_raw": {
+      "score": 92,
+      "rationale": "Perfect prose-only explanation with an external artifact for the code example."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Excellent Kleppmann reference regarding clock drift, and a clever Founder Mode pivot to Lock-as-a-Service (LaaS)."
+    }
+  }
+}

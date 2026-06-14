@@ -1,0 +1,15 @@
+{
+  "prompt_id": 5,
+  "variant": "fable_raw",
+  "timestamp": "2026-06-14T15:34:22.155795Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Our churn rate just spiked to 8% this month. What are the first three immediate actions I should take to diagnose and fix this?",
+  "full_model_response": "FAILED: INVALID_ARGUMENT (code 400): Function call is missing a thought_signature in functionCall parts.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 0,
+    "errors_encountered": "FAILED: INVALID_ARGUMENT (code 400): Function call is missing a thought_signature in functionCall parts."
+  }
+}

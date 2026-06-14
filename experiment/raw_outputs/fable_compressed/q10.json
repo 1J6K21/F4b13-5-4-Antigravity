@@ -1,0 +1,15 @@
+{
+  "prompt_id": 10,
+  "variant": "fable_compressed",
+  "timestamp": "2026-06-14T15:37:42.836959Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "[Read from artifact multi_tenant_saas_schema.md]",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 0,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

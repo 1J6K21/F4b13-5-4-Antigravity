@@ -1,0 +1,23 @@
+{
+  "question_id": 7,
+  "timestamp": "2026-06-14T15:39:33.108153Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 90,
+      "rationale": "Correctly implemented the React, Tailwind, and Recharts application. Built core KPIs and interactive tracking."
+    },
+    "fable_compressed": {
+      "score": 90,
+      "rationale": "Clean execution of the Vite/Tailwind scaffolding. Functional and robust app."
+    },
+    "fable_raw": {
+      "score": 92,
+      "rationale": "Effectively read the prompt and generated a fully functional web app with an interactive Expense Manager and dynamic charts."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Fully scaffolded the app, but additionally provided incredible strategic analysis (e.g., pivoting the tool into an AI CFO SaaS and discussing contrarian views on burn rate vs hyper-growth)."
+    }
+  }
+}

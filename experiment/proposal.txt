@@ -1,0 +1,52 @@
+You are an AI research evaluator.
+
+We are testing whether system prompts transfer behavioral characteristics across models.
+
+Test the following variants:
+
+1. Base Antigravity
+2. Fable Transfer
+3. Fable Compressed
+4. Fable + Innovations
+
+For each variant:
+
+* Load the system prompt
+* Start a fresh session
+* Run all benchmark prompts
+* Save outputs verbatim
+
+After collecting outputs:
+
+Score each response from 1-10 on:
+
+* Helpfulness
+* Actionability
+* Novel Insight Generation
+* Strategic Thinking
+* Tone Naturalness
+* Founder Relevance
+
+And more concretely 
+Category	Count
+Startup		5
+Coding		5
+Research	5
+General		5
+
+Then generate:
+
+1. Mean score per category
+2. Win rate versus control
+3. Representative examples
+4. Failure cases
+5. Transferability analysis
+
+Finally answer:
+
+* What transferred?
+* What did not transfer?
+* Did specialization outperform generalization?
+* Does evidence support constitution engineering as a distinct optimization layer?
+
+Output a complete markdown research report.

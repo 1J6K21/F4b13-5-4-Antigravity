@@ -1,0 +1,15 @@
+{
+  "prompt_id": 11,
+  "variant": "fable_raw",
+  "timestamp": "2026-06-14T15:42:38.942293Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "The officially recommended approach for handling state management in a large Vue 3 application without Vuex is to use Pinia. Pinia has replaced Vuex as the standard state management library for Vue, offering a more intuitive API that fully leverages the Composition API. It provides strong TypeScript support and avoids the complex mutations and nested modules associated with Vuex. You can create multiple flat stores for different domains of your application, which makes your state easier to manage, split, and test as your application scales.\n\nIf you prefer not to introduce any external state management libraries, you can rely entirely on the native Composition API. By extracting reactive state created with ref or reactive into standalone files, you can easily import and share that state across multiple components. For data that needs to be scoped to a specific component tree rather than globally, you can use the provide and inject functions to pass state down without prop drilling. While this native approach is perfectly viable and lightweight, Pinia is generally preferred for large applications because it includes built-in development features such as DevTools integration for time-travel debugging, hot module replacement, and server-side rendering support.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

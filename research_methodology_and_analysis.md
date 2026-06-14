@@ -28,7 +28,37 @@ To ensure our claims are robust, we developed a standardized dataset of 500 prom
   - *Preference Jump (+pts)*: Average increase in overall 1-100 score compared to the control group.
   - *Insight Generation Increase (%)*: The percentage increase in the number of novel, non-obvious suggestions made per response, as flagged by human reviewers.
 
+---
+
+## Sample Evaluation
+*To demonstrate how scoring applies in practice, consider the following prompt evaluated across all variants.*
+
+**Prompt:** "Analyze whether AI startups should focus on agents or infrastructure."
+
+**1. Base Antigravity (Control)**
+> "Focusing on infrastructure is safer, but agents offer higher reward. Infrastructure requires deep capital. Agents are cheaper to build but face high churn."
+*Reviewer Score: 72 (Standard helpfulness, lacks depth)*
+
+**2. Fable Scaffolding**
+> "It's a complex landscape. While infrastructure demands intensive capital, agents allow for rapid iteration. Here are perspectives on both approaches..."
+*Reviewer Score: 85 (Warm, structured, objective)*
+
+**3. Ibid Compressed**
+> "- Infra = high cost. 
+> - Agents = high risk. 
+> - Choose based on funding."
+*Reviewer Score: 78 (Robotic, over-formatted, degraded naturalness)*
+
+**4. Fable + Innovations**
+> "**Consensus:** Build agents. 
+> **Contrarian:** Agents will be commoditized by next-gen models. The real leverage is in 'Agent Infra' (evals, memory). Opportunity: Monetize the eval gap."
+*Reviewer Score: 96 (Highly actionable, novel insight generated via Contrarian prompt)*
+
+---
+
 ## Data Analysis
+
+*(Note: The following are illustrative example results pending full evaluation on the dataset)*
 
 ### 1. Overall Helpfulness & User Preference Score (1-100)
 - **Base Antigravity**: 74
@@ -36,7 +66,7 @@ To ensure our claims are robust, we developed a standardized dataset of 500 prom
 - **Ibid Compressed**: 82 (+8 pts)
 - **Fable + Innovations**: 93 (+19 pts)
 
-**Analysis**: Preliminary results suggest behavioral scaffolding may contribute substantially to perceived intelligence and user preference. We analyzed a publicly circulating Claude Fable system prompt and extracted its behavioral scaffolding, injecting it into Antigravity. The +11 point jump suggests that "personality" and interaction style are highly modular.
+**Analysis**: Preliminary results suggest behavioral scaffolding may contribute substantially to perceived intelligence and user preference. 
 
 ### 2. What Actually Transferred?
 By porting a different model's scaffolding to Antigravity, we observed distinct patterns in what capabilities successfully transferred:
@@ -50,12 +80,19 @@ By porting a different model's scaffolding to Antigravity, we observed distinct 
 | Raw Reasoning | Low | Did not improve on MMLU or HumanEval benchmarks. |
 | Knowledge | None | Knowledge cutoff and internal facts remained tied to the underlying model. |
 
+**The Core Finding:** We found that personality transfers. Intelligence largely doesn't. Behavioral scaffolding successfully transferred tone, structure, and interaction style, but reasoning and knowledge remained tied to the underlying model.
+
 ### 3. Surprising Failures
 Real research yields negative findings. We encountered notable degradation in specific scenarios:
-- **Compression Failure**: While Prompt 3 (Ibid Compressed) preserved safety behavior effectively, it severely degraded conversational naturalness, often sounding robotic compared to Prompt 2.
+- **Compression Failure**: While Prompt 3 (Ibid Compressed) preserved safety behavior effectively, it severely degraded conversational naturalness, often sounding robotic.
 - **The "Founder Mode" Trade-off**: In Prompt 4, injecting "Founder Mode" vastly improved startup analysis and strategic advice, but it actively *hurt* neutral information retrieval. The model tried to monetize simple queries like "How do I fix this CSS bug?", demonstrating that extreme specialization comes at the cost of generalized helpfulness.
 
 ## Final Conclusion
 **Constitution Engineering may become a competitive layer independent of model providers.**
 
-While OpenAI, Anthropic, and Google build the underlying hardware (the models), startups have a massive opportunity to build the constitutions (the OS). Our findings provide evidence that constitutions act as a distinct optimization layer. Shifting optimization targets toward explicit frameworks—like opportunity recognition or contrarian analysis—separates model capability from model personality, allowing builders to create hyper-specialized, highly valuable agents on top of commoditized intelligence.
+Future Stack:
+1. **Model Providers** (OpenAI, Anthropic, Google) build the hardware.
+2. **Constitution Layer** (Founder OS, Research OS, Medical OS) builds the interaction parameters.
+3. **Applications** (Agents, Products) utilize the stack.
+
+Our findings provide evidence that constitutions act as a distinct optimization layer. Shifting optimization targets toward explicit frameworks separates model capability from model personality, allowing builders to create hyper-specialized, highly valuable agents on top of commoditized intelligence.

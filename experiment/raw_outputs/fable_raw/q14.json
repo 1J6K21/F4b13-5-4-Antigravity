@@ -1,0 +1,15 @@
+{
+  "prompt_id": 14,
+  "variant": "fable_raw",
+  "timestamp": "2026-06-14T15:42:38.942956Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Unknown",
+  "full_model_response": "WebSockets, Server-Sent Events, and WebRTC are all technologies for enabling real-time communication on the web, but they serve different architectural needs and use cases.\n\nWebSockets provide a persistent, full-duplex, bidirectional connection between a client and a server over a single TCP connection. Because both parties can send and receive messages at any time with very low latency, WebSockets are ideal for highly interactive, two-way applications. Common use cases include live chat applications, multiplayer online games, collaborative editing tools, and financial trading platforms where rapid back-and-forth data exchange is essential.\n\nServer-Sent Events offer a unidirectional channel where the server pushes updates to the client over a standard HTTP connection. Once the client establishes the connection, it simply listens for a continuous stream of events from the server. This makes Server-Sent Events much simpler to implement than WebSockets when you only need one-way data flow. It is the best choice for applications like live sports scores, news tickers, social media feeds, or real-time notifications where the client receives continuous updates but rarely needs to send data back.\n\nWebRTC takes a different approach by enabling direct peer-to-peer communication between browsers without routing the media or data through an intermediate server. While it requires a server initially to set up the connection through a process called signaling, the actual data flows directly between the clients. This architecture provides the absolute lowest latency possible, making WebRTC the standard for high-bandwidth, real-time media applications like video conferencing, voice over IP calls, and direct peer-to-peer file sharing.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 1,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

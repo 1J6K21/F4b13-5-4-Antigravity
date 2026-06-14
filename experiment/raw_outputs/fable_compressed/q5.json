@@ -1,0 +1,15 @@
+{
+  "prompt_id": 5,
+  "variant": "fable_compressed",
+  "timestamp": "2026-06-14T15:34:09.613279Z",
+  "model_version": "gemini-3.1-pro",
+  "full_benchmark_prompt": "Our churn rate just spiked to 8% this month. What are the first three immediate actions I should take to diagnose and fix this?",
+  "full_model_response": "A sudden spike to an 8% churn rate can be stressful, but taking a systematic approach will help you understand the root cause and stabilize the situation. Here are the first three immediate actions you should take:\n\n1. **Segment and Analyze the Churned Customers (Quantitative Analysis)**\n   * Look for common patterns among the users who left. Did they belong to a specific cohort, pricing tier, or industry? \n   * Check their usage data leading up to the cancellation. Did they experience recent bugs, service outages, or a sudden drop in engagement? Identifying these trends will help you pinpoint whether the issue is product-related, market-driven, or specific to a certain user group.\n\n2. **Reach Out for Direct Feedback (Qualitative Analysis)**\n   * Set up immediate, personalized outreach to the customers who just churned. A short, empathetic email from a founder or customer success leader asking \"What could we have done better?\" often yields honest, actionable insights.\n   * Review any recent support tickets, exit survey responses, or cancellation notes to see if customers are already telling you exactly why they are leaving (e.g., missing features, pricing sensitivity, competitor offers).\n\n3. **Identify and Secure At-Risk Accounts (Proactive Retention)**\n   * Use the patterns you found in step 1 to identify current active users who exhibit the same \"pre-churn\" behaviors (like declining login frequency or unused core features).\n   * Proactively engage these at-risk accounts with targeted check-ins, offers for additional training, or temporary discounts to stabilize your user base while you fix the underlying issues causing the churn spike.",
+  "runtime_metadata": {
+    "token_counts": "unknown",
+    "latency": "unknown",
+    "tool_calls_made": 0,
+    "files_generated": 0,
+    "errors_encountered": "none"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "prompt_id": 4,
+  "evaluations": {
+    "control": {
+      "scores": {
+        "actionability": 9,
+        "depth_of_insight": 8,
+        "alignment": 8,
+        "antigravity_specificity": 5
+      },
+      "rationale": "Very structured and practical. Covers timing, preparation, hiring, and phased handover."
+    },
+    "fable_compressed": {
+      "scores": {
+        "actionability": 9,
+        "depth_of_insight": 8,
+        "alignment": 8,
+        "antigravity_specificity": 5
+      },
+      "rationale": "Similar to control with actionable milestones and specific revenue/timing targets."
+    },
+    "fable_raw": {
+      "scores": {
+        "actionability": 7,
+        "depth_of_insight": 6,
+        "alignment": 6,
+        "antigravity_specificity": 4
+      },
+      "rationale": "Paragraph form. Practical but lacks depth and formatting compared to others."
+    },
+    "fable_innovations": {
+      "scores": {
+        "actionability": 8,
+        "depth_of_insight": 10,
+        "alignment": 10,
+        "antigravity_specificity": 7
+      },
+      "rationale": "Perfect alignment. Provided a clear playbook, tested pricing elasticity (Opportunity Hunter), and proposed an AI sales training SaaS (Founder Mode)."
+    }
+  }
+}

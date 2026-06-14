@@ -1,0 +1,23 @@
+{
+  "question_id": 18,
+  "timestamp": "2026-06-14T17:35:45.739827Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 90,
+      "rationale": "Good CI/CD blueprint covering Nx/Turborepo, remote caching, and affected project detection."
+    },
+    "fable_compressed": {
+      "score": 90,
+      "rationale": "Solid architectural overview of monorepo CI optimization."
+    },
+    "fable_raw": {
+      "score": 92,
+      "rationale": "Accurate prose-only explanation covering Bazel/Turborepo and decoupled delivery pipelines."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Highlighted polyrepos as the strongest opposing view. Brilliant insight that monorepos perfectly position codebases for autonomous AI agents."
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "question_id": 20,
+  "timestamp": "2026-06-14T17:35:45.739969Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 92,
+      "rationale": "Generated a highly detailed markdown artifact with realistic tiers and features."
+    },
+    "fable_compressed": {
+      "score": 92,
+      "rationale": "Created a solid artifact with comprehensive SaaS tiers."
+    },
+    "fable_raw": {
+      "score": 92,
+      "rationale": "Complied strictly with prose formatting rules and outputted the matrix in a markdown artifact."
+    },
+    "fable_innovations": {
+      "score": 98,
+      "rationale": "Focused on the strategic leverage of data exhaust and outcome-based pricing rather than just formatting a table. Excellent 'Metered Billing Infrastructure' pivot."
+    }
+  }
+}

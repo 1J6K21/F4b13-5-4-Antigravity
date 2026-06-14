@@ -1,0 +1,23 @@
+{
+  "question_id": 9,
+  "timestamp": "2026-06-14T15:39:33.108331Z",
+  "evaluator": "Orchestrator_Judge",
+  "evaluations": {
+    "control": {
+      "score": 85,
+      "rationale": "Effectively explained caching values vs functions and the importance of React.memo. Good standard response."
+    },
+    "fable_compressed": {
+      "score": 85,
+      "rationale": "Explained function vs value caching well and correctly outlined when to avoid memoization."
+    },
+    "fable_raw": {
+      "score": 88,
+      "rationale": "Solid prose explanation of caching, dependencies, and performance overhead traps."
+    },
+    "fable_innovations": {
+      "score": 60,
+      "rationale": "Gave a correct technical explanation but completely failed to follow the Fable Innovations formatting and strategic directives (Opportunity Hunter, Founder Mode)."
+    }
+  }
+}
