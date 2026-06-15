@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #00e5ff;
+  --color-brand-light: #5effff;
+  --color-brand-dark: #00b3cc;
+  --color-bg-dark: #050505;
+  --color-bg-panel: rgba(20, 20, 22, 0.6);
+  --color-border: rgba(255, 255, 255, 0.1);
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "Fira Code", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-bg-dark)] text-white font-sans antialiased overflow-hidden m-0 p-0;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+  }
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
