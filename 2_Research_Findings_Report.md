@@ -30,7 +30,7 @@ The innovating prompt introduced three strict directives:
 **The Effect:** During the Startup MVP benchmark, the `fable-prompted-innovating` subagent explicitly outputted a "Contrarian Research Assistant Output" section with exact headers matching the prompt (Consensus, Opposing View, Unknowns). By contrast, the `fable-prompted` and `control(antigravity)` subagents completely lacked this structure. The model did not become more intelligent intrinsically; it simply executed the mandated workflow.
 
 ## 2. Transferability Analysis
-Principle: "Personality transfers. Intelligence largely doesn't."
+Principle: "Constitutions appear capable of altering reasoning structure, workflow, planning style, and decision frameworks while leaving core model capabilities largely unchanged."
 
 **Evidence Supporting (Based strictly on Explicit Directives Engineered):**
 - **Tone & Formatting Transfer (100%)**: The `fable-prompted` variant flawlessly adopted the constrained, non-judgmental, prose-only tone and successfully avoided bulleted lists as instructed.

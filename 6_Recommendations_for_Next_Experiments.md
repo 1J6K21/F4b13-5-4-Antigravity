@@ -11,7 +11,7 @@
 - **Compression Efficiency**: The evidence shows that highly compressed prompts (`fabled-prompted-compressed`) degrade conversational naturalness and score lower than the uncompressed control.
 
 ### Most Important Discovery
-**The "Workflow Layer" Threshold**: Injecting explicit, step-by-step cognitive algorithms into the system prompt reliably forces the model to execute that algorithm before answering. This proves that a model's *workflow* can be programmed via prompt, even if its raw *intelligence* cannot be upgraded.
+**The "Workflow Layer" Threshold**: Injecting explicit, step-by-step cognitive algorithms into the system prompt reliably forces the model to execute that algorithm before answering. This proves that a model's *workflow* can be programmed via prompt, even if its raw *computational capabilities* cannot be upgraded.
 
 ### Next Steps
 1. **Dynamic Constitutions**: Test a system that dynamically swaps constitutions based on the user's query to mitigate the specialization failure mode.

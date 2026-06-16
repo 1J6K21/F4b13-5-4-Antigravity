@@ -48,4 +48,4 @@ By porting a different model's scaffolding to Antigravity, we observed distinct 
 
 ## Final Conclusion
 **Constitution Engineering serves as a competitive Workflow Layer.**
-Our findings provide evidence that shifting optimization targets toward explicit frameworks separates model capability from model intelligence, allowing builders to route raw computational power through specialized workflows.
+Our findings provide evidence that shifting optimization targets toward explicit frameworks separates underlying model capability from applied behavioral frameworks, allowing builders to route raw computational power through specialized workflows.
