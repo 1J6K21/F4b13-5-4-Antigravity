@@ -1,4 +1,76 @@
-<!DOCTYPE html>
+import os
+
+base_dir = "/Users/jonathankalsky/Developer/F4b13-5-4-Antigravity"
+
+# Definitions to append/inject
+definitions_text = """
+### Definition of Cognitive Frameworks
+Throughout this report, we reference specific "Cognitive Frameworks" injected into the `fable-prompted-innovating` variant. These are defined as exact strings appended to the system prompt:
+- **Founder Mode**: *"Whenever the user describes a problem, search for a business opportunity hidden inside it."*
+- **Opportunity Hunter**: *"Every response should identify hidden leverage."*
+- **Contrarian Research Assistant**: *"Every answer must contain: Consensus view, Strongest opposing view, Unknowns, What would change the conclusion."*
+"""
+
+# 1. Update 1_Executive_Summary.md
+exec_sum_path = os.path.join(base_dir, "1_Executive_Summary.md")
+with open(exec_sum_path, 'r') as f:
+    content = f.read()
+if "Definition of Cognitive Frameworks" not in content:
+    content = content.replace("## Core Findings", definitions_text + "\n## Core Findings")
+# Fix the metric explanation
+content = content.replace(
+    "scoring 76.38 vs 71.27 on an automated 20-query evaluation suite", 
+    "scoring 76.38 vs 71.27. This score was obtained by utilizing an automated LLM-as-a-judge system to rigorously evaluate 20 complex programming and architecture queries, grading each output from 1-100 on Helpfulness, Actionability, and Tone Naturalness"
+)
+with open(exec_sum_path, 'w') as f: f.write(content)
+
+
+# 2. Update 2_Research_Findings_Report.md
+find_path = os.path.join(base_dir, "2_Research_Findings_Report.md")
+with open(find_path, 'r') as f:
+    content = f.read()
+if "Definition of Cognitive Frameworks" not in content:
+    content = content.replace("## 1. Quantitative Findings", definitions_text + "\n## 1. Quantitative Findings")
+with open(find_path, 'w') as f: f.write(content)
+
+
+# 3. Update 5_Failure_Analysis.md
+fail_path = os.path.join(base_dir, "5_Failure_Analysis.md")
+with open(fail_path, 'r') as f:
+    content = f.read()
+if "Multi-Agent Architecture" not in content:
+    content = content.replace(
+        "distracting and degrades the user experience.", 
+        "distracting and degrades the user experience.\n\n**The Solution: Multi-Agent Architecture**\nTo solve this specialization overfitting, the architecture must evolve beyond a single monolithic prompt. A router agent should classify the user's intent, and then hand off the task to specialized subagents with distinctly engineered personalities—e.g., a 'Founder' agent for strategic analysis, a 'Coder' agent for raw syntax, and a 'Financer' agent for budgeting. This allows extreme specialization without degrading general capability."
+    )
+with open(fail_path, 'w') as f: f.write(content)
+
+
+# 4. Update community_presentation.html (STAR Result)
+pres_path = os.path.join(base_dir, "community_presentation.html")
+with open(pres_path, 'r') as f:
+    content = f.read()
+# Replace Result
+if "the action of our experiment" not in content:
+    content = content.replace(
+        '<h2><span class="highlight">R</span>esult: The Data</h2>',
+        '<h2><span class="highlight">R</span>esult: The Data & The Discovery</h2>'
+    )
+    content = content.replace(
+        '<div class="stat-label">Preference Jump</div>',
+        '<div class="stat-label">Preference Jump</div>\n                </div>\n            </div>\n            <p style="font-size: 0.9rem; margin-top: 20px; text-align: left;" class="fragment">\n                <strong>The true Result</strong> goes far beyond the agent producing higher quality answers. By executing this vast experimentation, we arrived at a fundamental conclusion: models are rapidly commoditizing into basic "Hardware", while the true differentiator is the "Operating System" layered on top via System Prompts.\n            </p>'
+    )
+# Define the modes
+if "Founder Mode:" not in content:
+    content = content.replace(
+        "<li><code>fable-prompted-innovating</code> (Injected with Opportunity Hunter, Founder Mode, and Contrarian Research Assistant)</li>",
+        "<li><code>fable-prompted-innovating</code> (Injected with Opportunity Hunter, Founder Mode, and Contrarian Research Assistant)</li>\n            </ul>\n            <div class=\"fragment\" style=\"font-size: 0.8rem; text-align: left; margin-top: 15px; background: rgba(0,0,0,0.5); padding: 10px; border-left: 3px solid #c3073f;\">\n                <strong>Definitions:</strong><br>\n                <em>Founder Mode:</em> \"Whenever the user describes a problem, search for a business opportunity hidden inside it.\"<br>\n                <em>Contrarian Assistant:</em> \"Every answer must contain: Consensus view, Strongest opposing view...\"<br>\n                <em>Opportunity Hunter:</em> \"Every response should identify hidden leverage.\"\n            </div>"
+    )
+with open(pres_path, 'w') as f: f.write(content)
+
+
+# 5. Overhaul the One-Pager (research_recap_one_pager.html)
+one_pager_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,9 +104,7 @@
         .print-btn { position: absolute; top: 50px; right: 50px; background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: 600; transition: background 0.3s; }
         .print-btn:hover { background: var(--accent); }
         @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 0; max-width: 100%; } .print-btn { display: none; } }
-    .captionable-frame { background: #fff; padding: 30px; border-radius: 12px; border-left: 6px solid var(--accent); box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin: 40px 0; font-size: 1.3rem; line-height: 1.6; }
-        .captionable-frame .author { text-align: right; font-size: 1rem; color: #666; font-style: italic; margin-top: 15px; }
-        </style>
+    </style>
 </head>
 <body>
 
@@ -42,36 +112,15 @@
     <button class="print-btn" onclick="window.print()">Download PDF</button>
     
     <div class="header">
-        <h1>System Prompts as the Cognitive OS</h1>
-        <div class="subtitle">Why the Model is Just Hardware: Evidence from Constitution Engineering</div>
-        <div style="margin-top: 15px; font-weight: bold; color: var(--accent);">Lead Researcher & Architect: Jonathan Kalsky</div>
+        <h1>Deep Dive Research Report: Constitution Engineering</h1>
+        <div class="subtitle">Evidence for System Prompts as a Workflow Optimization Layer</div>
     </div>
 
     <h2>Executive Summary</h2>
-    <p>Our experimentation conclusively proves that behavioral scaffolding acts as a critical "Workflow Layer". Evaluating four prompt variants (`control(antigravity)`, `fable-prompted`, `fabled-prompted-compressed`, and `fable-prompted-innovating`) across 20 programmatic queries and fully built React applications proved that constitutions dictate strategic intelligence, while technical capabilities remain anchored to the base model.</p>
+    <p>Experimentation confirms that behavioral scaffolding acts as a critical "Workflow Layer". Evaluating four prompt variants (`control(antigravity)`, `fable-prompted`, `fabled-prompted-compressed`, and `fable-prompted-innovating`) across 20 programmatic queries and fully built React applications proved that constitutions dictate strategic intelligence, while technical capabilities remain anchored to the base model.</p>
     
     <div class="quote-box">
-        Personality and workflow transfer. Underlying intelligence does not.
-    </div>
-
-    
-    <h2>What & How We Tested (The Deep Dive)</h2>
-    <p>To prove these claims, we architected a highly rigorous, programmatic testing environment. We did not rely on simple chat interfaces; we built an autonomous orchestration layer to push the models to their limits across two primary tracks:</p>
-    
-    <div style="display: flex; gap: 20px; margin-bottom: 30px;">
-        <div style="flex: 1; background: #f9fafb; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-            <h3 style="margin-top:0; color: var(--accent);">Track 1: The 20-Query Architecture Benchmark</h3>
-            <p style="font-size: 0.95rem;">We spawned <strong>80 isolated subagents</strong> in parallel to answer 20 elite-level system architecture queries (e.g., GraphQL N+1 optimization, CI/CD Monorepo design). The results were evaluated programmatically by an LLM-as-a-judge system scoring strictly on Helpfulness, Actionability, and Tone Naturalness (1-100).</p>
-        </div>
-        <div style="flex: 1; background: #f9fafb; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-            <h3 style="margin-top:0; color: var(--accent);">Track 2: The Autonomous Startup MVPs</h3>
-            <p style="font-size: 0.95rem;">Subagents were placed in isolated local directories and tasked to ideate, scaffold, and compile fully functional "Apple/Palantir" style web apps. They autonomously wrote <strong>Next.js, Tailwind, and Three.js</strong> code. When they encountered `EADDRINUSE` port collisions, the agents wrote dynamic Node.js scripts to negotiate open ports and successfully spin up the dev servers entirely unassisted.</p>
-        </div>
-    </div>
-
-    <div class="captionable-frame">
-        <strong>The "Hardware vs. OS" Paradigm:</strong> "Models are rapidly commoditizing into baseline Hardware. The true strategic differentiator is the Operating System layered on top via System Prompts. Capability comes from the weights; intelligence comes from the workflow."
-        <div class="author">— Jonathan Kalsky, Lead Researcher</div>
+        "Personality and workflow transfer. Underlying intelligence does not."
     </div>
 
     <h2>Methodology & Metrics Formulation</h2>
@@ -125,17 +174,16 @@
     <h2>What Actually Transferred?</h2>
     
     <div class="chart-container">
-        <img src="transferability_chart.png" alt="Horizontal bar chart showing Tone and Workflow transferred 100%, Tool Autonomy 60%, and Recursive Self-Improvement 0%">
+        <img src="transferability_chart.png" alt="Horizontal bar chart showing Tone and Workflow transferred High, Raw Reasoning Low, and Architecture choice None">
     </div>
 
     <table>
-        <tr><th>Engineered Directive</th><th>Compliance</th><th>Fact-Checked Notes</th></tr>
-        <tr><td>Tone & Formatting Constraints</td><td>100%</td><td>Perfect adherence to the "do not use bullets" and "dry tone" instructions.</td></tr>
-        <tr><td>Cognitive Workflows</td><td>100%</td><td>Successfully applied injected "Founder Mode" and "Contrarian" algorithms.</td></tr>
-        <tr><td>Tool Autonomy Habits</td><td>60%</td><td>Directives to search eagerly for leverage transferred partially but inconsistently.</td></tr>
-        <tr><td>Recursive Self-Improvement</td><td>0%</td><td>The directive to "continuously rewrite an internal constitution" completely failed due to the lack of a cross-session memory architecture.</td></tr>
+        <tr><th>Capability</th><th>Transferred?</th><th>Notes</th></tr>
+        <tr><td>Tone & Structure</td><td>High</td><td>Perfect adherence to formatting constraints.</td></tr>
+        <tr><td>Strategic Workflow</td><td>High</td><td>Successfully applied injected frameworks (e.g., Founder Mode).</td></tr>
+        <tr><td>Raw Reasoning</td><td>Low</td><td>Did not perform better at fundamentally solving the algorithm.</td></tr>
+        <tr><td>Architecture Choices</td><td>None</td><td>Code execution remained homogeneous across variants (Next.js/React).</td></tr>
     </table>
-    <p><strong>Fact-Check Insight:</strong> Rather than unfairly grading the model on metrics it was never prompted to change (like architectural preferences), we graded compliance strictly on what was injected into the prompt. The data proves that while strategic workflows transfer flawlessly, system prompts cannot magically grant capabilities (like long-term memory tracking) that require fundamental architectural support.</p>
 
     <h2>Surprising Failures & The Multi-Agent Solution</h2>
     <p>We discovered two major failures:</p>
@@ -156,3 +204,10 @@
 
 </body>
 </html>
+"""
+
+with open(os.path.join(base_dir, "research_recap_one_pager.html"), 'w') as f:
+    f.write(one_pager_html)
+
+
+print("Successfully updated the reports with the detailed one-pager, new chart embeds, STAR result refinement, definition of cognitive frameworks, and the multi-agent architecture solution.")

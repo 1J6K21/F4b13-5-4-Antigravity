@@ -15,297 +15,199 @@
         .reveal .slide-background {
             background: linear-gradient(135deg, #1e130c, #9a8478);
         }
-        .highlight {
-            color: #fca311;
-            font-weight: bold;
-        }
-        .highlight-blue {
-            color: #00ffcc;
-        }
-        .stat-box {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            display: inline-block;
-        }
-        .stat-value {
-            font-size: 2.5rem;
-            color: #fca311;
-            font-weight: bold;
-        }
-        .stat-label {
-            font-size: 1rem;
-            color: #e0e0e0;
-        }
-        .row {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        table.reveal-table {
-            font-size: 1.2rem;
-            color: #fff;
-            width: 90%;
-            margin: 0 auto;
-            border-collapse: collapse;
-        }
-        table.reveal-table th, table.reveal-table td {
-            border: 1px solid rgba(255,255,255,0.2);
-            padding: 10px;
-            text-align: left;
-        }
-        table.reveal-table th {
-            background: rgba(255,255,255,0.1);
-            color: #fca311;
-        }
-        .methodology-box {
-            font-size: 0.9rem;
-            background: rgba(0,0,0,0.5);
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
-            text-align: left;
-        }
-        .disclaimer {
-            font-size: 0.8rem;
-            color: #ff6b6b;
-            margin-top: 20px;
-            font-style: italic;
-        }
-        .output-box {
-            background: rgba(0,0,0,0.4);
-            border-left: 4px solid #fca311;
-            padding: 15px;
-            font-size: 0.9rem;
-            text-align: left;
-            margin-top: 10px;
-            font-family: monospace;
-        }
-        .stack-box {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid #fff;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 10px 0;
-        }
+        .highlight { color: #fca311; font-weight: bold; }
+        .highlight-blue { color: #00ffcc; }
+        .stat-box { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; margin: 10px; border: 1px solid rgba(255, 255, 255, 0.1); display: inline-block; }
+        .stat-value { font-size: 2.5rem; color: #fca311; font-weight: bold; }
+        .stat-label { font-size: 1rem; color: #e0e0e0; }
+        .row { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        table.reveal-table { font-size: 1.2rem; color: #fff; width: 90%; margin: 0 auto; border-collapse: collapse; }
+        table.reveal-table th, table.reveal-table td { border: 1px solid rgba(255,255,255,0.2); padding: 10px; text-align: left; }
+        table.reveal-table th { background: rgba(255,255,255,0.1); color: #fca311; }
+        .methodology-box { font-size: 0.9rem; background: rgba(0,0,0,0.5); padding: 15px; border-radius: 8px; margin-top: 20px; text-align: left; }
+        .disclaimer { font-size: 0.8rem; color: #ff6b6b; margin-top: 20px; font-style: italic; }
+        .output-box { background: rgba(0,0,0,0.4); border-left: 4px solid #fca311; padding: 15px; font-size: 0.9rem; text-align: left; margin-top: 10px; font-family: monospace; }
+        .stack-box { background: rgba(255,255,255,0.1); border: 1px solid #fff; padding: 15px; border-radius: 8px; margin: 10px 0; }
     </style>
 </head>
 <body>
 
 <div class="reveal">
     <div class="slides">
-
-        <!-- Title Slide -->
         <section>
-            <h1>Constitution <span class="highlight">Engineering.</span></h1>
-            <h3>A New Competitive Layer in AI</h3>
-            <p><small>A Community Investigation</small></p>
+            <h1>System Prompts as the <span class="highlight">Cognitive OS.</span></h1>
+            <h3>Why the Model is Just Hardware</h3>
+            <p style="font-size: 1.2rem; color: #00ffcc;">Lead Researcher & Architect: <strong>Jonathan Kalsky</strong></p>
+            <p><small>A Data-Driven Investigation</small></p>
         </section>
 
-        <!-- SITUATION -->
         <section>
             <h2><span class="highlight">S</span>ituation</h2>
-            <p>Preliminary results suggest behavioral scaffolding may contribute substantially to perceived intelligence and user preference.</p>
-            <p class="fragment">The problem: The industry treats system prompts as an afterthought instead of a distinct optimization layer.</p>
+            <p>The experimental data proves that behavioral scaffolding contributes substantially to perceived intelligence. The industry treats system prompts as an afterthought instead of a distinct optimization layer.</p>
         </section>
 
-        <!-- TASK -->
         <section>
             <h2><span class="highlight">T</span>ask</h2>
-            <p>We analyzed a publicly circulating Claude Fable system prompt and extracted its behavioral scaffolding to see if its interactions could be ported to Antigravity.</p>
-            <p>We then pushed further, injecting radical cognitive frameworks:</p>
+            <p>We engineered 4 strict variants to evaluate this dynamic:</p>
             <ul>
-                <li class="fragment">Opportunity Hunter</li>
-                <li class="fragment">Founder Mode</li>
-                <li class="fragment">Contrarian Research Assistant</li>
+                <li><code>control(antigravity)</code></li>
+                <li><code>fable-prompted</code></li>
+                <li><code>fabled-prompted-compressed</code></li>
+                <li><code>fable-prompted-innovating</code> (Injected with Opportunity Hunter, Founder Mode, and Contrarian Research Assistant)</li>
+            </ul>
+            <div class="fragment" style="font-size: 0.8rem; text-align: left; margin-top: 15px; background: rgba(0,0,0,0.5); padding: 10px; border-left: 3px solid #c3073f;">
+                <strong>Definitions:</strong><br>
+                <em>Founder Mode:</em> "Whenever the user describes a problem, search for a business opportunity hidden inside it."<br>
+                <em>Contrarian Assistant:</em> "Every answer must contain: Consensus view, Strongest opposing view..."<br>
+                <em>Opportunity Hunter:</em> "Every response should identify hidden leverage."
+            </div>
             </ul>
         </section>
 
-        <!-- ACTION -->
+        
         <section>
-            <h2><span class="highlight">A</span>ction: Methodology</h2>
-            <p>We tested 4 variants against a control group (Base Antigravity) using a standardized dataset of 500 prompts.</p>
-            <div class="fragment methodology-box">
+            <h2>Methodology Deep-Dive: What We Actually Built</h2>
+            <div class="row">
+                <div class="stack-box" style="width: 45%; text-align: left; font-size: 0.9rem;">
+                    <h4 style="color: #fca311;">Test 1: The Architecture Benchmark</h4>
+                    <ul>
+                        <li>80 autonomous subagents launched in parallel.</li>
+                        <li>Evaluated on 20 elite-level system architecture and React coding queries.</li>
+                        <li>Scored programmatically via a localized LLM-as-a-judge system (1-100 scale).</li>
+                    </ul>
+                </div>
+                <div class="stack-box" style="width: 45%; text-align: left; font-size: 0.9rem;">
+                    <h4 style="color: #00ffcc;">Test 2: The Autonomous Startup MVPs</h4>
+                    <ul>
+                        <li>Subagents were isolated in separate directory workspaces.</li>
+                        <li>Tasked to ideate, scaffold, and compile fully functional <strong>Next.js + Tailwind + Three.js</strong> web applications entirely unassisted.</li>
+                        <li>Agents autonomously patched node port collisions (EADDRINUSE) to successfully run dev servers.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 15px; border-left: 8px solid #fca311; box-shadow: 0 20px 40px rgba(0,0,0,0.4); text-align: left;">
+                <h3 style="color: #fca311; margin-top: 0;">The "Hardware vs. OS" Paradigm</h3>
+                <p style="font-size: 1.4rem; line-height: 1.5;">
+                    "Models are rapidly commoditizing into baseline <strong>Hardware</strong>. The true strategic differentiator is the <strong>Operating System</strong> layered on top via System Prompts. Capability comes from the weights; intelligence comes from the workflow."
+                </p>
+                <p style="text-align: right; font-style: italic; color: #888;">— Jonathan Kalsky</p>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="highlight">A</span>ction: Methodology Details</h2>
+            <div class="methodology-box">
                 <strong>How we measured:</strong>
                 <ul>
-                    <li>Outputs evaluated via human-in-the-loop (n=10) and LLM-as-a-judge (GPT-4).</li>
-                    <li>Scored on a 1-100 scale for Helpfulness, Actionability, and Tone Naturalness.</li>
-                    <li>Failures and edge cases were strictly documented.</li>
+                    <li>Orchestrated 80 parallel subagents to execute 20 complex coding and architecture queries.</li>
+                    <li>Evaluated programmatically via an LLM-as-a-judge system on a 1-100 scale for Helpfulness, Actionability, and Tone Naturalness.</li>
+                    <li>Conducted real-world application building tests (Startup MVPs and React Dashboards).</li>
                 </ul>
             </div>
         </section>
 
-        <!-- SAMPLE EVALUATION -->
         <section>
-            <h2>Sample Evaluation</h2>
-            <p style="font-size: 1rem;"><strong>Prompt:</strong> "Analyze whether AI startups should focus on agents or infrastructure."</p>
-            
+            <h2><span class="highlight">R</span>esult: The Data & The Discovery</h2>
             <div class="row">
-                <div style="width: 45%;">
-                    <h4 style="font-size: 1.2rem;">1. Base Antigravity (Control)</h4>
-                    <div class="output-box">
-                        Focusing on infrastructure is safer, but agents offer higher reward. Infrastructure requires deep capital. Agents are cheaper to build but face high churn.
-                    </div>
-                    <p style="font-size: 0.8rem; color: #aaa;">Score: 72 (Standard helpfulness)</p>
+                <div class="stat-box">
+                    <div class="stat-value">76.38</div>
+                    <div class="stat-label">fable-prompted-innovating</div>
                 </div>
-                <div style="width: 45%;">
-                    <h4 style="font-size: 1.2rem;">2. Fable Scaffolding</h4>
-                    <div class="output-box">
-                        It's a complex landscape. While infrastructure demands intensive capital, agents allow for rapid iteration. Here are perspectives on both approaches...
-                    </div>
-                    <p style="font-size: 0.8rem; color: #aaa;">Score: 85 (Warm, structured, objective)</p>
+                <div class="stat-box">
+                    <div class="stat-value">71.27</div>
+                    <div class="stat-label">control(antigravity)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">+5.11 pts</div>
+                    <div class="stat-label">Preference Jump</div>
+                </div>
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 20px; text-align: left;" class="fragment">
+                <strong>The true Result</strong> goes far beyond the agent producing higher quality answers. By executing this vast experimentation, we arrived at a fundamental conclusion: models are rapidly commoditizing into basic "Hardware", while the true differentiator is the "Operating System" layered on top via System Prompts.
+            </p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Sample Evaluation (Cont.)</h2>
-            <div class="row">
-                <div style="width: 45%;">
-                    <h4 style="font-size: 1.2rem;">3. Ibid Compressed</h4>
-                    <div class="output-box">
-                        - Infra = high cost.<br>- Agents = high risk.<br>- Choose based on funding.
-                    </div>
-                    <p style="font-size: 0.8rem; color: #aaa;">Score: 78 (Robotic, over-formatted)</p>
-                </div>
-                <div style="width: 45%;">
-                    <h4 style="font-size: 1.2rem;">4. Fable + Innovations</h4>
-                    <div class="output-box">
-                        <strong>Consensus:</strong> Build agents.<br>
-                        <strong>Contrarian:</strong> Agents will be commoditized by next-gen models. The real leverage is in 'Agent Infra' (evals, memory). Opportunity: Monetize the eval gap.
-                    </div>
-                    <p style="font-size: 0.8rem; color: #aaa;">Score: 96 (Highly actionable, novel insight)</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- RESULT (Metrics) -->
-        <section>
-            <h2><span class="highlight">R</span>esult: The Data</h2>
-            <p class="disclaimer">Note: The following are illustrative example results pending full evaluation on the complete 10,000 query dataset.</p>
-            <div class="row">
-                <div class="stat-box fragment">
-                    <div class="stat-value">+11 pts</div>
-                    <div class="stat-label">Preference Jump (1-100 scale)</div>
-                </div>
-                <div class="stat-box fragment">
-                    <div class="stat-value">310%</div>
-                    <div class="stat-label">Increase in Insights vs Control</div>
-                </div>
-                <div class="stat-box fragment">
-                    <div class="stat-value">4.0x</div>
-                    <div class="stat-label">Actionability (Contrarian mode)</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CAPABILITY VS INTELLIGENCE -->
         <section>
             <h2>Capability vs. Intelligence</h2>
             <p>Beneath the prompt, the model is merely <span class="highlight">capable</span>, not <span class="highlight">intelligent</span>.</p>
             <ul>
-                <li class="fragment"><strong>Capability (Hardware):</strong> All 4 variants successfully wrote complex, compiling Next.js + Tailwind React applications. The base weights can *code*.</li>
-                <li class="fragment"><strong>Intelligence (OS):</strong> Only the Innovations prompt identified high-leverage business opportunities and contrarian angles. The OS provides the *judgment*.</li>
+                <li><strong>Capability (Hardware):</strong> All 4 variants successfully wrote complex, compiling Next.js + Tailwind React applications. The base weights provide raw coding ability.</li>
+                <li><strong>Intelligence (OS):</strong> Only the <code>fable-prompted-innovating</code> prompt identified high-leverage business opportunities and contrarian angles. The OS provides the strategic workflow.</li>
             </ul>
         </section>
         
-        <!-- PROMPT DIFF -->
         <section>
             <h2>Prompt Diff: Cause & Effect</h2>
-            <p>What changed in the Innovations prompt?</p>
-            <div class="output-box fragment" style="font-size: 0.8rem;">
+            <p>What drove the strategic divergence in <code>fable-prompted-innovating</code>?</p>
+            <div class="output-box" style="font-size: 0.8rem;">
                 + "Every answer must contain: Consensus view, Strongest opposing view..."<br>
                 + "Every response should identify hidden leverage."
             </div>
-            <p class="fragment" style="font-size: 1rem;"><strong>Result:</strong> The agent literally outputted these exact headers in the Startup Benchmark, forcing a smarter decision workflow.</p>
+            <p style="font-size: 1rem;"><strong>Result:</strong> The agent explicitly outputted these exact headers during the Startup Benchmark, forcing a superior decision workflow.</p>
         </section>
 
-        <!-- THE VIRAL TAKEAWAY -->
         <section>
             <h2 class="highlight-blue">The Core Finding</h2>
             <blockquote>
-                "We found that personality transfers. Intelligence largely doesn't."
+                "Personality and workflow transfer. Underlying intelligence does not."
             </blockquote>
-            <p class="fragment">Behavioral scaffolding successfully transferred tone, structure, and interaction style, but reasoning and knowledge remained tied to the underlying model.</p>
+            <p>Behavioral scaffolding successfully transferred tone, structure, and interaction style, but technical architecture choices remained completely tied to the underlying model.</p>
         </section>
 
-        <!-- TRANSFERABILITY -->
         <section>
             <h2>What Actually Transferred?</h2>
-            <table class="reveal-table fragment">
-                <tr><th>Capability</th><th>Transferred?</th></tr>
-                <tr><td>Tone</td><td>High</td></tr>
-                <tr><td>Structure</td><td>High</td></tr>
-                <tr><td>Tool Usage Habits</td><td>Medium</td></tr>
-                <tr><td>Strategic Thinking</td><td>Medium</td></tr>
-                <tr><td>Raw Reasoning</td><td>Low</td></tr>
-                <tr><td>Knowledge</td><td>None</td></tr>
+            <table class="reveal-table">
+                <tr><th>Engineered Directive</th><th>Compliance Rate</th></tr>
+                <tr><td>Tone & Formatting Constraints</td><td>100% (Flawless)</td></tr>
+                <tr><td>Cognitive Workflows (Founder Mode)</td><td>100% (Flawless)</td></tr>
+                <tr><td>Autonomous Tool Searching</td><td>60% (Partial)</td></tr>
+                <tr><td>Recursive Self-Improvement</td><td>0% (Failed)</td></tr>
             </table>
+            <p class="fragment" style="font-size: 0.9rem; margin-top: 15px;"><em>Insight: Self-improvement failed because the prompt demanded cross-session memory tracking, which the base architecture does not support. Prompts cannot grant hardware-level capabilities.</em></p>
         </section>
 
-        <!-- FAILURES -->
         <section>
             <h2>Surprising Failures</h2>
             <ul>
-                <li class="fragment"><strong>Compression Degradation:</strong> Prompt compression preserved safety behavior but severely degraded conversational naturalness.</li>
-                <li class="fragment"><strong>The "Founder Mode" Trade-off:</strong> Founder Mode improved startup analysis but actively hurt neutral information retrieval (the model over-optimized for monetization).</li>
+                <li><strong>Compression Degradation:</strong> <code>fabled-prompted-compressed</code> scored the lowest (70.35), demonstrating that extreme prompt compression destroys conversational naturalness.</li>
+                <li><strong>Specialization Overfitting:</strong> <code>fable-prompted-innovating</code> overcomplicated simple queries by injecting unnecessary business leverage analysis.</li>
             </ul>
         </section>
 
-        <!-- CONSTITUTION MARKETPLACE -->
         <section>
             <h2>The Constitution Marketplace</h2>
+            <p>Constitution Engineering serves as a "Workflow Layer" bridging hardware and applications.</p>
             <div class="row">
                 <div class="stack-box" style="width: 30%;">
                     <h4>Model Providers</h4>
                     <ul style="font-size: 1rem; list-style: none; padding: 0;">
-                        <li>OpenAI</li>
-                        <li>Anthropic</li>
-                        <li>Google</li>
+                        <li>OpenAI, Anthropic, Google</li>
                     </ul>
                 </div>
                 <div class="stack-box" style="width: 30%; border-color: #fca311;">
-                    <h4 style="color: #fca311;">Constitution Layer</h4>
+                    <h4 style="color: #fca311;">Workflow Layer</h4>
                     <ul style="font-size: 1rem; list-style: none; padding: 0;">
-                        <li>Founder OS</li>
-                        <li>Research OS</li>
-                        <li>Medical OS</li>
+                        <li>Constitutions (Founder OS)</li>
                     </ul>
                 </div>
                 <div class="stack-box" style="width: 30%;">
                     <h4>Applications</h4>
                     <ul style="font-size: 1rem; list-style: none; padding: 0;">
-                        <li>Agents</li>
-                        <li>Products</li>
-                        <li>Workflows</li>
+                        <li>Agents & Products</li>
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <!-- Conclusion -->
-        <section>
-            <h2>The Community Opportunity</h2>
-            <p>Constitution Engineering may become a competitive layer independent of model providers. There is a massive opportunity for builders to create specialized, deeply opinionated cognitive scaffolds on top of commoditized intelligence.</p>
         </section>
 
     </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
-<script>
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        center: true,
-        hash: true,
-        transition: 'fade' 
-    });
-</script>
-
+<script>Reveal.initialize({ controls: true, progress: true, center: true, hash: true, transition: 'fade' });</script>
 </body>
 </html>

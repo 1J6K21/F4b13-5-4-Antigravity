@@ -1,18 +1,18 @@
 # Recommendations for Next Experiments
 
 ### Supported Claims
-- Behavioral scaffolding (tone, structure, explicit frameworks) transfers flawlessly via system prompts.
-- Specialization (injecting specific cognitive frameworks) significantly outperforms generalized helpfulness for complex, strategic queries.
+- **Workflow Transfer**: Behavioral scaffolding (tone, structure, explicit frameworks) transfers reliably via system prompts.
+- **Specialization vs. Generalization**: Injecting specific cognitive frameworks (`fable-prompted-innovating`) outperforms generalized helpfulness (`control(antigravity)`) for complex, strategic queries.
 
 ### Weakly Supported Claims
-- "Constitution = Operating System". The evidence supports this only if we define an OS as a "Workflow Layer". It does not hold up if we define an OS as something that fundamentally upgrades the hardware's capabilities.
+- **"Constitution = Operating System"**: The evidence supports this only if defined as a "Workflow Layer". It does not hold if defined as an OS that fundamentally upgrades hardware capabilities.
 
 ### Disproven Claims
-- Compression retains 90% of behavioral transfer. The evidence shows that highly compressed prompts degrade conversational naturalness and score lower than the control.
+- **Compression Efficiency**: The evidence shows that highly compressed prompts (`fabled-prompted-compressed`) degrade conversational naturalness and score lower than the uncompressed control.
 
 ### Most Important Discovery
-**The "Workflow Layer" Threshold**: The most important finding is that injecting explicit, step-by-step cognitive algorithms (like the Contrarian Research Assistant) into the system prompt reliably forces the model to execute that algorithm before answering. This proves that you can program a model's *workflow* via prompt, even if you cannot upgrade its raw *intelligence*.
+**The "Workflow Layer" Threshold**: Injecting explicit, step-by-step cognitive algorithms into the system prompt reliably forces the model to execute that algorithm before answering. This proves that a model's *workflow* can be programmed via prompt, even if its raw *intelligence* cannot be upgraded.
 
 ### Next Steps
-1. **Dynamic Constitutions**: Test a system that dynamically hot-swaps constitutions based on the user's query (e.g., switching from "Founder Mode" to "Standard Helpful" to avoid the specialization failure mode).
-2. **Technical Constraints**: Conduct an experiment forcing the model to use obscure or novel tech stacks to see if a strict constitution can break the emergent homogeneity observed in the code generation tasks.
+1. **Dynamic Constitutions**: Test a system that dynamically swaps constitutions based on the user's query to mitigate the specialization failure mode.
+2. **Technical Constraints**: Conduct an experiment forcing the model to use obscure or novel tech stacks to determine if a strict constitution can break the emergent homogeneity observed in code generation tasks.

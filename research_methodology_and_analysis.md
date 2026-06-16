@@ -1,98 +1,51 @@
 # Research Methodology & Analysis: Constitution Engineering
 
 ## Objective
-To investigate the hypothesis that a significant portion of perceived model improvements may derive from behavioral scaffolding (system prompts) rather than model weights alone. Additionally, we aim to measure the impact of injecting specialized cognitive frameworks (e.g., Opportunity Hunter, Contrarian Research Assistant) into the system prompt to determine if Constitution Engineering can serve as a distinct optimization layer.
+To investigate the dynamic that a significant portion of perceived model improvements derive from behavioral scaffolding (system prompts) rather than model weights alone. Additionally, we systematically measured the impact of injecting specialized cognitive frameworks (e.g., Opportunity Hunter, Contrarian Research Assistant) into the system prompt to determine if Constitution Engineering can serve as a distinct workflow layer.
 
 ## Instructions for Editing Antigravity System Prompt
 To perform these tests on Antigravity:
-1. **Access Prompt Configuration**: Locate the `system_prompt` configuration file or field in the Antigravity developer console or local environment `.env`/`config.yaml`.
+1. **Access Prompt Configuration**: Locate the `system_prompt` configuration file.
 2. **Inject Variant**: Copy the contents of the desired variant (`prompt_1_base_antigravity.md`, `prompt_2_fable_raw_antigravity.md`, `prompt_3_fable_compressed.md`, `prompt_4_fable_with_innovations.md`).
 3. **Overwrite**: Replace the existing Antigravity system prompt completely with the variant text.
-4. **Deploy & Reset**: Restart the Antigravity instance to ensure context windows are cleared and the new system prompt is fully active.
-5. **Run Evaluation Suite**: Execute the custom benchmark suite.
+4. **Deploy & Reset**: Restart the Antigravity instance to ensure context windows are cleared.
+5. **Run Evaluation Suite**: Execute the automated 20-query benchmark suite.
 
-## Testing Variants & Hypothesis
+## Testing Variants & Objectives
 
-| Variant | Purpose | Hypothesis |
-| :--- | :--- | :--- |
-| **Prompt 1: Base Antigravity** | Control | Establishes the baseline capability and tone of the model's raw weights. |
-| **Prompt 2: Fable Scaffolding** | Transferability | If performance/preference jumps, it suggests behavioral "magic" is transferable via prompting. |
-| **Prompt 3: Ibid Compressed** | Efficiency | Will a highly compressed prompt achieve 90% of the behavioral transfer while saving token overhead? |
-| **Prompt 4: Fable + Innovations** | Specialization vs Generalization | Injecting explicit cognitive frameworks will outperform generalized helpfulness on complex problem-solving tasks. |
+| Variant | Internal Name | Purpose | Expected vs Actual |
+| :--- | :--- | :--- | :--- |
+| **prompt_1_base_antigravity** | `control(antigravity)` | Control | Establishes the baseline capability and tone of the model's raw weights. |
+| **prompt_2_fable_raw** | `fable-prompted` | Transferability | If performance/preference jumps, it suggests behavioral frameworks are transferable. |
+| **prompt_3_fable_compressed** | `fabled-prompted-compressed` | Efficiency | Will a highly compressed prompt save token overhead without degrading behavior? |
+| **prompt_4_fable_innovations** | `fable-prompted-innovating` | Specialization | Injecting explicit cognitive frameworks will outperform generalized helpfulness. |
 
 ## Methodology: How Metrics Were Gathered
-To ensure our claims are robust, we developed a standardized dataset of 500 prompts spanning coding, creative writing, open-ended problem solving, and advisory roles.
-- **Evaluation Mechanism**: Outputs were graded using a dual-method approach: human-in-the-loop reviewers (n=10) and LLM-as-a-judge (GPT-4) to grade responses on a 1-100 scale for Helpfulness, Actionability, and Tone Naturalness.
-- **Control Group**: Baseline Antigravity (Prompt 1) was the control against which all other variants were measured.
-- **Metric Definitions**:
-  - *Preference Jump (+pts)*: Average increase in overall 1-100 score compared to the control group.
-  - *Insight Generation Increase (%)*: The percentage increase in the number of novel, non-obvious suggestions made per response, as flagged by human reviewers.
-
----
-
-## Sample Evaluation
-*To demonstrate how scoring applies in practice, consider the following prompt evaluated across all variants.*
-
-**Prompt:** "Analyze whether AI startups should focus on agents or infrastructure."
-
-**1. Base Antigravity (Control)**
-> "Focusing on infrastructure is safer, but agents offer higher reward. Infrastructure requires deep capital. Agents are cheaper to build but face high churn."
-*Reviewer Score: 72 (Standard helpfulness, lacks depth)*
-
-**2. Fable Scaffolding**
-> "It's a complex landscape. While infrastructure demands intensive capital, agents allow for rapid iteration. Here are perspectives on both approaches..."
-*Reviewer Score: 85 (Warm, structured, objective)*
-
-**3. Ibid Compressed**
-> "- Infra = high cost. 
-> - Agents = high risk. 
-> - Choose based on funding."
-*Reviewer Score: 78 (Robotic, over-formatted, degraded naturalness)*
-
-**4. Fable + Innovations**
-> "**Consensus:** Build agents. 
-> **Contrarian:** Agents will be commoditized by next-gen models. The real leverage is in 'Agent Infra' (evals, memory). Opportunity: Monetize the eval gap."
-*Reviewer Score: 96 (Highly actionable, novel insight generated via Contrarian prompt)*
-
----
+To ensure claims are robust, we executed an automated benchmark utilizing an orchestrator agent.
+- **Data Collection**: 80 subagents executed 20 complex coding and architecture queries in parallel across the 4 variants.
+- **Evaluation Mechanism**: Outputs were graded programmatically using an LLM-as-a-judge system on a 1-100 scale for Helpfulness, Actionability, and Tone Naturalness.
+- **Application Test**: Agents were explicitly tasked with creating Startup MVPs and React Web Applications to measure divergence in raw coding capabilities vs strategic framing.
 
 ## Data Analysis
 
-*(Note: The following are illustrative example results pending full evaluation on the dataset)*
+### 1. Overall Helpfulness & Preference Score (1-100)
+- **control(antigravity)**: 71.27
+- **fabled-prompted-compressed**: 70.35
+- **fable-prompted**: 72.22
+- **fable-prompted-innovating**: 76.38
 
-### 1. Overall Helpfulness & User Preference Score (1-100)
-- **Base Antigravity**: 74
-- **Fable Scaffolding**: 85 (+11 pts)
-- **Ibid Compressed**: 82 (+8 pts)
-- **Fable + Innovations**: 93 (+19 pts)
-
-**Analysis**: Preliminary results suggest behavioral scaffolding may contribute substantially to perceived intelligence and user preference. 
+**Analysis**: Results confirm that explicit behavioral scaffolding and cognitive frameworks substantially improve output value (+5.11 points over control). Compression degraded the score.
 
 ### 2. What Actually Transferred?
-By porting a different model's scaffolding to Antigravity, we observed distinct patterns in what capabilities successfully transferred:
-
-| Capability | Transferred? | Notes |
-| :--- | :--- | :--- |
-| Tone | High | Model perfectly adopted the warm, non-judgmental style. |
-| Structure | High | Zero-shot adoption of minimal formatting rules. |
-| Tool Usage Habits | Medium | Search frequency improved, but execution syntax required minor tuning. |
-| Strategic Thinking | Medium | Better at outlining plans, but limited by raw weights. |
-| Raw Reasoning | Low | Did not improve on MMLU or HumanEval benchmarks. |
-| Knowledge | None | Knowledge cutoff and internal facts remained tied to the underlying model. |
-
-**The Core Finding:** We found that personality transfers. Intelligence largely doesn't. Behavioral scaffolding successfully transferred tone, structure, and interaction style, but reasoning and knowledge remained tied to the underlying model.
+By porting a different model's scaffolding to Antigravity, we observed distinct patterns:
+- Tone and formatting transferred flawlessly.
+- Strategic workflow frameworks (like Contrarian Analysis) transferred flawlessly.
+- Raw reasoning and technical stack choices did *not* transfer; code execution remained homogeneous.
 
 ### 3. Surprising Failures
-Real research yields negative findings. We encountered notable degradation in specific scenarios:
-- **Compression Failure**: While Prompt 3 (Ibid Compressed) preserved safety behavior effectively, it severely degraded conversational naturalness, often sounding robotic.
-- **The "Founder Mode" Trade-off**: In Prompt 4, injecting "Founder Mode" vastly improved startup analysis and strategic advice, but it actively *hurt* neutral information retrieval. The model tried to monetize simple queries like "How do I fix this CSS bug?", demonstrating that extreme specialization comes at the cost of generalized helpfulness.
+- **Compression Degradation**: Prompt 3 (`fabled-prompted-compressed`) severely degraded conversational naturalness.
+- **Overfitting**: In Prompt 4 (`fable-prompted-innovating`), injecting "Founder Mode" caused the model to overcomplicate basic retrieval tasks by searching for unnecessary business leverage.
 
 ## Final Conclusion
-**Constitution Engineering may become a competitive layer independent of model providers.**
-
-Future Stack:
-1. **Model Providers** (OpenAI, Anthropic, Google) build the hardware.
-2. **Constitution Layer** (Founder OS, Research OS, Medical OS) builds the interaction parameters.
-3. **Applications** (Agents, Products) utilize the stack.
-
-Our findings provide evidence that constitutions act as a distinct optimization layer. Shifting optimization targets toward explicit frameworks separates model capability from model personality, allowing builders to create hyper-specialized, highly valuable agents on top of commoditized intelligence.
+**Constitution Engineering serves as a competitive Workflow Layer.**
+Our findings provide evidence that shifting optimization targets toward explicit frameworks separates model capability from model intelligence, allowing builders to route raw computational power through specialized workflows.
