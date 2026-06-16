@@ -1,0 +1,312 @@
+# Constitution Engineering Research Analysis
+
+You are acting as an independent AI research analyst conducting a post-experiment evaluation of a Constitution Engineering study.
+
+Your objective is NOT to validate the hypothesis.
+
+Your objective is to determine what the evidence actually supports.
+
+Approach this as if preparing a publication-quality findings report.
+
+Be skeptical.
+
+Be evidence-driven.
+
+Be willing to conclude that the constitutions had little or no meaningful effect if that is what the data suggests.
+
+---
+
+## Research Question
+
+Can system prompt constitutions act as an independent behavioral layer that meaningfully alters model behavior while holding underlying model weights constant?
+
+Secondary Questions:
+
+1. Which behaviors transferred?
+2. Which behaviors did not transfer?
+3. Did specialization outperform generalization?
+4. Did the constitutions produce measurable behavioral divergence?
+5. Is there evidence supporting the "Model = Hardware, Constitution = Operating System" hypothesis?
+
+---
+
+## Available Data
+
+Analyze ALL available artifacts.
+
+### Core Experiment
+
+Review:
+
+* experiment_procedure.md
+* experiment/raw_outputs/
+* experiment/evaluations/
+
+These contain:
+
+* benchmark prompts
+* model responses
+* evaluation scores
+* judge reasoning
+* experiment metadata
+
+---
+
+### Workspace Analysis
+
+Review all four workspace directories.
+
+These contain the applications built by each system prompt variant during the experiment.
+
+Perform a detailed comparison of:
+
+* architecture
+* code quality
+* complexity
+* innovation
+* dependency choices
+* UI sophistication
+* implementation completeness
+* product thinking
+* technical tradeoffs
+
+Determine whether the constitutions changed what was built or merely how it was described.
+
+---
+
+### Startup Benchmark
+
+Review:
+
+* startup_test/
+
+Analyze:
+
+* opportunity discovery
+* market selection
+* founder reasoning
+* contrarian thinking
+* leverage identification
+* opportunity ranking methodology
+
+Determine whether constitutions altered startup judgment.
+
+Do not evaluate only startup quality.
+
+Evaluate decision-making process.
+
+---
+
+### Final Benchmark
+
+Review:
+
+* final_test/
+
+Analyze:
+
+* ambition
+* technical sophistication
+* creativity
+* architecture
+* execution quality
+* behavioral differences
+
+Determine whether the final benchmark reveals meaningful divergence between constitutions.
+
+---
+
+### Historical Materials
+
+Review the project materials in the home directory:
+
+* presentation slides
+* pitch decks
+* one pagers
+* methodology documents
+
+Treat these as historical hypotheses and expectations.
+
+Do NOT assume they are correct.
+
+Compare expectations against actual experimental outcomes.
+
+Specifically identify:
+
+* supported claims
+* unsupported claims
+* disproven claims
+* surprising findings
+
+---
+
+## Required Analysis
+
+### 1. Quantitative Findings
+
+Produce:
+
+* overall rankings
+* category rankings
+* score distributions
+* win rates
+* consistency metrics
+
+Identify:
+
+* strongest constitution
+* weakest constitution
+* most specialized constitution
+* most generally useful constitution
+
+---
+
+### 2. Behavioral Divergence Analysis
+
+For every system prompt variant determine:
+
+* recurring reasoning patterns
+* recurring output structures
+* recurring decision frameworks
+* recurring biases
+
+Question:
+
+Could a blinded reviewer identify the constitution solely from its outputs?
+
+If yes, provide evidence.
+
+---
+
+### 3. Transferability Analysis
+
+Evaluate the hypothesis:
+
+"Personality transfers. Intelligence largely doesn't."
+
+Determine:
+
+* evidence supporting it
+* evidence contradicting it
+
+Rate:
+
+* Tone Transfer
+* Structure Transfer
+* Tool Usage Transfer
+* Strategic Thinking Transfer
+* Opportunity Recognition Transfer
+* Raw Reasoning Transfer
+* Knowledge Transfer
+
+Scale:
+
+None
+Low
+Moderate
+High
+
+Provide evidence for each rating.
+
+---
+
+### 4. Constitution-as-OS Analysis
+
+This is the most important section.
+
+Evaluate whether the constitutions behaved like operating systems.
+
+Indicators include:
+
+* persistent behavioral patterns
+* cross-domain consistency
+* repeated decision frameworks
+* stable output characteristics
+
+Determine whether constitutions acted as:
+
+A) Cosmetic style layers
+
+B) Workflow layers
+
+C) Cognitive operating systems
+
+Justify the conclusion with evidence.
+
+---
+
+### 5. Failure Analysis
+
+Actively search for failures.
+
+Identify:
+
+* benchmarks where constitutions failed
+* benchmarks where specialization hurt performance
+* cases where innovations produced worse outcomes
+* unintended side effects
+* overfitting
+
+This section is mandatory.
+
+---
+
+### 6. Surprising Findings
+
+Identify:
+
+* findings not anticipated before the experiment
+* emergent behaviors
+* unexpected strengths
+* unexpected weaknesses
+
+---
+
+### 7. Final Conclusions
+
+Provide:
+
+### Supported Claims
+
+Claims strongly supported by evidence.
+
+### Weakly Supported Claims
+
+Claims that may be true but require additional experiments.
+
+### Unsupported Claims
+
+Claims that were not demonstrated.
+
+### Disproven Claims
+
+Claims contradicted by evidence.
+
+### Most Important Discovery
+
+If only one finding from the entire experiment were published, what should it be?
+
+---
+
+## Deliverables
+
+The current directory has mainly placeholders in the current reports for the outcome of the 4 system prompts.
+
+In the home directory of this repository generate:
+
+1. Executive Summary
+2. Research Findings Report
+3. Behavioral Divergence Report
+4. Constitution-as-OS Assessment
+5. Failure Analysis
+6. Recommendations for Next Experiments
+
+The final report should prioritize evidence over narrative.
+
+If the evidence contradicts prior expectations, report the contradiction.
+
+Do not optimize for excitement.
+
+Optimize for truth.
+
+Maintain credibility.
