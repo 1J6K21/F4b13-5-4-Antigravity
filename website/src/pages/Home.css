@@ -1,21 +1,33 @@
 .hero {
   text-align: center;
-  padding: 6rem 0 4rem;
-  max-width: 800px;
+  padding: 8rem 0 5rem;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 4.5rem;
   line-height: 1.1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   margin-bottom: 1.5rem;
+  font-weight: 800;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   color: var(--text-secondary);
   margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.author-tag {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(37, 99, 235, 0.1);
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
 }
 
 .hero-actions {
@@ -28,7 +40,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.8rem 1.5rem;
+  padding: 0.9rem 1.8rem;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
@@ -44,6 +56,7 @@
 .btn-primary:hover {
   background: var(--accent-light);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
 .btn-secondary {
@@ -51,7 +64,8 @@
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--primary-bg);
+  border-color: var(--text-secondary);
 }
 
 .features {
@@ -68,7 +82,7 @@
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
 .feature-icon {
@@ -80,11 +94,12 @@
   font-size: 1.25rem;
   margin-bottom: 1rem;
   color: var(--text-primary);
+  font-weight: 700;
 }
 
 .feature-card p {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .citation-section {
@@ -94,26 +109,13 @@
 }
 
 .citation-content h3 {
-  color: var(--accent-gold);
+  color: var(--text-primary);
   margin-bottom: 1rem;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .citation-content p {
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
-}
-
-.code-block {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-  overflow-x: auto;
-}
-
-.code-block code {
-  font-family: 'Fira Code', monospace;
-  color: #e0e0e0;
-  font-size: 0.9rem;
 }

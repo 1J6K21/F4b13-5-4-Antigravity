@@ -8,6 +8,11 @@ An empirical study on the behavioral portability and limits of model-level align
 
 ---
 
+## *Disclaimer regarding "Fable" variants
+The term "fable" used throughout the experimental variants in this repository refers directly to the system prompt instructions published in the [CL4R1T4S repository by elder-plinius](https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-FABLE-5.md). This study explicitly investigates the behavioral portability and limits of those exact alignment directives when layered onto alternative LLM substrates.
+
+---
+
 ## Repository Structure
 
 * `reports/` — Scientific and experimental reports detailing the core findings.

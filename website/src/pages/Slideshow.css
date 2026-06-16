@@ -2,37 +2,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: calc(100vh - 200px);
   padding: 2rem;
 }
 
 .slide {
-  width: 100%;
-  max-width: 900px;
-  min-height: 500px;
+  width: 95%;
+  max-width: 1200px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 3rem;
+  padding: 4rem;
   position: relative;
+  border-radius: 12px;
 }
 
 .slide-title {
-  font-size: 2.5rem;
-  color: var(--accent);
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
 }
 
 .slide-subtitle {
   font-size: 1.25rem;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
-  font-weight: 400;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
 }
 
 .slide-body {
   font-size: 1.15rem;
   line-height: 1.7;
+  color: var(--text-primary);
+}
+
+.slide-card {
+  background: var(--secondary-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .slide-controls {
@@ -48,7 +60,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: transparent;
+  background: var(--primary-bg);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   padding: 0.5rem 1rem;
@@ -56,36 +68,42 @@
   cursor: pointer;
   transition: all 0.2s ease;
   font-family: inherit;
-  font-size: 1rem;
+  font-weight: 500;
 }
 
 .control-btn:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.1);
   border-color: var(--text-secondary);
+  background: var(--border-color);
 }
 
 .control-btn:disabled {
-  opacity: 0.3;
+  opacity: 0.4;
   cursor: not-allowed;
 }
 
 .slide-indicator {
-  color: var(--text-secondary);
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 /* Slide Content Utilities */
 .text-center { text-align: center; }
-.text-xl { font-size: 1.25rem; }
-.text-lg { font-size: 1.15rem; }
-.text-sm { font-size: 0.9rem; }
+.text-xl { font-size: 1.5rem; }
+.text-lg { font-size: 1.2rem; }
+.text-sm { font-size: 0.95rem; }
+.mb-2 { margin-bottom: 0.5rem; }
 .mb-4 { margin-bottom: 1rem; }
 .mb-6 { margin-bottom: 1.5rem; }
+.mt-4 { margin-top: 1rem; }
 .mt-6 { margin-top: 1.5rem; }
 .mt-8 { margin-top: 2rem; }
 .p-4 { padding: 1rem; }
 .p-6 { padding: 1.5rem; }
+.font-bold { font-weight: 700; }
+.leading-relaxed { line-height: 1.8; }
+
+.bg-secondary-bg { background-color: var(--primary-bg); }
 
 .grid-2 {
   display: grid;
@@ -115,16 +133,17 @@
   position: absolute;
   left: 0;
   color: var(--accent);
+  font-weight: bold;
 }
 
 .def-box {
-  background: rgba(0, 0, 0, 0.4);
-  border-left: 4px solid var(--accent-cyan);
+  background: var(--primary-bg);
+  border-left: 4px solid var(--accent);
   padding: 1.5rem;
   border-radius: 0 8px 8px 0;
   font-size: 0.95rem;
 }
 
-.border-accent {
-  border-color: var(--accent-gold);
-}
+.border-accent { border: 1px solid var(--accent); }
+.border-danger { border: 1px solid var(--accent-red); }
+.border-warning { border: 1px solid var(--accent-gold); }

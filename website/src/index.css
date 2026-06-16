@@ -1,16 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --primary-bg: #0a0a0c;
-  --secondary-bg: #121215;
-  --accent: #c3073f;
-  --accent-light: #ff2a6d;
-  --accent-gold: #fca311;
-  --accent-cyan: #00ffcc;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a5;
-  --border-color: rgba(255, 255, 255, 0.1);
-  --glass-bg: rgba(18, 18, 21, 0.7);
+  /* Light Theme - Slate/Blue Tinted */
+  --primary-bg: #F8FAFC;
+  --secondary-bg: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --border-color: #E2E8F0;
+  
+  --accent: #2563EB;
+  --accent-light: #60A5FA;
+  --accent-gold: #D97706;  
+  --accent-green: #059669; 
+  --accent-red: #DC2626;   
+  --accent-gray: #64748B;  
+  
+  --glass-bg: rgba(255, 255, 255, 0.95);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Theme - Deep Midnight Blue */
+    --primary-bg: #020617;
+    --secondary-bg: #0F172A;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --border-color: #1E293B;
+    --glass-bg: rgba(15, 23, 42, 0.85);
+    
+    --accent: #3B82F6;
+    --accent-light: #93C5FD;
+    --accent-gold: #F59E0B;
+    --accent-green: #10B981;
+    --accent-red: #EF4444;
+    --accent-gray: #94A3B8;
+  }
 }
 
 * {
@@ -28,21 +52,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Glassmorphism utilities */
+/* Colored thematic panels */
 .glass-panel {
-  background: var(--glass-bg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: var(--secondary-bg);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 .text-gradient-accent {
@@ -52,15 +71,14 @@ body {
   background-clip: text;
 }
 
-.text-gradient-gold {
-  background: linear-gradient(135deg, #ffd166 0%, var(--accent-gold) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+.text-accent-gold { color: var(--accent-gold); }
+.text-accent-cyan { color: var(--accent-light); }
+.text-accent-green { color: var(--accent-green); }
+.text-accent-red { color: var(--accent-red); }
+.text-accent { color: var(--accent); }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -73,9 +91,23 @@ body {
   background: var(--primary-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-bg);
+  background: var(--border-color);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--border-color);
+  background: var(--accent);
+}
+
+.code-block {
+  background: var(--primary-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  overflow-x: auto;
+}
+
+.code-block code {
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  color: var(--text-primary);
+  font-size: 0.9rem;
 }

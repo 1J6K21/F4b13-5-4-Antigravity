@@ -51,10 +51,11 @@
 }
 
 .track-card {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--secondary-bg);
   padding: 1.5rem;
   border-radius: 8px;
   border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .track-card h3 {
@@ -63,8 +64,9 @@
 }
 
 .highlight-box {
-  background: linear-gradient(135deg, rgba(195, 7, 63, 0.1), rgba(0, 0, 0, 0.5));
+  background: var(--secondary-bg);
   border-left: 6px solid var(--accent);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .highlight-text {
@@ -91,9 +93,11 @@
 .stat-item {
   text-align: center;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--secondary-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   min-width: 200px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .stat-value {
@@ -134,10 +138,12 @@
 }
 
 .framework-item {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--secondary-bg);
   padding: 1.25rem;
   border-radius: 8px;
   border-left: 3px solid var(--accent-gold);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .framework-title {
@@ -163,7 +169,7 @@
 }
 
 .data-table th {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--secondary-bg);
   color: var(--text-secondary);
   font-weight: 600;
 }
