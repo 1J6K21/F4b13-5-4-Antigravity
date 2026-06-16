@@ -35,7 +35,16 @@ The codebase is organized into modular directories at the root level, preserving
 * 💡 **[`prompts/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/prompts/)**: The raw constitutional files and benchmarking templates used.
 * 🛠️ **[`scripts/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/scripts/)**: Automated utilities for data extraction, chart formatting, and text polishing.
 * 🖼️ **[`assets/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/assets/)**: Visual charts and empirical data plots.
-* 🧪 **[`experiment/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/experiment/)**: The active workspaces containing the codebases built by the subagents under test.
+* 🧪 **[`experiment/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/experiment/)**: The active experimental workspace.
+  * [`specs/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/experiment/specs/) — Test requirements, procedures, and architectural proposals.
+  * [`scripts/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/experiment/scripts/) — Evaluation harnesses and batch-saving utilities.
+  * [`raw_data/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/experiment/raw_data/) — Evaluation logs and raw quantitative scores.
+  * [`raw_outputs/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/experiment/raw_outputs/) — Direct generated answers separated by tested LLM model.
+  * Workspaces under evaluation:
+    * [`control_workspace/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/experiment/control_workspace/)
+    * [`fable_raw_workspace/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/experiment/fable_raw_workspace/)
+    * [`fable_compressed_workspace/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/experiment/fable_compressed_workspace/)
+    * [`fable_innovations_workspace/`](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/experiment/fable_innovations_workspace/)
 
 ---
 
