@@ -42,6 +42,15 @@ The term "fable" used throughout the experimental variants in this repository re
 
 ---
 
+## Limitations
+To maintain scientific rigor and transparency, the following constraints should be noted regarding these experimental results:
+* **Sample size limited**: The experiments were conducted over a specific set of 20 architecture benchmarks and 2 end-to-end software builds.
+* **Generalizability**: Results evaluate specific structural constitutions applied to a constant baseline model; portability across fundamentally different model weight families (e.g., Llama vs. Claude) remains hypothesized but untested in this repository.
+* **LLM-as-a-Judge**: Quantitative scoring relies on LLM-based evaluators, which carry inherent stylistic biases and may not perfectly correlate with human developer preferences.
+* **Exploratory Nature**: The findings indicate strong behavioral portability, but they are exploratory rather than definitive.
+
+---
+
 ## Citation & Academic Reference
 If you build upon this research, utilize the datasets, or reference the "Constitution-as-an-OS" framing in your work, please cite the primary investigator:
 
