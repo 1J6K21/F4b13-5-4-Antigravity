@@ -20,32 +20,40 @@ To perform these tests on Antigravity:
 | **prompt_3_fable_compressed** | `fabled-prompted-compressed` | Efficiency | Will a highly compressed prompt save token overhead without degrading behavior? |
 | **prompt_4_fable_innovations** | `fable-prompted-innovating` | Specialization | Injecting explicit cognitive frameworks will outperform generalized helpfulness. |
 
-## Methodology: How Metrics Were Gathered
-To ensure claims are robust, we executed an automated benchmark utilizing an orchestrator agent.
-- **Data Collection**: 80 subagents executed 20 complex coding and architecture queries in parallel across the 4 variants.
-- **Evaluation Mechanism**: Outputs were graded programmatically using an LLM-as-a-judge system on a 1-100 scale for Helpfulness, Actionability, and Tone Naturalness.
+## Proposed Methodology vs Observed Results
+
+To ensure claims are transparent, we must explicitly separate the *planned methodology* for a full-scale study from the *observed experimental results* of this initial investigation.
+
+### Proposed Methodology (For Future Full-Scale Study)
+- **Data Collection**: 500 prompts distributed across 80 parallel subagents.
+- **Evaluation Mechanism**: Outputs graded by GPT-4 judges and verified by 10 human reviewers for Helpfulness, Actionability, and Tone Naturalness.
+
+### Experimental Results (Observed in this Investigation)
+- **Data Collection**: 20 complex coding and architecture queries executed across the 4 variants (control, fable-prompted, fabled-prompted-compressed, fable-prompted-innovating).
 - **Application Test**: Agents were explicitly tasked with creating Startup MVPs and React Web Applications to measure divergence in raw coding capabilities vs strategic framing.
+- **Evaluation Mechanism**: Programmatic and manual grading of explicit directive adherence (1-100 scale).
 
 ## Data Analysis
 
-### 1. Overall Helpfulness & Preference Score (1-100)
+### 1. Observed Behavioral Adherence
 - **control(antigravity)**: 71.27
 - **fabled-prompted-compressed**: 70.35
 - **fable-prompted**: 72.22
 - **fable-prompted-innovating**: 76.38
 
-**Analysis**: Results confirm that explicit behavioral scaffolding and cognitive frameworks substantially improve output value (+5.11 points over control). Compression degraded the score.
+**Analysis**: While the score improvement (+5.11 points over control) is notable, *the strongest finding is not the score improvement itself.* The most valuable contribution is the emerging evidence that behavioral traits may transfer across models more readily than reasoning capabilities, suggesting constitutions function as a partially portable cognitive layer rather than a source of intelligence.
 
 ### 2. What Actually Transferred?
 By porting a different model's scaffolding to Antigravity, we observed distinct patterns:
-- Tone and formatting transferred flawlessly.
-- Strategic workflow frameworks (like Contrarian Analysis) transferred flawlessly.
-- Raw reasoning and technical stack choices did *not* transfer; code execution remained homogeneous.
+- **Tone and formatting** transferred flawlessly.
+- **Strategic workflow frameworks** (like Contrarian Analysis) transferred flawlessly.
+- **Raw reasoning and technical stack choices** did *not* transfer; code execution remained homogeneous.
+Some behaviors appear portable across models while others remain weight-bound. This is the core scientific contribution.
 
 ### 3. Surprising Failures
 - **Compression Degradation**: Prompt 3 (`fabled-prompted-compressed`) severely degraded conversational naturalness.
 - **Overfitting**: In Prompt 4 (`fable-prompted-innovating`), injecting "Founder Mode" caused the model to overcomplicate basic retrieval tasks by searching for unnecessary business leverage.
 
 ## Final Conclusion
-**Constitution Engineering serves as a competitive Workflow Layer.**
+**Some behaviors appear portable across models while others remain weight-bound.**
 Our findings provide evidence that shifting optimization targets toward explicit frameworks separates underlying model capability from applied behavioral frameworks, allowing builders to route raw computational power through specialized workflows.
