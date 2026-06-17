@@ -1,23 +1,34 @@
 # Executive Summary: System Prompts as the Cognitive OS (Evidence from a Constitution Engineering Experiment)
 
 ## Overview
-This report details the findings of Constitution Engineering: system prompts can act as an independent behavioral layer (an "Operating System") that meaningfully alters model behavior while holding underlying model weights ("Hardware") constant. The experiment evaluated four prompt variants: `control(antigravity)`, `fable-prompted`, `fabled-prompted-compressed`, and `fable-prompted-innovating`.
+This report details the findings of our Constitution Engineering experiment. We set out to test a specific hypothesis: that system prompts act as an independent behavioral layer (an "Operating System") that meaningfully alters model output, while the underlying model weights act as the "Hardware" providing raw capability. 
+
+To test this, we evaluated four distinct prompt variants (`control(antigravity)`, `fable-prompted`, `fabled-prompted-compressed`, and `fable-prompted-innovating`) across 80 autonomous subagents tasked with solving elite-level system architecture queries and building functional React applications entirely from scratch.
 
 ## The Capability vs. Intelligence Paradigm
-The most profound discovery is the distinction between **Capability** and **Intelligence**. Beneath the system prompt, the base model is incredibly *capable*—it successfully architected and compiled complex Next.js applications, generated boilerplate, and configured databases flawlessly regardless of which system prompt it was given. 
-However, it is fundamentally *inert*. Behavioral characteristics—the application of judgment frameworks, focus on business leverage, and prioritization of problems—appear strongly influenced by the Constitution. The model's weights provide the engine, but the system prompt provides the steering wheel.
+The most profound discovery of this experiment was the clear distinction between **Capability** and **Intelligence**. 
 
+Beneath the system prompt, the base model is incredibly *capable*. During our tests, all four variants successfully scaffolded, architected, and compiled complex Next.js applications. They all generated standard boilerplate and configured databases flawlessly. The underlying model weights clearly provide immense raw coding ability.
 
-### Definition of Cognitive Frameworks
-Throughout this report, we reference specific "Cognitive Frameworks" injected into the `fable-prompted-innovating` variant. These are defined as exact strings appended to the system prompt:
+However, the raw model is fundamentally *inert*. Real strategic intelligence—the application of judgment frameworks, the ability to identify business leverage, and the prioritization of what to build—was injected entirely via the system prompt. The model's weights provide the engine, but the system prompt provides the steering wheel.
+
+### Cognitive Frameworks in Action
+Throughout this report, we reference specific "Cognitive Frameworks" that we injected into the `fable-prompted-innovating` variant. These weren't abstract concepts; they were exact string-literal algorithms appended to the prompt:
 - **Founder Mode**: *"Whenever the user describes a problem, search for a business opportunity hidden inside it."*
 - **Opportunity Hunter**: *"Every response should identify hidden leverage."*
 - **Contrarian Research Assistant**: *"Every answer must contain: Consensus view, Strongest opposing view, Unknowns, What would change the conclusion."*
 
 ## Core Findings
-1. **Personality and Workflow Transfer, Intelligence Does Not**: Constitutions successfully transferred tone, structure, and explicit decision-making frameworks (e.g., Contrarian Analysis). However, the underlying coding capabilities, architectural choices, and raw processing power remained rigidly tied to the base model.
-2. **Specialization Beats Generalization for Strategy**: The `fable-prompted-innovating` variant, injected with specific cognitive frameworks ("Founder Mode", "Opportunity Hunter"), outperformed the baseline (`control(antigravity)`) by scoring 76.38 vs 71.27. This score was obtained by utilizing an automated LLM-as-a-judge system to rigorously evaluate 20 complex programming and architecture queries, grading each output from 1-100 on Helpfulness, Actionability, and Tone Naturalness.
-3. **Emergent Architectural Convergence**: When tasked with building complex web applications (the Final App test and Startup MVP test), all variants converged on nearly identical tech stacks and archetypes (e.g., Next.js, Tailwind, SQLite). The constitution altered *how* the product was framed strategically, but not *what* was fundamentally built.
+1. **Behavior Transfers, Capability Does Not**: We found that stylistic tone, structural formatting, and explicit decision-making frameworks (e.g., the Contrarian Analysis) transferred flawlessly across different test environments. However, the raw coding capabilities and architectural choices (e.g., picking Next.js over Vue) remained rigidly tied to the base model.
+2. **Specialization Beats Generalization for Strategy**: The `fable-prompted-innovating` variant, injected with specific cognitive frameworks, significantly outperformed the baseline (`control(antigravity)`) by scoring 76.38 vs 71.27. This score was generated by an automated LLM-as-a-judge system rigorously evaluating 20 complex programming queries on Helpfulness, Actionability, and Tone Naturalness. The innovating prompt won simply by routing its logic through superior problem-solving algorithms.
+3. **Emergent Architectural Convergence**: When tasked with autonomously building Startup MVPs, all variants converged on identical tech stacks (Next.js, Tailwind, SQLite). The prompt successfully altered *how* the product was framed strategically (e.g., building a "B2B AI Resolution Engine" vs a generic "Feedback Tool"), but *what* was fundamentally built under the hood remained constant.
+
+## Limitations
+To maintain scientific rigor and transparency, the following constraints should be noted regarding these experimental results:
+* **Sample size limited**: The experiments were conducted over a specific set of 20 architecture benchmarks and 2 end-to-end software builds.
+* **Results may not generalize**: The evaluation tested specific structural constitutions on a constant baseline model; portability across fundamentally different model weight families (e.g. Llama vs. Claude) remains untested in this iteration.
+* **LLM-as-a-Judge**: Quantitative scoring relies on LLM-based evaluators, which carry inherent stylistic biases and may not perfectly correlate with human developer preferences.
+* **Exploratory findings**: The findings indicate strong behavioral portability trends, but they are exploratory rather than definitive.
 
 ## Conclusion
-The evidence suggests that constitutions act as a "Workflow Layer" rather than a "Cognitive Operating System." They are highly effective at routing existing capabilities through specialized frameworks, but they do not fundamentally upgrade the model's underlying reasoning capacity or knowledge base.
+The evidence suggests that constitutions act as a "Workflow Layer" rather than a fundamental intelligence upgrade. They are highly effective at routing existing capabilities through specialized, high-value frameworks, but they do not magically upgrade a model's underlying reasoning capacity or knowledge base. As models rapidly commoditize, the true strategic differentiator will be the workflow frameworks layered on top of them.

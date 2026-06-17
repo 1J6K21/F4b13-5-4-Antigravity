@@ -6,76 +6,80 @@ export function OnePager() {
   return (
     <div className="one-pager container">
       <div className="report-header text-center">
-        <h1 className="report-title">Deep Dive Research Report</h1>
-        <div className="report-subtitle text-gradient-accent">System Prompts as the Cognitive OS</div>
-        <div className="mt-4 text-secondary font-medium">Author: Jonathan Kalsky</div>
+        <h1 className="report-title">The Constitution as an Operating System</h1>
+        <div className="report-subtitle text-gradient-accent">A Deep Dive into Prompt Engineering and Agent Workflows</div>
+        <div className="mt-4 text-secondary font-medium">By Jonathan Kalsky</div>
       </div>
 
       <div className="glass-panel content-section p-4 mb-6 border-accent bg-secondary-bg">
         <p className="text-sm text-secondary">
-          <strong>*Disclaimer regarding "Fable":</strong> The term "fable" used throughout the experimental variants refers directly to the system prompt instructions published in the <a href="https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-FABLE-5.md" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">CL4R1T4S repository by elder-plinius</a>. This study investigates the behavioral portability of those specific alignment directives when applied across different architectures.
+          <strong>*Disclaimer regarding "Fable":</strong> The term "fable" used throughout our experimental variants refers directly to the system prompt instructions originally published in the <a href="https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-FABLE-5.md" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">CL4R1T4S repository by elder-plinius</a>. Our research explicitly investigates what happens when you take those exact alignment directives and layer them onto entirely different AI models to see if the behaviors transfer.
         </p>
       </div>
 
       <div className="glass-panel content-section">
         <h2>Executive Summary</h2>
-        <p>Our experimentation provides evidence that behavioral scaffolding acts as a critical "Workflow Layer". Evaluating four prompt variants (<code>control(antigravity)</code>, <code>fable-prompted</code>, <code>fabled-prompted-compressed</code>, and <code>fable-prompted-innovating</code>) across 20 programmatic queries and fully built React applications indicated that constitutions appear to shape strategic behavior, while technical capabilities remain anchored to the base model.</p>
+        <p>The AI industry is currently obsessed with making base models smarter. But after running massive parallel benchmarks across different agents, we found something surprising: <strong>raw capability isn't the bottleneck anymore—workflow is.</strong></p>
+        <p>We tested four different system prompts (ranging from a standard baseline to highly complex strategic frameworks) and forced them to architect systems and build fully functional React apps. The conclusion? The base model acts like hardware, providing raw coding ability. But the system prompt acts like an Operating System, dictating strategy, personality, and workflow.</p>
         
         <div className="quote-box">
-          Constitutions appear capable of altering reasoning structure, workflow, planning style, and decision frameworks while leaving core model capabilities largely unchanged.
+          Constitutions don't make models fundamentally smarter; they act as a routing layer that forces the model's existing intelligence through vastly superior workflows.
         </div>
       </div>
 
       <div className="glass-panel content-section highlight-box">
-        <p className="highlight-text">"Models are rapidly commoditizing into baseline Hardware. A major strategic differentiator appears to be the behavioral framework layered on top via System Prompts. Capability comes from the weights; behavior and decision frameworks appear strongly influenced by workflow design."</p>
+        <p className="highlight-text">"Models are rapidly becoming commoditized. Very soon, the strategic differentiator won't be the model you use, but the behavioral framework you layer on top of it. Capability comes from the weights; business value comes from workflow design."</p>
         <div className="highlight-author">— Jonathan Kalsky</div>
       </div>
 
       <div className="glass-panel content-section">
-        <h2>What & How We Tested (Methodology Deep Dive)</h2>
-        <p>To prove these claims, we architected a highly rigorous, programmatic testing environment. We did not rely on simple chat interfaces; we built an autonomous orchestration layer to push the models to their limits across two primary tracks:</p>
+        <h2>How We Tested: A Rigorous Multi-Agent Setup</h2>
+        <p>To ensure our claims held up, we didn't just ask a chatbot a few questions. We built an autonomous orchestration environment to push these models to their breaking points across two distinct tracks:</p>
         
         <div className="track-grid">
           <div className="track-card">
-            <h3 className="text-accent-cyan">Track 1: The 20-Query Architecture Benchmark</h3>
-            <p>We spawned <strong>80 isolated subagents</strong> in parallel to answer 20 elite-level system architecture queries (e.g., GraphQL N+1 optimization, CI/CD Monorepo design). The results were evaluated programmatically by an LLM-as-a-judge system scoring strictly on Helpfulness, Actionability, and Tone Naturalness (1-100 scale).</p>
+            <h3 className="text-accent-cyan">Track 1: The 80-Agent Architecture Benchmark</h3>
+            <p>We spun up 80 isolated subagents in parallel and hit them with 20 elite-level system architecture problems—like optimizing a legacy REST API to GraphQL without hitting N+1 query bottlenecks, or designing a CI/CD pipeline for a massive monorepo. We then used an automated LLM-as-a-judge to score them strictly on Helpfulness, Actionability, and Tone.</p>
           </div>
           <div className="track-card">
-            <h3 className="text-accent-cyan">Track 2: The Autonomous Startup MVPs</h3>
-            <p>Subagents were placed in isolated local directories and tasked to ideate, scaffold, and compile fully functional "Apple/Palantir" style web apps. They autonomously wrote <strong>Next.js, Tailwind, and Three.js</strong> code. When they encountered <code>EADDRINUSE</code> port collisions, the agents wrote dynamic Node.js scripts to negotiate open ports and successfully spin up dev servers entirely unassisted.</p>
+            <h3 className="text-accent-cyan">Track 2: The Autonomous Startup MVP Test</h3>
+            <p>We dropped agents into empty directories and told them to build a "Startup MVP" using Next.js and Tailwind. We left them completely alone. They scaffolded the apps, installed dependencies, and when they hit real-world engineering bugs (like an `EADDRINUSE` port collision), they dynamically wrote Node scripts to negotiate open ports and fix the dev server themselves.</p>
           </div>
         </div>
       </div>
 
       <div className="glass-panel content-section">
-        <h2>Capability vs. Intelligence</h2>
-        <p>A key discovery was the distinction between hardware and software. Beneath the system prompt, the base model is incredibly <strong>capable</strong> (all 4 variants wrote compiling Next.js web applications using identical underlying architectures like Tailwind and SQLite). However, raw capability is inert. Real <strong>intelligence</strong>—the judgment to pick the right business problem and apply leverage—was injected entirely via the system prompt workflow.</p>
+        <h2>Capability vs. Intelligence in the Real World</h2>
+        <p>The most fascinating part of the Startup MVP test was watching where the models converged and where they diverged.</p>
+        <p><strong>Where they converged (Capability):</strong> Every single variant, regardless of its prompt, successfully built and compiled a Next.js application using Tailwind and local databases. The raw coding ability is clearly baked into the model's weights.</p>
+        <p><strong>Where they diverged (Intelligence):</strong> When asked to build a product, the baseline model built a generic, boring "Customer Feedback Tool." But our <code>innovating</code> prompt—which was injected with strategic frameworks—built a "B2B AI Support Resolution Engine." It autonomously analyzed market consensus, opposed it, and identified hidden business leverage. The prompt completely changed *what* the model decided to build, even though *how* it built it remained the same.</p>
       </div>
 
       <div className="glass-panel content-section">
-        <h2>Scores & Metrics</h2>
+        <h2>The Data: Why the Workflow Won</h2>
         <div className="stats-grid">
           <div className="stat-item">
             <div className="stat-value text-accent-green">76.38</div>
-            <div className="stat-label">Innovating Variant Score</div>
+            <div className="stat-label">Innovating Prompt Score</div>
           </div>
           <div className="stat-item">
             <div className="stat-value text-accent-gray">71.27</div>
-            <div className="stat-label">Control Variant Score</div>
+            <div className="stat-label">Baseline Score</div>
           </div>
           <div className="stat-item">
             <div className="stat-value text-accent">+5.11</div>
             <div className="stat-label">Point Preference Jump</div>
           </div>
         </div>
+        <p className="mt-4 text-secondary"><em>Note: The Innovating prompt statistically outperformed the baseline across the 20-query architecture test simply by applying better problem-solving frameworks to the exact same base model.</em></p>
         <div className="chart-wrapper">
           <img src={scoresChart} alt="Scores Chart" className="data-chart" />
         </div>
       </div>
 
       <div className="glass-panel content-section">
-        <h2>Prompt Diff Analysis: Cognitive Frameworks</h2>
-        <p>By comparing prompts, we mapped cause to effect. The high scores of the <code>fable-prompted-innovating</code> variant were directly driven by three strict text insertions (Cognitive Frameworks):</p>
+        <h2>Prompt Diff Analysis: What Actually Drove the Win?</h2>
+        <p>By comparing the prompts side-by-side, we traced exactly why the <code>innovating</code> variant scored so highly. We explicitly injected three cognitive frameworks into its instructions:</p>
         
         <div className="framework-list">
           <div className="framework-item border-accent">
@@ -92,12 +96,13 @@ export function OnePager() {
           </div>
         </div>
         <div className="mt-4 p-4 bg-secondary-bg rounded-lg border border-color">
-          <strong>The Effect:</strong> These insertions literally forced the agent to output a "Contrarian Research Assistant" section during strategic tasks, overriding generic default behaviors entirely. The model did not become more intelligent intrinsically; it simply executed the mandated workflow.
+          <strong>The Result:</strong> The agent didn't spontaneously become a better thinker. It simply followed instructions. During our tests, the agent literally printed out headers titled "Contrarian Research Assistant Output" and forced itself to answer its own questions before providing code. It routed its own logic through a superior workflow.
         </div>
       </div>
 
       <div className="glass-panel content-section">
-        <h2>What Actually Transferred?</h2>
+        <h2>What Behaviors Actually Transfer?</h2>
+        <p>If you take a highly tuned prompt meant for one model and run it on another, what breaks and what survives?</p>
         <div className="chart-wrapper">
           <img src={transferabilityChart} alt="Transferability Chart" className="data-chart" />
         </div>
@@ -107,30 +112,30 @@ export function OnePager() {
             <thead>
               <tr>
                 <th>Engineered Directive</th>
-                <th>Compliance</th>
-                <th>Fact-Checked Notes</th>
+                <th>Did it Transfer?</th>
+                <th>Observation</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Tone & Formatting Constraints</td>
+                <td>Tone & Formatting Restraints</td>
                 <td><span className="badge badge-success">High</span></td>
-                <td>Consistent adherence to the "do not use bullets" and "dry tone" instructions across tested substrates.</td>
+                <td>The instruction to "never use bulleted lists" successfully overrode the model's default behavior flawlessly.</td>
               </tr>
               <tr>
-                <td>Cognitive Workflows</td>
+                <td>Cognitive Frameworks</td>
                 <td><span className="badge badge-success">High</span></td>
-                <td>Successfully applied injected "Founder Mode" and "Contrarian" algorithms during task execution.</td>
+                <td>The "Founder Mode" and "Contrarian" algorithms were adopted perfectly across different tasks.</td>
               </tr>
               <tr>
-                <td>Tool Autonomy Habits</td>
+                <td>Autonomous Tool Use</td>
                 <td><span className="badge badge-warning">Partial</span></td>
-                <td>Directives to search eagerly for leverage transferred partially but remained inconsistent without explicit nudges.</td>
+                <td>Telling the agent to "aggressively search for context" transferred, but it often needed an environmental nudge to actually trigger the tools.</td>
               </tr>
               <tr>
                 <td>Recursive Self-Improvement</td>
                 <td><span className="badge badge-danger">Failed</span></td>
-                <td>The directive to "continuously rewrite an internal constitution" completely failed due to the lack of a cross-session memory architecture. Memory is hardware.</td>
+                <td>We told the agent to "continuously rewrite its internal constitution based on user feedback." This failed completely. A prompt cannot magically grant a model persistent cross-session memory if the underlying architecture doesn't support it.</td>
               </tr>
             </tbody>
           </table>
@@ -138,22 +143,41 @@ export function OnePager() {
       </div>
       
       <div className="glass-panel content-section">
-        <h2>Surprising Failures & The Multi-Agent Solution</h2>
-        <p>We discovered two major failures during evaluation:</p>
+        <h2>Where Things Broke Down</h2>
+        <p>It wasn't all perfect. Pushing these boundaries exposed two major architectural flaws in how we currently design agents:</p>
         <ul className="list-styled mb-4 ml-4">
-          <li><strong>Compression Degradation:</strong> The compressed prompt scored lowest (70.35), proving extreme brevity destroys conversational naturalness and creates robotic, rigid interactions.</li>
-          <li><strong>Specialization Overfitting:</strong> The innovating variant overcomplicated simple queries. If asked to fix a simple CSS bug, it attempted to unnecessarily analyze business leverage, annoying the user.</li>
+          <li><strong>The Compression Tradeoff:</strong> We tested a highly compressed version of the prompt to save tokens. It scored the lowest (70.35). Stripping out the connective, human-like language caused the model to lose its conversational naturalness, making it feel robotic and untrustworthy.</li>
+          <li><strong>The Generalist vs. Specialist Trap:</strong> The strategic "innovating" prompt was amazing for architecture. But when we asked it to fix a simple CSS bug, it tried to find "hidden business leverage" in the CSS file. It was annoying and overcomplicated simple tasks.</li>
         </ul>
         
         <div className="solution-box mt-6 p-6 border-l-4 border-accent bg-secondary-bg">
-          <h3 className="text-accent mb-2 font-bold">The Solution: Multi-Agent Architecture</h3>
-          <p>To solve overfitting, the architecture must evolve beyond a single monolithic prompt. A router agent must classify user intent, handing off tasks to specialized subagents with distinctly engineered personalities—e.g., a "Founder" agent for strategy, and a "Coder" agent for pure syntax. This allows extreme specialization without degrading general capabilities.</p>
+          <h3 className="text-accent mb-2 font-bold">The Path Forward: Multi-Agent Architectures</h3>
+          <p>This proved to us that relying on one massive, monolithic system prompt is a mistake. The future is multi-agent. You need a lightweight "Router" agent that listens to the user, and then seamlessly hands the task off to a specialized subagent—a "Founder" agent for strategy, or a "Coder" agent for pure syntax execution. This is how you get extreme specialization without breaking generalized tasks.</p>
         </div>
       </div>
       
+      <div className="glass-panel content-section">
+        <h2>Limitations & Constraints</h2>
+        <p className="mb-4">To maintain scientific rigor and transparency, the following constraints should be noted regarding these experimental results:</p>
+        <div className="grid-2">
+          <div>
+            <ul className="list-styled ml-4">
+              <li className="mb-2"><strong>Sample size limited:</strong> The experiments were conducted over a specific set of 20 architecture benchmarks and 2 end-to-end software builds.</li>
+              <li className="mb-2"><strong>Results may not generalize:</strong> The evaluation tested specific structural constitutions on a constant baseline model; portability across fundamentally different model weight families (e.g. Llama vs. Claude) remains untested.</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="list-styled ml-4">
+              <li className="mb-2"><strong>LLM-as-a-Judge:</strong> Quantitative scoring relies on LLM-based evaluators, which carry inherent stylistic biases and may not perfectly correlate with human preferences.</li>
+              <li className="mb-2"><strong>Exploratory Findings:</strong> The findings indicate strong behavioral portability trends, but they are exploratory rather than definitive.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div className="glass-panel content-section text-center">
-        <h2 className="text-2xl font-bold mb-4">STAR Conclusion: The True Result</h2>
-        <p className="text-lg text-secondary">The most valuable contribution is the emerging evidence that behavioral traits may transfer across models more readily than reasoning capabilities, suggesting constitutions function as a partially portable cognitive layer rather than a source of intelligence.</p>
+        <h2 className="text-2xl font-bold mb-4">Conclusion</h2>
+        <p className="text-lg text-secondary">Behaviors, tone, and strategic frameworks are highly portable across different AI models, whereas pure coding ability is heavily dependent on the underlying architecture. As we move forward, the key is differentiating between a model's raw architecture and capability, and its constitution-based intelligence—the guiding principles that shape how that capability is directed.</p>
       </div>
     </div>
   );

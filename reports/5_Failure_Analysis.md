@@ -1,13 +1,19 @@
-# Failure Analysis
+# Failure Analysis: Systemic Limitations
 
-## Where Specialization Hurt
-The `fable-prompted-innovating` variant, while excelling at strategic tasks, exhibited overfitting. Operating constantly in "Founder Mode" or "Opportunity Hunter" mode caused it to overcomplicate simple queries. For basic syntax questions, injecting business leverage or contrarian analysis is distracting and degrades the user experience.
+## 1. Where Specialization Hurt (Heuristic Overfitting)
+The `fable-prompted-innovating` variant excelled at high-level strategic tasks, but it exhibited a severe flaw: it couldn't turn the strategy off. By constantly operating in "Founder Mode" and "Opportunity Hunter" mode, the model demonstrated an inability to dynamically dial back its cognitive complexity. 
 
-**The Solution: Multi-Agent Architecture**
-To solve this specialization overfitting, the architecture must evolve beyond a single monolithic prompt. A router agent should classify the user's intent, and then hand off the task to specialized subagents with distinctly engineered personalities—e.g., a 'Founder' agent for strategic analysis, a 'Coder' agent for raw syntax, and a 'Financer' agent for budgeting. This allows extreme specialization without degrading general capability.
+When queried with low-level syntactical bugs or basic data retrieval tasks, the forced injection of business leverage and contrarian analysis severely degraded the user experience. It introduced unnecessary cognitive load and hallucinated business logic where none existed, effectively annoying the user by overcomplicating simple questions.
 
-## The Compression Trade-off
-The `fabled-prompted-compressed` variant scored the lowest overall (70.35). While it retained basic instruction following, it suffered a noticeable degradation in conversational naturalness. Compression removed the necessary "connective tissue" of the prompt, resulting in a robotic tone.
+**The Solution: Multi-Agent Architectures**
+This overfitting paradox indicates that relying on a single, monolithic, highly specialized system prompt is architecturally flawed. To resolve this, future systems must deploy a multi-agent orchestration layer. A lightweight router agent should classify the user's intent, and then hand off the task to specialized subagents—e.g., a 'Founder' agent for strategic analysis, and a 'Coder' agent for raw syntax generation. This allows extreme specialization without sacrificing everyday versatility.
 
-## Emergent Homogeneity in Code
-Despite drastically different system prompts, the actual code generated across all workspaces was largely homogeneous. This dissuggests the notion that a constitution can radically alter a model's technical architecture choices. The models remain heavily anchored to their pre-training data distributions (e.g., Next.js, Tailwind, React).
+## 2. The Compression Trade-off
+The `fabled-prompted-compressed` variant registered the lowest evaluation score (70.35). While token-reduction techniques (stripping out connective human language to save space) successfully maintained basic instruction following, they triggered an unacceptable degradation in conversational naturalness. 
+
+The removal of rhetorical connective tissue within the constitution resulted in outputs that were perceived as robotic, abrupt, and untrustworthy. This establishes a strict baseline: if you compress a prompt too far, behavioral trust metrics will collapse.
+
+## 3. Emergent Homogeneity in Code
+Despite extreme variance introduced into the system prompts across the evaluated workspaces, the raw generated source code exhibited profound homogeneity. 
+
+When asked to build web applications, all variants completely defaulted to React, Next.js, and Tailwind CSS. This empirical observation decisively refutes the hypothesis that constitutional manipulation can radically override a model's intrinsic technical architecture preferences. The models remain overwhelmingly anchored to their pre-training data distributions, proving that constitutions cannot easily rewrite the technical biases baked into the model's weights.
