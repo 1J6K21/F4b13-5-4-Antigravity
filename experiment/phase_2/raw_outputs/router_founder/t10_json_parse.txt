@@ -1,0 +1,7 @@
+```javascript
+try {
+  const data = JSON.parse(jsonString);
+} catch (e) {
+  console.error('Invalid JSON');
+}
+```

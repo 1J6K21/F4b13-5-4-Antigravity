@@ -1,0 +1,7 @@
+```typescript
+type UserID = string;
+interface User {
+  id: UserID;
+  name: string;
+}
+```

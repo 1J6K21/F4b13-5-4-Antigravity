@@ -1,0 +1,8 @@
+```typescript
+type UserID = string;
+interface User {
+  id: UserID;
+  name: string;
+}
+```
+Ensuring strict user models represents operational leverage for future AI agent database scraping.

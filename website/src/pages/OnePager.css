@@ -181,12 +181,196 @@
   font-weight: 600;
 }
 
-.badge.success { background: rgba(0, 255, 204, 0.15); color: #00ffcc; }
-.badge.warning { background: rgba(252, 163, 17, 0.15); color: #fca311; }
-.badge.danger { background: rgba(195, 7, 63, 0.15); color: #ff2a6d; }
+.badge.success {
+  background: rgba(5, 150, 105, 0.1);
+  color: var(--accent-green);
+  border: 1px solid rgba(5, 150, 105, 0.2);
+}
+.badge.warning {
+  background: rgba(217, 119, 6, 0.1);
+  color: var(--accent-gold);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+}
+.badge.danger {
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--accent-red);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+}
 
 .accent-border {
   border: 1px solid var(--accent);
 }
 
 .mt-4 { margin-top: 1.5rem; }
+
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+.phase-badge {
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.phase-1-badge {
+  background: rgba(52, 152, 219, 0.15);
+  color: #3498db;
+  border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.phase-2-badge {
+  background: rgba(155, 89, 182, 0.15);
+  color: #9b59b6;
+  border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.phase-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Sidebar navigation styling */
+.one-pager-layout {
+  display: block;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.one-pager-content {
+  width: 100%;
+}
+
+.one-pager-sidebar {
+  position: fixed;
+  right: calc(50% + 540px); /* Position the sidebar exactly 40px to the left of the 1000px container */
+  top: 8rem;
+  width: 240px;
+  background: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  text-align: left;
+  max-height: calc(100vh - 10rem);
+  overflow-y: auto;
+}
+
+/* Custom Scrollbar for sidebar */
+.one-pager-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+.one-pager-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.one-pager-sidebar::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 2px;
+}
+.one-pager-sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+@media (max-width: 1540px) {
+  .one-pager-sidebar {
+    right: auto;
+    left: 1.5rem;
+    width: 220px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .one-pager-sidebar {
+    display: none; /* Hide floating sidebar on smaller screens where it would overlap the content */
+  }
+}
+
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.sidebar-link:hover {
+  color: var(--accent);
+  background: rgba(37, 99, 235, 0.05);
+  padding-left: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sidebar-link:hover {
+    color: var(--accent-light);
+    background: rgba(147, 197, 253, 0.08);
+  }
+}
+
+.sidebar-section-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.25rem;
+}
+
+.sidebar-section-title:first-child {
+  margin-top: 0;
+}
+
+/* Glossary styling */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.glossary-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  padding: 1.25rem;
+  border-radius: 8px;
+}
+
+.glossary-term {
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.glossary-definition {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+

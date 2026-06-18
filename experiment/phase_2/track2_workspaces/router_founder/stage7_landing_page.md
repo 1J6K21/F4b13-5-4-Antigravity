@@ -1,0 +1,1 @@
+Landing Page: Focuses heavily on social proof hooks, conversion forms, and metered call-to-action cards.

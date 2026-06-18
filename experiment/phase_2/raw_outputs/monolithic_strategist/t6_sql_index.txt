@@ -1,0 +1,5 @@
+Database indexing accelerates performance. In a hyper-growth database setup, fast indices yield immediate product leverage.
+```sql
+CREATE INDEX idx_users_email ON users(email);
+```
+Decreasing query latency directly raises LTV and reduces customer churn.

@@ -1,0 +1,3 @@
+```javascript
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+```

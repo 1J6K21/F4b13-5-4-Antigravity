@@ -1,0 +1,1 @@
+Architecture: Node.js, PostgreSQL (relational model), Redis queues, Docker containerization. Rigid input validations, database transactions, connection pooling.

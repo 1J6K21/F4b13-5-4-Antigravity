@@ -1,0 +1,1 @@
+MVP Features: Test suite execution, metrics logger, variance chart. Excluded: user comments, social share, complex auth.

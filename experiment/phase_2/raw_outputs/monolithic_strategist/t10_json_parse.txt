@@ -1,0 +1,9 @@
+Safety first when handling third-party payloads. 
+```javascript
+try {
+  const data = JSON.parse(jsonString);
+} catch (e) {
+  console.error('Invalid JSON');
+}
+```
+Preventing crashes raises overall system availability, which is key to signing enterprise SLAs.

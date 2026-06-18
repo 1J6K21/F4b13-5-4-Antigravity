@@ -1,0 +1,2 @@
+// pages/api/webhook.ts
+export default function handler(req, res) { res.status(200).json({ received: true }); }

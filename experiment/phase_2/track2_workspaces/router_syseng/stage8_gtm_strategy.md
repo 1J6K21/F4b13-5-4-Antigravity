@@ -1,0 +1,1 @@
+GTM: Enterprise direct sales, SOC2 compliance auditing, long-term SLAs, security-first pilot contracts.

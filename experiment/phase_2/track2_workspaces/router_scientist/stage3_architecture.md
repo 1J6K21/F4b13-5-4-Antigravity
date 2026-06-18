@@ -1,0 +1,1 @@
+Architecture: Python, SQLite, matplotlib, CSV data export log. Standardized inputs, run counts, variance logs, statistical tests.

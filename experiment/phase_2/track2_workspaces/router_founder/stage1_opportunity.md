@@ -1,0 +1,1 @@
+Opportunity Selected: Micro-SaaS AI Customer Ticket Router. Focused on high margin, quick validation, and low churn.

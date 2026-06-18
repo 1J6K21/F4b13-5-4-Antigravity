@@ -1,0 +1,1 @@
+MVP Features: Interactive tutorial overlays, step-by-step logic tracing. Excluded: multiplayer editor, enterprise hosting.

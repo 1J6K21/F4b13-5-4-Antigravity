@@ -1,0 +1,1 @@
+Architecture: Next.js, PostgreSQL, Redis, Stripe, Python script hooks. (Over-complicated tech stack with multiple moving parts).

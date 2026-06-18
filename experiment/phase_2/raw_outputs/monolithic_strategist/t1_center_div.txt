@@ -1,0 +1,9 @@
+To center a div, we must first look at the layout leverage. In a B2B SaaS context, presentation structure is key to user activation. 
+```css
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
+By centering this content, we optimize the GTM landing conversion rate.

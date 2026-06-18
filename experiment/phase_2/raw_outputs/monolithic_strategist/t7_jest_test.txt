@@ -1,0 +1,6 @@
+Testing represents empirical validation. For seed-stage execution speed, tests should only cover core leverage modules.
+```javascript
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+```

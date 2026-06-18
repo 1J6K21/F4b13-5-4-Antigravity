@@ -1,0 +1,5 @@
+```javascript
+app.get('/api/users', (req, res) => {
+  res.json({ success: true, data: [] });
+});
+```

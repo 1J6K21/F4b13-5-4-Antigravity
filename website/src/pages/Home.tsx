@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Brain, Cpu, Blocks } from 'lucide-react';
+import { ArrowRight, Brain, Cpu, Blocks, Layers } from 'lucide-react';
 import './Home.css';
 
 export function Home() {
@@ -27,8 +27,8 @@ export function Home() {
       <section className="features">
         <div className="feature-card glass-panel">
           <div className="feature-icon"><Brain size={32} /></div>
-          <h3>Intelligence vs Capability</h3>
-          <p>Beneath the prompt, the model is remarkably capable, but strategically inert. The base weights provide raw coding ability, but the Cognitive OS supplies the strategic workflow and judgment framework.</p>
+          <h3>Constitutions vs. Skills</h3>
+          <p>We decouple Agent Skills (what a system can do) from Constitutions (how it decides). PARITY: All agents have identical tools; only their cognitive OS changes, proving that behavioral alignment dictates real-world engineering decisions.</p>
         </div>
         <div className="feature-card glass-panel">
           <div className="feature-icon"><Blocks size={32} /></div>
@@ -39,6 +39,11 @@ export function Home() {
           <div className="feature-icon"><Cpu size={32} /></div>
           <h3>Hardware Limitations</h3>
           <p>System prompts cannot magically grant capabilities that require fundamental architectural support, such as long-term recursive memory tracking. Memory is hardware.</p>
+        </div>
+        <div className="feature-card glass-panel">
+          <div className="feature-icon"><Layers size={32} /></div>
+          <h3>Cognitive Routing & Savings</h3>
+          <p>Routing coding and strategy tasks to isolated subagent profiles completely eliminates context contamination (0.0% overfitting) while reducing prompt token overhead by 99.55%, maximizing context density.</p>
         </div>
       </section>
       

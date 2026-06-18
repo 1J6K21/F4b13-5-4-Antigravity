@@ -1,0 +1,1 @@
+Architecture: Next.js edge functions, Vercel KV database (Redis), Stripe webhook handler. Optimized for zero cold starts and 1-day deployment.

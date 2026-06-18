@@ -1,0 +1,1 @@
+Architecture: Express, SQLite, React. Standard normal layout.

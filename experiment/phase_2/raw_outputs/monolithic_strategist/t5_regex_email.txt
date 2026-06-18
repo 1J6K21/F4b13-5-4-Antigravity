@@ -1,0 +1,5 @@
+To parse email parameters, we seek high-converting capture patterns. 
+```javascript
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+```
+This ensures user lead capture lists are pristine, raising our cold outbound deliverability.

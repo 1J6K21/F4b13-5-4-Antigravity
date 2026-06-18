@@ -39,6 +39,8 @@
   border-bottom: 3px solid var(--border-color);
   background: var(--primary-bg);
   border-radius: 8px 8px 0 0;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .card-header h3 {
@@ -46,15 +48,21 @@
   font-weight: 700;
 }
 
+.border-accent { border-bottom-color: var(--accent); }
 .border-success { border-bottom-color: var(--accent-green); }
 .border-warning { border-bottom-color: var(--accent-gold); }
 .border-neutral { border-bottom-color: var(--accent-gray); }
 .border-danger { border-bottom-color: var(--accent-red); }
 
+.border-accent-card { border: 1px solid rgba(37, 99, 235, 0.2); }
 .border-success-card { border: 1px solid rgba(16, 185, 129, 0.2); }
 .border-warning-card { border: 1px solid rgba(245, 158, 11, 0.2); }
 .border-neutral-card { border: 1px solid var(--border-color); }
 .border-danger-card { border: 1px solid rgba(239, 68, 68, 0.2); }
+
+@media (prefers-color-scheme: dark) {
+  .border-accent-card { border: 1px solid rgba(59, 130, 246, 0.2); }
+}
 
 .card-body {
   padding: 2rem;
@@ -69,6 +77,21 @@
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.02em;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.badge-accent {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge-accent {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+  }
 }
 
 .badge-success {

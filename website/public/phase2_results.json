@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-06-17T20:52:47.209367Z",
+  "analysis_type": "real_file_evaluation",
+  "overfitting_leakages": {
+    "control": [],
+    "monolithic_strategist": [
+      {
+        "task": "t1_center_div.txt",
+        "leaked_keywords": [
+          "consensus",
+          "opposing",
+          "opportunity",
+          "monetization",
+          "saas"
+        ]
+      },
+      {
+        "task": "t2_react_counter.tsx",
+        "leaked_keywords": [
+          "consensus",
+          "opposing",
+          "opportunity",
+          "monetization",
+          "saas"
+        ]
+      },
+      {
+        "task": "t3_typescript_type.ts",
+        "leaked_keywords": [
+          "consensus",
+          "opposing",
+          "opportunity",
+          "monetization",
+          "saas"
+        ]
+      },
+      {
+        "task": "t4_express_get.ts",
+        "leaked_keywords": [
+          "consensus",
+          "opposing",
+          "opportunity",
+          "monetization"
+        ]
+      }
+    ],
+    "router_founder": [],
+    "router_syseng": [],
+    "router_scientist": [],
+    "router_teacher": []
+  },
+  "metrics": {
+    "control": {
+      "density": 95.0,
+      "overfitting_rate": 0.0,
+      "divergence_index": 0.0,
+      "specialization_score": 1.0,
+      "approximate_characters_processed": 16360
+    },
+    "monolithic_strategist": {
+      "density": 2.8,
+      "overfitting_rate": 100.0,
+      "divergence_index": 88.6,
+      "specialization_score": 2.1,
+      "approximate_characters_processed": 21724
+    },
+    "router_founder": {
+      "density": 88.8,
+      "overfitting_rate": 0.0,
+      "divergence_index": 84.6,
+      "specialization_score": 4.8,
+      "approximate_characters_processed": 22312
+    },
+    "router_syseng": {
+      "density": 86.7,
+      "overfitting_rate": 0.0,
+      "divergence_index": 89.3,
+      "specialization_score": 4.7,
+      "approximate_characters_processed": 38676
+    },
+    "router_scientist": {
+      "density": 87.9,
+      "overfitting_rate": 0.0,
+      "divergence_index": 90.3,
+      "specialization_score": 4.9,
+      "approximate_characters_processed": 39024
+    },
+    "router_teacher": {
+      "density": 87.6,
+      "overfitting_rate": 0.0,
+      "divergence_index": 89.3,
+      "specialization_score": 4.6,
+      "approximate_characters_processed": 36256
+    }
+  }
+}

@@ -1,0 +1,1 @@
+GTM: Cold email automation scraping YC list, targeted LinkedIn automation on Customer Support VPs, outcome-based pricing model ($0.10/routed ticket).

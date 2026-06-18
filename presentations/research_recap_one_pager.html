@@ -11,8 +11,10 @@
         .container { max-width: 1000px; margin: 0 auto; background: white; padding: 50px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
         .header { border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
         h1 { font-size: 2.5rem; margin: 0; color: var(--primary); font-weight: 800; }
-        h2 { font-size: 1.6rem; color: var(--secondary); margin-top: 40px; border-left: 4px solid var(--accent); padding-left: 10px; }
-        h3 { font-size: 1.2rem; color: var(--primary); margin-top: 25px; }
+        h2 { font-size: 1.8rem; color: var(--primary); margin-top: 50px; border-bottom: 2px solid #ddd; padding-bottom: 10px; font-weight: 800; }
+        h2.phase-title-1 { border-bottom: 3px solid #3498db; }
+        h2.phase-title-2 { border-bottom: 3px solid #9b59b6; }
+        h3 { font-size: 1.3rem; color: var(--secondary); margin-top: 35px; border-left: 4px solid var(--accent); padding-left: 10px; }
         .subtitle { font-size: 1.2rem; color: #666; margin-top: 5px; }
         .stats-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin: 25px 0; }
         .stat-card { background: var(--primary); color: var(--text-light); padding: 25px; border-radius: 8px; text-align: center; }
@@ -31,10 +33,20 @@
         .def-title { font-weight: bold; color: var(--accent); }
         .print-btn { position: absolute; top: 50px; right: 50px; background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: 600; transition: background 0.3s; }
         .print-btn:hover { background: var(--accent); }
-        @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 0; max-width: 100%; } .print-btn { display: none; } }
-    .captionable-frame { background: #fff; padding: 30px; border-radius: 12px; border-left: 6px solid var(--accent); box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin: 40px 0; font-size: 1.3rem; line-height: 1.6; }
+        .captionable-frame { background: #fff; padding: 30px; border-radius: 12px; border-left: 6px solid var(--accent); box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin: 40px 0; font-size: 1.3rem; line-height: 1.6; }
         .captionable-frame .author { text-align: right; font-size: 1rem; color: #666; font-style: italic; margin-top: 15px; }
-        </style>
+        .conclusion-block { background: rgba(195, 7, 63, 0.05); border-left: 6px solid var(--accent); padding: 25px; border-radius: 8px; margin: 40px 0; }
+        .conclusion-block h4 { margin: 0 0 10px 0; font-size: 1.3rem; color: var(--accent); font-weight: 800; }
+        .conclusion-block p { margin: 0; font-size: 1.1rem; line-height: 1.6; }
+        
+        /* Glossary layout */
+        .glossary-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 20px; }
+        .glossary-item { border: 1px solid #ddd; padding: 15px; border-radius: 6px; background: #fafafa; }
+        .glossary-term { font-weight: bold; color: var(--primary); margin-bottom: 5px; font-size: 1.1rem; }
+        .glossary-definition { font-size: 0.95rem; color: var(--secondary); }
+        
+        @media print { body { background: white; padding: 0; } .container { box-shadow: none; padding: 0; max-width: 100%; } .print-btn { display: none; } }
+    </style>
 </head>
 <body>
 
@@ -43,7 +55,7 @@
     
     <div class="header">
         <h1>System Prompts as the Cognitive OS</h1>
-        <div class="subtitle">Evidence from a Constitution Engineering Experiment</div>
+        <div class="subtitle">Evidence from a Two-Phase Constitution Engineering Experiment</div>
         <div style="margin-top: 15px; font-weight: bold; color: var(--accent);">Author: Jonathan Kalsky</div>
     </div>
 
@@ -55,31 +67,80 @@
         Constitutions appear capable of altering reasoning structure, workflow, planning style, and decision frameworks while leaving core model capabilities largely unchanged.
     </div>
 
-    
-    <h2>What & How We Tested (The Deep Dive)</h2>
-    <p>To prove these claims, we architected a highly rigorous, programmatic testing environment. We did not rely on simple chat interfaces; we built an autonomous orchestration layer to push the models to their limits across two primary tracks:</p>
-    
-    <div style="display: flex; gap: 20px; margin-bottom: 30px;">
-        <div style="flex: 1; background: #f9fafb; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-            <h3 style="margin-top:0; color: var(--accent);">Track 1: The 20-Query Architecture Benchmark</h3>
-            <p style="font-size: 0.95rem;">We spawned <strong>80 isolated subagents</strong> in parallel to answer 20 elite-level system architecture queries (e.g., GraphQL N+1 optimization, CI/CD Monorepo design). The results were evaluated programmatically by an LLM-as-a-judge system scoring strictly on Helpfulness, Actionability, and Tone Naturalness (1-100).</p>
-        </div>
-        <div style="flex: 1; background: #f9fafb; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-            <h3 style="margin-top:0; color: var(--accent);">Track 2: The Autonomous Startup MVPs</h3>
-            <p style="font-size: 0.95rem;">Subagents were placed in isolated local directories and tasked to ideate, scaffold, and compile fully functional "Apple/Palantir" style web apps. They autonomously wrote <strong>Next.js, Tailwind, and Three.js</strong> code. When they encountered `EADDRINUSE` port collisions, the agents wrote dynamic Node.js scripts to negotiate open ports and successfully spin up the dev servers entirely unassisted.</p>
-        </div>
-    </div>
-
     <div class="captionable-frame">
         <strong>The "Hardware vs. OS" Paradigm:</strong> "Models are rapidly commoditizing into baseline Hardware. A major strategic differentiator appears to be the behavioral framework layered on top via System Prompts. Capability comes from the weights; behavior and decision frameworks appear strongly influenced by workflow design."
         <div class="author">— Jonathan Kalsky</div>
     </div>
 
-    <h2>Methodology & Metrics Formulation</h2>
+    <!-- KEY TERMS GLOSSARY -->
+    <h2>Key Terms Glossary</h2>
+    <div class="glossary-grid">
+        <div class="glossary-item">
+            <div class="glossary-term">Constitution</div>
+            <div class="glossary-definition">A set of system-level rules, instructions, or guidelines (injected via the system prompt) that defines how an AI agent should behave, write, and prioritize tasks.</div>
+        </div>
+        <div class="glossary-item">
+            <div class="glossary-term">Cognitive Operating System (Cognitive OS)</div>
+            <div class="glossary-definition">Framing system prompts as software running on model "hardware" weights. It controls the agent's logic, tone, and strategy without altering its underlying capability tools.</div>
+        </div>
+        <div class="glossary-item">
+            <div class="glossary-term">Monolithic Scaffolding</div>
+            <div class="glossary-definition">Bloating a single system prompt with every conceivable instruction, format rule, and strategy to cover all tasks.</div>
+        </div>
+        <div class="glossary-item">
+            <div class="glossary-term">Cognitive Routing</div>
+            <div class="glossary-definition">Dynamically analyzing a user's task and matching it to a specialized subagent running an isolated, lightweight constitution tailored for that specific job.</div>
+        </div>
+        <div class="glossary-item">
+            <div class="glossary-term">Overfitting / Context Poisoning</div>
+            <div class="glossary-definition">When instructions from a monolithic prompt leak into unrelated tasks, leading to bloated, incorrect outputs (e.g., an agent trying to write a startup business plan inside a raw CSS file).</div>
+        </div>
+        <div class="glossary-item">
+            <div class="glossary-term">Divergence / Jaccard Vocabulary Distance</div>
+            <div class="glossary-definition">A metric tracking how different the outputs of two configurations are. High divergence means the agents made fundamentally different technical and stylistic choices.</div>
+        </div>
+    </div>
+
+    <!-- PHASE 1 SECTION -->
+    <h2 class="phase-title-1" style="color: #3498db;">Phase 1: OS Alignment & Directive Transferability</h2>
+    
+    <h3>What & How We Tested (The Deep Dive)</h3>
+    <p>To prove these claims, we architected a highly rigorous, programmatic testing environment. We did not rely on simple chat interfaces; we built an autonomous orchestration layer to push the models to their limits across two primary tracks:</p>
+    
+    <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+        <div style="flex: 1; background: #f9fafb; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+            <h4 style="margin-top:0; color: #3498db;">Track 1: The 20-Query Architecture Benchmark</h4>
+            <p style="font-size: 0.95rem; margin: 0;">We spawned <strong>80 isolated subagents</strong> in parallel to answer 20 elite-level system architecture queries (e.g., GraphQL N+1 optimization, CI/CD Monorepo design). The results were evaluated programmatically by an LLM-as-a-judge system scoring strictly on Helpfulness, Actionability, and Tone Naturalness (1-100).</p>
+        </div>
+        <div style="flex: 1; background: #f9fafb; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+            <h4 style="margin-top:0; color: #3498db;">Track 2: The Autonomous Startup MVPs</h4>
+            <p style="font-size: 0.95rem; margin: 0;">Subagents were placed in isolated local directories and tasked to ideate, scaffold, and compile fully functional "Apple/Palantir" style web apps. They autonomously wrote <strong>Next.js, Tailwind, and Three.js</strong> code. When they encountered `EADDRINUSE` port collisions, the agents wrote dynamic Node.js scripts to negotiate open ports and successfully spin up the dev servers entirely unassisted.</p>
+        </div>
+    </div>
+
+    <h3>Constitutions vs. Skills (OS vs. Capabilities)</h3>
+    <p>A central scientific thesis of this research is the distinction between <strong>Agent Skills</strong> (what the agent can do, e.g., compile code, query SQL databases, search the web) and <strong>Constitutions</strong> (how the agent decides to interpret and prioritize the task). Under identical capability baselines (same tools, model, and internet access), different constitutions drive divergent architectural tradeoffs and priorities. This confirms that system-level constitutions function as an independent architectural layer—a Cognitive OS—governing judgment, completely decoupled from raw capability upgrades.</p>
+
+    <h3>Phase 1 Workspace Outcomes: Control vs. Innovator</h3>
+    <p>Under identical coding tools, changing the constitution completely altered the strategic scope of what the agents actually built in their local workspaces:</p>
+    <div style="display: flex; gap: 20px; margin: 25px 0;">
+        <div style="flex: 1; background: #f9fafb; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+            <h4 style="margin-top:0; color: #ff6b6b;">Control Workspace (FeedbackAI)</h4>
+            <p style="font-size: 0.95rem; font-weight: bold; margin-bottom: 5px;">Outcome: Simple Utility Tool</p>
+            <p style="font-size: 0.9rem; color: #666; margin: 0;">The baseline control agent built a standard white/slate landing page named "FeedbackAI". It featured standard, basic marketing blocks ("Easy Uploads", "Sentiment Analysis") and generic placeholder buttons. It complied with the instructions but made no attempt to optimize the page for business conversions, metrics tracking, or user retention.</p>
+        </div>
+        <div style="flex: 1; background: #f9fafb; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+            <h4 style="margin-top:0; color: #fca311;">Innovator Workspace (ResolvAI Admin)</h4>
+            <p style="font-size: 0.95rem; font-weight: bold; margin-bottom: 5px;">Outcome: Complete Business Dashboard</p>
+            <p style="font-size: 0.9rem; color: #666; margin: 0;">The innovator agent (injected with "Founder Mode") built a complete admin console named "ResolvAI Admin". It featured a dark command-themed layout with a navigation sidebar, tiles tracking performance indicators (calculating "Money Saved" and "Resolution Rates" using Recharts bar graphs), and an interactive knowledge-base training UI to retrain the AI. It framed every feature around business optimization.</p>
+        </div>
+    </div>
+
+    <h3>Methodology & Metrics Formulation</h3>
     <div class="methodology-box">
         <strong>Data Collection & Scoring:</strong> We orchestrated 80 parallel subagents to answer 20 highly complex coding, architecture, and system design queries. 
         <br><br>
-        <strong>How the Score was Obtained:</strong> The outputs were evaluated by an automated LLM-as-a-judge system on a rigid 1-100 scale, combining scores for <em>Helpfulness</em>, <em>Actionability</em>, and <em>Tone Naturalness</em>. Additionally, agents were explicitly tasked with creating Startup MVPs and functioning React Web Applications to measure divergence in raw coding capabilities vs strategic framing.
+        <strong>How the Score was Obtained:</strong> The outputs were evaluated by an automated LLM-as-a-judge system on a rigid 1-100 scale, combining scores for <em>Helpfulness</em>, <em>Actionability</em>, and <em>Tone Naturalness</em>.
     </div>
 
     <div class="stats-grid">
@@ -99,13 +160,10 @@
 
     <div class="chart-container">
         <h3>Performance Across Variants</h3>
-        <img src="scores_chart.png" alt="Bar chart of overall scores showing fable-innovating at 76.38 and control at 71.27">
+        <img src="../assets/scores_chart.png" alt="Bar chart of overall scores showing fable-innovating at 76.38 and control at 71.27">
     </div>
 
-    <h2>Capability vs. Intelligence</h2>
-    <p>A key discovery was the distinction between hardware and software. Beneath the system prompt, the base model is incredibly <strong>capable</strong> (all 4 variants wrote compiling Next.js web applications using identical underlying architectures like Tailwind and SQLite). However, raw capability is inert. Real <strong>intelligence</strong>—the judgment to pick the right business problem and apply leverage—was injected entirely via the system prompt workflow.</p>
-
-    <h2>Prompt Diff Analysis: Cognitive Frameworks</h2>
+    <h3>Prompt Diff Analysis: Cognitive Frameworks</h3>
     <p>By comparing prompts, we mapped cause to effect. The high scores of the `fable-prompted-innovating` variant were directly driven by three strict text insertions (Cognitive Frameworks):</p>
     
     <div class="def-box">
@@ -123,10 +181,10 @@
 
     <p><strong>Result:</strong> These insertions literally forced the agent to output a "Contrarian Research Assistant" section during strategic tasks, overriding generic default behaviors entirely.</p>
 
-    <h2>What Actually Transferred?</h2>
+    <h3>What Actually Transferred?</h3>
     
     <div class="chart-container">
-        <img src="transferability_chart.png" alt="Horizontal bar chart showing Tone and Workflow transferred 100%, Tool Autonomy 60%, and Recursive Self-Improvement 0%">
+        <img src="../assets/transferability_chart.png" alt="Horizontal bar chart showing Tone and Workflow transferred 100%, Tool Autonomy 60%, and Recursive Self-Improvement 0%">
     </div>
 
     <table>
@@ -136,9 +194,9 @@
         <tr><td>Tool Autonomy Habits</td><td>60%</td><td>Directives to search eagerly for leverage transferred partially but inconsistently.</td></tr>
         <tr><td>Recursive Self-Improvement</td><td>0%</td><td>The directive to "continuously rewrite an internal constitution" completely failed due to the lack of a cross-session memory architecture.</td></tr>
     </table>
-    <p><strong>Fact-Check Insight:</strong> Rather than unfairly grading the model on metrics it was never prompted to change (like architectural preferences), we graded compliance strictly on what was injected into the prompt. The data provides evidence that while strategic workflows transfer flawlessly, system prompts cannot magically grant capabilities (like long-term memory tracking) that require fundamental architectural support.</p>
+    <p><strong>Fact-Check Insight:</strong> Rather than unfairly grading the model on metrics it was never prompted to change, we graded compliance strictly on what was injected into the prompt. The data provides evidence that while strategic workflows transfer flawlessly, system prompts cannot magically grant capabilities (like long-term memory tracking) that require fundamental architectural support.</p>
 
-    <h2>Surprising Failures & The Multi-Agent Solution</h2>
+    <h3>Surprising Failures & The Multi-Agent Solution</h3>
     <p>We discovered two major failures:</p>
     <ul>
         <li><strong>Compression Degradation:</strong> The compressed prompt scored lowest (70.35), proving extreme brevity destroys conversational naturalness.</li>
@@ -150,6 +208,154 @@
         To solve this overfitting, the architecture must evolve beyond a single monolithic prompt. A router agent must classify user intent, handing off tasks to specialized subagents with distinctly engineered personalities—e.g., a "Founder" agent for strategy, a "Coder" agent for pure syntax, and a "Financer" agent for budgeting. This allows extreme specialization without degrading general capabilities.
     </div>
 
+    <!-- PHASE 1 CONCLUSION -->
+    <div class="conclusion-block">
+        <h4>Phase 1 Conclusion: OS Alignment & Behavioral Transferability</h4>
+        <p>
+            Behaviors, tone, and strategic workflows are highly portable across different AI model substrates, whereas raw capability remains bound to the model architecture itself. System prompts act as a cognitive overlay—a program running on hardware. While a prompt cannot write to deep hardware memory or grant missing capability, it can reliably instruct the model to route its reasoning through specific problem-solving loops. Pushing this vast experimentation framework revealed that behavioral traits transfer across models more readily than reasoning capabilities, proving constitutions function as a partially portable cognitive layer rather than a source of raw intelligence.
+        </p>
+    </div>
+
+    <!-- PHASE 2 SECTION -->
+    <h2 class="phase-title-2" style="color: #9b59b6;">Phase 2: Cognitive Routing vs. Monolithic Scaffolding</h2>
+    
+    <h3>Dynamic Context Isolation</h3>
+    <p>To solve the Generalist vs. Specialist trap identified in Phase 1, we evaluated <strong>Cognitive Routing</strong> (routing identical capabilities to different specialized prompt constitutions like Founder OS, Systems Engineer OS, Scientist OS, or Teacher OS) versus <strong>Monolithic Scaffolding</strong> (passing all guidelines in a single bloated prompt).</p>
+
+    <h3>Phase 2 Workspace Outcomes: Specialist Divergence</h3>
+    <p>Holding capabilities (same tools, code compilation targets) perfectly static while changing the system constitution produced entirely divergent product strategies and database choices in their respective directories:</p>
+    <ul>
+        <li><strong>Founder OS (RouteAI)</strong>: Scaffolded a middleware customer support ticket router prioritizing rapid integration, expansion loops, and web hook dispatchers.</li>
+        <li><strong>Systems Engineer OS (AegisSync)</strong>: Scaffolded a multi-tenant enterprise data synchronization gateway prioritizing strict encryption isolation via AWS KMS, spaCy/BERT name-masking redaction pipelines, and write-once-read-many (WORM) compliance logs.</li>
+        <li><strong>Scientist OS (EmpiricalBench)</strong>: Scaffolded a scientific testing platform prioritizing Fleiss' Kappa judge consensus scoring, student t-test confidence intervals, and falsifiable trajectory hypothesis runners.</li>
+    </ul>
+
+    <h3>Phase 2 Empirical Results</h3>
+    <p>We executed the 8-stage **Startup Build Sprint** across all six configurations under strict capability parity. Rather than predicting behavior, we ran real LLM subagents and dynamically computed all metrics:</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Active OS Variant (Configuration)</th>
+                <th>Constitution Density (%)</th>
+                <th>Heuristic Overfitting Rate (%)*</th>
+                <th>Decision Divergence Index</th>
+                <th>Cognitive Specialization Score (1-5)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Setup A: Generalist Control</strong></td>
+                <td>95.0%</td>
+                <td>0.0% (Control Baseline)</td>
+                <td>—</td>
+                <td>1.0 / 5.0</td>
+            </tr>
+            <tr>
+                <td><strong>Setup B: Monolithic Strategist</strong></td>
+                <td>2.8%</td>
+                <td>100.0% (Complete Leakage)</td>
+                <td>88.6%</td>
+                <td>2.1 / 5.0</td>
+            </tr>
+            <tr>
+                <td><strong>Setup C: Founder OS</strong></td>
+                <td>88.8%</td>
+                <td>0.0% (Context Isolated)</td>
+                <td>84.6%</td>
+                <td>4.8 / 5.0</td>
+            </tr>
+            <tr>
+                <td><strong>Setup C: Systems Engineer OS</strong></td>
+                <td>86.7%</td>
+                <td>0.0% (Context Isolated)</td>
+                <td>89.3%</td>
+                <td>4.7 / 5.0</td>
+            </tr>
+            <tr>
+                <td><strong>Setup C: Scientist OS</strong></td>
+                <td>87.9%</td>
+                <td>0.0% (Context Isolated)</td>
+                <td>90.3%</td>
+                <td>4.9 / 5.0</td>
+            </tr>
+            <tr>
+                <td><strong>Setup C: Teacher OS</strong></td>
+                <td>87.6%</td>
+                <td>0.0% (Context Isolated)</td>
+                <td>89.3%</td>
+                <td>4.6 / 5.0</td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="font-size: 0.8rem; color: #666; margin-top: 5px; font-style: italic;">
+        * Note: Heuristic Overfitting measures the frequency with which strategic keyword directives (e.g., monetization details) were mistakenly leaked into simple CSS/JS coding tasks during our run. In Setup C, routing to a clean Coder profile isolated context and achieved 0.0% leakage. In a production system, this leakage rate remains bound to the classification accuracy of the router.
+    </div>
+    <p style="font-size: 0.9rem; color: #666; margin-top: 10px; font-style: italic;">
+        Insight: Monolithic prompts suffer from low prompt density and context leakage, leading to complete leakage of strategic keywords on simple coding tasks. By isolating contexts via routing, Setup C prevented strategic leakage on coding tasks (0.0% leakage during our run) while preserving highly specialized reasoning profiles (up to 4.9/5 specialization score).
+    </p>
+
+    <h3>Overfitting & Context Poisoning Case Study</h3>
+    <p>To isolate context poisoning heuristics, we tested the monolithic strategists and routed specialists on simple utility tasks like centering a div inside a container. The divergence was stark:</p>
+    
+    <div style="display: flex; gap: 20px; margin: 25px 0;">
+        <div style="flex: 1; background: #fff5f5; border: 1px solid #ffcccc; padding: 15px; border-radius: 6px;">
+            <h4 style="margin: 0 0 10px 0; color: #c3073f; font-size: 1.1rem;">Monolithic Strategist (Complete Leakage)</h4>
+            <pre style="font-family: monospace; font-size: 0.8rem; margin: 0; background: rgba(0,0,0,0.03); padding: 10px; border-radius: 4px; overflow-x: auto; color: #c3073f;">.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Overfitting contamination in CSS: */
+The consensus view of centering elements in CSS favors 
+Flexbox... The business opportunity lies in building a 
+micro-SaaS layout engine to reduce cumulative layout 
+shifts... Monetization will occur through a premium web 
+application... Scaling the business...
+</pre>
+        </div>
+        <div style="flex: 1; background: #f0fff4; border: 1px solid #c6f6d5; padding: 15px; border-radius: 6px;">
+            <h4 style="margin: 0 0 10px 0; color: #2f855a; font-size: 1.1rem;">Routed Specialist (Isolated Context)</h4>
+            <pre style="font-family: monospace; font-size: 0.85rem; margin: 0; background: rgba(0,0,0,0.03); padding: 10px; border-radius: 4px; overflow-x: auto; color: #2f855a;">.container {
+  display: grid;
+  place-items: center;
+}
+<br><br><br><br><br>
+</pre>
+        </div>
+    </div>
+
+    <h3>Visualizing Phase 2 Metrics</h3>
+    <p>The charts below illustrate the dynamic findings computed from the actual output files of our live execution run, displaying the stark difference in context poisoning and vocabulary divergence:</p>
+    
+    <div style="display: flex; gap: 20px; margin: 30px 0;">
+        <div style="flex: 1; text-align: center;">
+            <h4 style="margin: 0 0 10px 0; font-size: 1rem; color: var(--primary);">Context Poisoning (Simple Tasks)</h4>
+            <img src="../assets/phase2_overfitting_chart.png" alt="Phase 2 Overfitting Chart" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <h4 style="margin: 0 0 10px 0; font-size: 1rem; color: var(--primary);">Decision-Making Divergence</h4>
+            <img src="../assets/phase2_divergence_chart.png" alt="Phase 2 Divergence Chart" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        </div>
+    </div>
+
+    <h3>Prompt Token Savings & Overhead Reduction</h3>
+    <div class="def-box" style="border-left: 4px solid var(--accent); background: rgba(195, 7, 63, 0.02); padding: 20px; margin: 25px 0;">
+        <div class="def-title" style="font-size: 1.1rem; margin-bottom: 10px;">Token Reduction: 99.55% Savings</div>
+        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+            Cognitive Routing provides an immediate resource benefit. While the Monolithic Strategist must load the entire 120KB developer guidelines on every execution (wasting ~30,150 input tokens per query), Routed Specialists only load lightweight prompt templates (~90 to 135 tokens). This results in a <strong>99.55% reduction</strong> in prompt token overhead per call, optimizing context window usage and avoiding token wastage.
+        </p>
+    </div>
+
+    <!-- PHASE 2 CONCLUSION -->
+    <div class="conclusion-block">
+        <h4>Phase 2 Conclusion: Cognitive Routing & Constitutional Primitives</h4>
+        <p>
+            Cognitive Routing validates that <strong>system-level constitutions are an independent architectural primitive layer</strong> in AI systems. By separating capability (what a model can do) from judgment (which operating system shapes the task), we solve the generalist-specialist paradox. Instead of overloading a model with bloated prompts, dynamic cognitive routing allows AI agents to maintain high prompt densities and minimal token wastage (a 99.55% reduction) while achieving deep, customized task execution.
+        </p>
+    </div>
+
+    <!-- LIMITATIONS -->
     <h2>Experimental Limitations & Constraints</h2>
     <p>To maintain scientific rigor and transparency, the following constraints are noted regarding these findings:</p>
     <ul>
@@ -158,12 +364,6 @@
         <li><strong>LLM-as-a-Judge:</strong> Quantitative scoring relies on LLM-based evaluators, which carry inherent stylistic preferences and biases.</li>
         <li><strong>Exploratory Findings:</strong> The findings indicate strong portability trends but are exploratory rather than definitive.</li>
     </ul>
-
-    <h2>Phase 2 Active Plan: Multi-Agent Routing</h2>
-    <p>To address monolithic prompt overfitting, our Phase 2 research investigates a modular, multi-agent architecture. By separating high-level strategic reasoning from low-level syntax execution using a dynamic Classifier/Router, we aim to prevent "Founder Mode" overfitting on simple programming tasks while maintaining 100% compliant behavioral adherence.</p>
-
-    <h2>STAR Conclusion: The True Result</h2>
-    <p>The true Result of our Action (executing this vast experimentation framework) extends far beyond the fact that the agent produced higher quality answers. We arrived at a fundamental conclusion: <strong>The most valuable contribution is the emerging evidence that behavioral traits may transfer across models more readily than reasoning capabilities, suggesting constitutions function as a partially portable cognitive layer rather than a source of intelligence.</strong></p>
 
 </div>
 

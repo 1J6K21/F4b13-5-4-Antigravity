@@ -1,0 +1,1 @@
+MVP Features: Single pricing landing page, 1-click stripe subscription, automated mock webhook receiver. Excluded: complex settings, multi-team support.

@@ -1,0 +1,1 @@
+Core Features: Structured sync queues, tenant isolation, secure logs. Excluded: payment systems, marketing modules.

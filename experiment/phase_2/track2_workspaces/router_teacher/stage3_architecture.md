@@ -1,0 +1,1 @@
+Architecture: Next.js, MDX content, React Flow graph rendering, simple local storage persistence.

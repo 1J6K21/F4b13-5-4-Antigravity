@@ -1,0 +1,8 @@
+Grid layouts structure user dashboards. A sleek WWDC-style grid increases perceived startup valuation. 
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+```
