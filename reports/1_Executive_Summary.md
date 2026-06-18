@@ -1,9 +1,11 @@
 # Executive Summary: System Prompts as the Cognitive OS (Evidence from a Constitution Engineering Experiment)
 
 ## Overview
-This report details the findings of our Constitution Engineering experiment. We set out to test a specific hypothesis: that system prompts act as an independent behavioral layer (an "Operating System") that meaningfully alters model output, while the underlying model weights act as the "Hardware" providing raw capability. 
+While the world was praising the raw performance of newly released foundation models, I was focused on a more practical problem: *how much of that advanced strategic behavior could actually be ported to strengthen my day-to-day workload?* 
 
-To test this, we evaluated four distinct prompt variants (`control(antigravity)`, `fable-prompted`, `fabled-prompted-compressed`, and `fable-prompted-innovating`) across 80 autonomous subagents tasked with solving elite-level system architecture queries and building functional React applications entirely from scratch.
+This inquiry drove this empirical case study. Using system prompt configurations published officially by Anthropic in their [System Prompts Release Notes](https://platform.claude.com/docs/en/release-notes/system-prompts) (the "Fable" directives), we set out to test a specific hypothesis: that system prompts act as an independent behavioral layer (a "Cognitive Operating System") that meaningfully alters model output, while the underlying model weights act as the "Hardware" providing raw capability.
+
+To evaluate this, we tested four distinct prompt variants (`control(antigravity)`, `fable-prompted`, `fabled-prompted-compressed`, and `fable-prompted-innovating`) across 80 autonomous subagents tasked with solving elite-level system architecture queries and building functional React applications entirely from scratch.
 
 ## The Capability vs. Intelligence Paradigm
 The most profound discovery of this experiment was the clear distinction between **Capability** and **Intelligence**. 

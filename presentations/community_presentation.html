@@ -42,8 +42,9 @@
         </section>
 
         <section>
-            <h2><span class="highlight">S</span>ituation</h2>
-            <p>The experimental data suggests that behavioral scaffolding contributes substantially to perceived output quality and strategic alignment. The industry treats system prompts as an afterthought instead of a distinct optimization layer.</p>
+            <h2><span class="highlight">S</span>ituation / Motive</h2>
+            <p>While the world was praising the raw performance of newly released models, I was focused on a more practical question: <strong>how much of that advanced strategic behavior can we port to strengthen our day-to-day workloads?</strong></p>
+            <p style="font-size: 0.9rem; color: #aaa;">We utilized the system prompt configurations published officially by Anthropic in their <a href="https://platform.claude.com/docs/en/release-notes/system-prompts" target="_blank" style="color: #00ffcc;">System Prompts Release Notes</a>.</p>
         </section>
 
         <section>
@@ -201,6 +202,40 @@
                         <li>Agents & Products</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experimental <span class="highlight">Limitations</span></h2>
+            <div class="row" style="font-size: 0.95rem; text-align: left;">
+                <div class="stack-box" style="width: 45%;">
+                    <h4 style="color: #ff6b6b; margin-top: 0;">Scale & Scope</h4>
+                    <ul>
+                        <li><strong>Sample size limited</strong>: Conducted across 20 system architecture benchmarks and 2 end-to-end software builds.</li>
+                        <li><strong>Generalizability</strong>: Portability across different model weight families remains untested.</li>
+                    </ul>
+                </div>
+                <div class="stack-box" style="width: 45%;">
+                    <h4 style="color: #ff6b6b; margin-top: 0;">Evaluation</h4>
+                    <ul>
+                        <li><strong>LLM Judges</strong>: Quantitative scoring carries inherent stylistic biases.</li>
+                        <li><strong>Exploratory Nature</strong>: Findings indicate strong trends but are exploratory rather than definitive.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="highlight-blue">Phase 2</span>: Multi-Agent Routing</h2>
+            <p style="font-size: 1.1rem;">Moving past monolithic prompt constraints to dynamic execution workflows.</p>
+            <div class="methodology-box" style="font-size: 0.9rem;">
+                <strong>The Hypothesis:</strong> Splitting planning ("Founder Mode") from code execution ("Coder Mode") via a dynamic Classifier/Router will eliminate overfitting and reduce token overhead.
+                <br><br>
+                <strong>Evaluation Details:</strong>
+                <ul>
+                    <li>An expanded 30-task suite comparing monolithic vs. multi-agent routing.</li>
+                    <li>Metrics: Task Adherence, Heuristic Overfitting Rate, and Token Footprints.</li>
+                </ul>
             </div>
         </section>
 

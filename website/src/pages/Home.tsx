@@ -44,9 +44,9 @@ export function Home() {
       
       <section className="citation-section glass-panel">
         <div className="citation-content mb-8 pb-8 border-b border-color">
-          <h3>*Disclaimer: "Fable" Methodology</h3>
+          <h3>Methodology & Source Attributions</h3>
           <p className="text-sm">
-            The term "fable" used throughout this experimental data refers directly to the system prompt instructions published in the <a href="https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-FABLE-5.md" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">CL4R1T4S repository by elder-plinius</a>. Our research explicitly evaluates the behavioral portability and limits of those exact alignment directives when layered onto alternative LLM substrates.
+            The term "fable" used throughout this experimental data refers to the system prompt instructions published officially by Anthropic in their <a href="https://platform.claude.com/docs/en/release-notes/system-prompts" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">System Prompts Release Notes</a>. Our research explicitly evaluates the behavioral portability and limits of these alignment directives when layered onto alternative LLM substrates.
           </p>
         </div>
         <div className="citation-content">

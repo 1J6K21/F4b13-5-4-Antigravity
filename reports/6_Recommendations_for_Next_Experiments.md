@@ -15,6 +15,8 @@
 ## 2. The Most Important Discovery
 **The "Workflow Layer" Threshold**: Injecting explicit, step-by-step cognitive algorithms into the system prompt reliably forces the model to execute that sequence before generating a final answer. This proves that while a foundation model's raw computational intelligence cannot be magically upgraded via prompt engineering, its *workflow and application trajectory* are completely programmable.
 
-## 3. Next Steps for Research
-1. **Dynamic Constitutions**: To mitigate the severe overfitting observed in the specialized subagents, the next iteration of the Antigravity architecture must deploy a dynamic router. This router will evaluate incoming user intent and dynamically swap the active constitution at runtime, testing if modular alignment can solve the generalist vs. specialist paradox.
-2. **Breaking the Technical Anchor**: Design an experimental control to test if an ultra-restrictive, highly punitive constitution can successfully coerce the model to utilize obscure, non-standard technical stacks, thereby breaking the emergent homogeneity (the default bias toward React/Next.js) observed in this study.
+## 3. Next Steps for Research: Phase 2
+To address the limitations discovered in Phase 1, we have formalized the **Phase 2 Experimental Design**. 
+
+1. **Multi-Agent Routing (Active Plan)**: We are deploying a lightweight dynamic Router to classify incoming tasks and dynamically delegate them to a Strategy Specialist ("Founder Mode") or a Code Specialist ("Coder Mode"). This directly tests whether a modular multi-agent structure eliminates heuristic overfitting and improves token efficiency compared to monolithic prompts. The complete blueprint is detailed in [Phase_2_Experimental_Design.md](file:///Users/jonathankalsky/Developer/F4b13-5-4-Antigravity/phase_2/Phase_2_Experimental_Design.md).
+2. **Breaking the Technical Anchor**: Designing an experimental control to test if highly punitive constitutions can coerce the model to utilize non-standard tech stacks, breaking the default homogeneity observed in this study.

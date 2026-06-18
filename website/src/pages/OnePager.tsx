@@ -13,14 +13,14 @@ export function OnePager() {
 
       <div className="glass-panel content-section p-4 mb-6 border-accent bg-secondary-bg">
         <p className="text-sm text-secondary">
-          <strong>*Disclaimer regarding "Fable":</strong> The term "fable" used throughout our experimental variants refers directly to the system prompt instructions originally published in the <a href="https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-FABLE-5.md" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">CL4R1T4S repository by elder-plinius</a>. Our research explicitly investigates what happens when you take those exact alignment directives and layer them onto entirely different AI models to see if the behaviors transfer.
+          <strong>*Disclaimer regarding "Fable":</strong> The term "fable" used throughout our experimental variants refers to the system prompt instructions officially published in the <a href="https://platform.claude.com/docs/en/release-notes/system-prompts" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Anthropic System Prompts Release Notes</a>. Our research explicitly investigates what happens when you take those exact alignment directives and layer them onto entirely different AI models to see if the behaviors transfer.
         </p>
       </div>
 
       <div className="glass-panel content-section">
         <h2>Executive Summary</h2>
-        <p>The AI industry is currently obsessed with making base models smarter. But after running massive parallel benchmarks across different agents, we found something surprising: <strong>raw capability isn't the bottleneck anymore—workflow is.</strong></p>
-        <p>We tested four different system prompts (ranging from a standard baseline to highly complex strategic frameworks) and forced them to architect systems and build fully functional React apps. The conclusion? The base model acts like hardware, providing raw coding ability. But the system prompt acts like an Operating System, dictating strategy, personality, and workflow.</p>
+        <p>While the world was praising the raw performance of newly released models, I was wondering how much of that strategic behavior could actually be ported to strengthen my day-to-day workload. This sparked a key question: <strong>Are system-level constitutions highly portable, and can they act as a true "Cognitive Operating System" independent of the underlying model weights?</strong></p>
+        <p>To test this, we evaluated four different system prompts (ranging from a standard baseline to highly complex strategic frameworks) and forced them to architect systems and build fully functional React apps. Our findings suggest that raw capability is no longer the primary bottleneck—workflow is. The base model acts as the hardware, providing raw coding ability. But the system prompt acts as the Operating System, dictating strategy, personality, and workflow.</p>
         
         <div className="quote-box">
           Constitutions don't make models fundamentally smarter; they act as a routing layer that forces the model's existing intelligence through vastly superior workflows.

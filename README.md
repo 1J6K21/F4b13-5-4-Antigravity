@@ -13,8 +13,15 @@ An empirical study on the behavioral portability and limits of model-level align
 
 ---
 
-## *Disclaimer regarding "Fable" variants
-The term "fable" used throughout the experimental variants in this repository refers directly to the system prompt instructions published in the [CL4R1T4S repository by elder-plinius](https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-FABLE-5.md). This study explicitly investigates the behavioral portability and limits of those exact alignment directives when layered onto alternative LLM substrates.
+## Project Origin & Motive
+While the world was praising the raw performance of newly released base models, I was focused on a more practical question: *how much of that behavior could actually be ported to strengthen my daily workload?* 
+
+This inquiry drove this empirical study. We set out to evaluate whether system-level constitutions (behavioral rulesets) are truly portable across different model substrates, behaving like a "Cognitive Operating System" layered over raw model "hardware."
+
+---
+
+## Disclaimer: System Prompt Sources
+The term "fable" used throughout the experimental variants in this repository refers to the system prompt instructions published officially by Anthropic in their [System Prompts Release Notes](https://platform.claude.com/docs/en/release-notes/system-prompts). This study explicitly investigates the behavioral portability and limits of these alignment directives when layered onto alternative LLM substrates.
 
 ---
 
