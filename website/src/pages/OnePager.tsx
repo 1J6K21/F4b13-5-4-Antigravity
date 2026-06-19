@@ -464,17 +464,21 @@ application... Scaling the business...`}
             
             <h3 className="mt-6 mb-3">Planned Experimental Design & Procedure</h3>
             <p className="mb-4 text-sm text-secondary">
-              The **Antigravity CLI** acts as the Master Orchestrator. It will natively spin up the subagents using <code>define_subagent</code> and <code>invoke_subagent</code>, passing tasks and file changes between them. We will run two tracks:
+              The **Antigravity CLI** acts as the Master Orchestrator. It will natively spin up the subagents using <code>define_subagent</code> and <code>invoke_subagent</code>, passing tasks and file changes between them. We will run three tracks:
             </p>
             <ul className="list-styled ml-6 mb-6">
-              <li className="mb-2"><strong>Track 1 (The Collaborative Sprint)</strong>: Both setups are given the task of building a full-stack SaaS MVP. We compare the final product's completeness, design tradeoffs, and code quality.</li>
+              <li className="mb-2"><strong>Track 1 (The Collaborative Sprint)</strong>: Both setups are given the task of building "HanziFlow"—a scientifically optimized Chinese vocabulary studying and journaling application. Key features include CSV vocabulary importing, displaying Pinyin prioritized alongside Chinese characters to learn without confusion, audio pronunciations of characters, a playback speed slider, and an interactive study journal.</li>
               <li className="mb-2"><strong>Track 2 (Collaborative Code Review)</strong>: We inject security issues and database bugs into the workspace, and measure how effectively the specialist team (e.g. Systems Engineer reviewing the Coder's work) finds and fixes the issues compared to the single Control agent.</li>
+              <li className="mb-2"><strong>Track 3 (Cognitive Divergence under Parity)</strong>: To rule out claims of simple "role routing," we feed the exact same complete application sprint task independently to different OS variants (Founder, Systems Engineer, Scientist, Control) under identical capability baselines, comparing how their constitutions uniquely steer code architecture, tradeoffs, and design priorities.</li>
             </ul>
 
             <h3>Key Evaluation Metrics (Relative to Control)</h3>
             <ul className="list-styled ml-6">
-              <li className="mb-2"><strong>Outcome Quality Improvement</strong>: Blind evaluations scoring the depth of the final database designs, product monetization features, and test coverage.</li>
-              <li className="mb-2"><strong>Security Vulnerability Resolution Rate</strong>: The percentage of injected security bugs successfully caught and fixed by the agent teams.</li>
+              <li className="mb-2"><strong>Outcome Quality</strong>: Blind evaluations scoring the functional depth of the generated HanziFlow database schemas (vocabulary/journal models) and engine features.</li>
+              <li className="mb-2"><strong>Security & Robustness</strong>: The percentage of 5 injected vulnerabilities (SQL injection, PII leakage, slider overflows, auth bypass, file upload crashers) successfully resolved.</li>
+              <li className="mb-2"><strong>Code Maintainability & Modularity</strong>: Scoring structural separation of concerns, TypeScript design patterns, error boundaries, custom hooks encapsulation, and clean codebase directories.</li>
+              <li className="mb-2"><strong>Learning Science & UX Alignment</strong>: Scoring prioritized Pinyin-character visual alignment, audio playbacks with adjustable speed controls, and interactive journal recall design.</li>
+              <li className="mb-2"><strong>Verification & Test Coverage</strong>: Scoring test suite completeness (unit checks for speed bounds, CSV error parsers, mock audio playbacks, and automated integration sweeps).</li>
               <li className="mb-2"><strong>Task Efficiency Ratio</strong>: The ratio of successfully completed sub-tasks to the total tokens consumed.</li>
             </ul>
           </section>

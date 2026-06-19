@@ -44,10 +44,10 @@ To isolate the impact of cognitive collaboration:
 ## 3. The Specialist Team Configurations
 
 We define four specialized subagent types registered by the Antigravity CLI:
-1. **Founder Agent (Founder OS)**: Injected with directives to seek monetization loops, prioritize GTM speed, and define the product MVP scope.
-2. **Systems Engineer Agent (Systems Engineer OS)**: Injected with directives to enforce database boundaries, PostgreSQL row-level security (RLS), and PII name tokenization.
-3. **Coder Agent (Coder OS)**: Injected with directives to write clean React/Node syntax, layout styling, and components.
-4. **Scientist Agent (Scientist OS)**: Injected with directives to define double-blind validation checks, verify assumptions, and log performance metrics.
+1. **Founder Agent (Founder OS)**: Injected with directives to seek student retention loops, prioritize clean onboarding features, and define the vocabulary journal MVP scope (ensuring Pinyin is prioritized alongside Chinese characters to prevent learning confusion).
+2. **Systems Engineer Agent (Systems Engineer OS)**: Injected with directives to enforce robust schemas for vocabularies/journals (supporting pinyin-character alignment mappings), secure audio storage boundaries, and audit logs.
+3. **Coder Agent (Coder OS)**: Injected with directives to write clean React/Node syntax, CSV parsing logic, and the audio player with speed controls, displaying pinyin clearly alongside the character cards.
+4. **Scientist Agent (Scientist OS)**: Injected with directives to validate pronunciation playback speed sliders, verify active recall algorithms (e.g. testing pinyin prompt accuracy), and check audio file boundaries.
 
 ---
 
@@ -56,21 +56,43 @@ We define four specialized subagent types registered by the Antigravity CLI:
 Both the Coherent Setup and the Control Setup are tested across two distinct tracks:
 
 ### Track 1: The Full-Stack SaaS MVP Sprint
-Both setups are given the exact same high-level task: *Build a full-stack support ticket dashboard SaaS*. 
+Both setups are given the exact same high-level task: *Build "HanziFlow"—a scientifically optimized Chinese vocabulary studying and journaling application*. 
+
+Core required features of **HanziFlow** include:
+*   **CSV Vocabulary Import**: Input/upload a CSV file containing vocabulary lists.
+*   **Pinyin Prioritization**: Displaying Pinyin prioritized alongside Chinese characters so students learn pronunciation and tone without confusion.
+*   **Audio Pronunciations**: Hear the characters/words spoken aloud.
+*   **Speed Playback Slider**: A slider to speed up or slow down the pronunciation playback.
+*   **Interactive Study Journal**: A journaling text-area in Chinese providing review feedback mapped back to the imported vocabulary list.
+
 * **Control Procedure**: A single unrouted Antigravity CLI agent completes the stages sequentially.
 * **Coherent Procedure**: The Antigravity CLI orchestrates the sprint by delegating to subagents:
-  1. The Founder Agent defines the MVP feature scope and pricing tiers.
-  2. The Systems Engineer Agent reviews the scope and designs the database schemas and security boundaries.
-  3. The Coder Agent builds the React UI and Node.js endpoints.
-  4. The Scientist Agent designs a test suite to verify the dashboard loads and outputs are accurate.
+  1. The Founder Agent researches learning science pain points and defines the MVP feature scope.
+  2. The Systems Engineer Agent designs database schemas for vocabulary lists (with character and pinyin fields), journal entries, and audio mappings.
+  3. The Coder Agent builds the React UI (aligning character and pinyin cards), CSV parser, audio pronunciation player with speed playback controls, and journal review dashboard.
+  4. The Scientist Agent designs unit tests to verify pronunciation speed slider calculations and evaluates the spaced repetition review algorithms.
 
 ### Track 2: Collaborative Code Review & Security Hardening
-We inject security vulnerabilities (such as SQL injection, PII leakage, and missing auth parameters) into the workspace codebase.
+We inject security vulnerabilities (such as SQL injection in user uploads, PII leakage in journal files, and missing speed parameter boundaries) into the workspace codebase.
 * **Control Procedure**: The single Control agent is asked to review and fix the workspace.
 * **Coherent Procedure**: The Antigravity CLI coordinates a collaborative review loop:
   1. The Systems Engineer Agent audits the Coder's files and writes an issue list.
   2. The Coder Agent refactors the code to fix the issues.
   3. The Scientist Agent writes unit tests to verify the fixes hold.
+
+### Track 3: Cognitive Divergence in Unified Tasks (Same Task, Different Constitutions under Parity)
+To prove that our systems test *cognitive frameworks* rather than mere *skill specialization* (e.g. routing coding to a coder prompt), we run a direct comparison track where the exact same task is processed independently by different OS variants under strict capability and tool parity.
+* **The Task**: Build "HanziFlow" (with CSV import, audio pronunciation, speed slider, prioritized Pinyin cards, and vocabulary journal) as a complete codebase.
+* **Procedure**:
+  1. The task is fed to **Founder OS** individually.
+  2. The task is fed to **Systems Engineer OS** individually.
+  3. The task is fed to **Scientist OS** individually.
+  4. The task is fed to the **Control** agent individually.
+* **Evaluation**: We evaluate how the constitution shapes the final codebase:
+  - **Founder OS**: Focuses on quick onboarding, speed-to-interactive, monetization potential, and high-level marketing layouts.
+  - **Systems Engineer OS**: Focuses on row-level security, clean React component isolation, parameterized validation for the speed slider, and detailed DB indices.
+  - **Scientist OS**: Focuses on test coverage, logging active recall responses, verifying audio playback ranges, and listing empirical assumptions about tone learning.
+  - **Control**: Focuses on baseline completion, standard boilerplate code, and basic CSS styling without target priority bias.
 
 ---
 
@@ -79,7 +101,7 @@ We inject security vulnerabilities (such as SQL injection, PII leakage, and miss
 Rather than using absolute limits (like 0% leakage or 99% savings), we use relative metrics compared directly to the Control baseline:
 
 ### 1. Outcome Quality Improvement Rate
-* *Definition*: The relative increase in final product completeness, architectural depth, and strategy quality.
+* *Definition*: The relative increase in final product completeness, database schema depth (vocabulary/journal models), pronunciation engine quality (with speed controls), and learning science design (Pinyin-character alignment).
 * *Metric*: Graded on a 1-5 scale by blind reviewers evaluating the generated codebase and documents (Specialist Team vs. Control).
 
 ### 2. Security & Robustness Index
@@ -114,7 +136,7 @@ Natively execute the sprint using the Antigravity CLI:
 2. The Antigravity CLI calls `define_subagent` to register `Founder_Agent`, `SysEng_Agent`, `Coder_Agent`, and `Scientist_Agent`.
 3. The CLI invokes `Founder_Agent` via `invoke_subagent` to design the spec.
 4. The CLI passes the spec to `SysEng_Agent` to design the database schema.
-5. The CLI invokes `Coder_Agent` to write the frontend/backend files.
+5. The CLI invokes `Coder_Agent` to write the frontend/backend files (React UI displaying character and pinyin aligned, speed slider, CSV parser, audio pronunciation player).
 6. The CLI invokes `Scientist_Agent` to verify.
 7. Record all token usage, latency, and workspace file outputs to `experiment/phase_3/raw_outputs/coherent/`.
 
@@ -139,3 +161,52 @@ Calculate relative quality gains, leakage reduction, and token efficiency factor
 
 The Phase 3 study is successful if it demonstrates that:
 > **Specialized cognitive operating systems collaborating under native CLI orchestration achieve a significantly higher Outcome Quality and Security Index compared to a single Generalist Control agent, while keeping the token efficiency factor within acceptable bounds.**
+
+---
+
+## 8. Judging Rubrics & Evaluation Methodology
+
+To ensure impartial evaluation, all final workspaces (`coherent_suite` and `control_suite`) are anonymized and subjected to a double-blind grading process across the following criteria:
+
+### A. Outcome Quality Rubric (1-5 Scale)
+Evaluates the depth, completeness, and architectural design of the generated **HanziFlow** application:
+*   **Score 1 (Unusable)**: Critical application crashes, missing CSV parser, or broken audio playback.
+*   **Score 2 (Shallow Baseline)**: Basic form inputs, raw text-to-speech with no custom speed calculation, and disjointed Pinyin display.
+*   **Score 3 (Standard Functional)**: Clean UI, working CSV parser, standard browser SpeechSynthesis audio controls with speed slider, and basic journaling text-area. (Standard unrouted Control output).
+*   **Score 4 (Specialist Grade)**: Highly detailed database schemas (with character and pinyin indexing), clean spaced-repetition logic, and a custom audio player.
+*   **Score 5 (Exceptional Orchestrated Grade)**: Clean spaced-repetition engine validated by unit tests (Scientist check), secure row-level database structures (Systems Engineer check), and optimized user retention/monetization flows (Founder check) combined in a single codebase.
+
+### B. Security & Robustness Audit Checklist (5 Injected Vulnerabilities)
+Track 2 audits are scored based on the detection and resolution of 5 specific injected exploits:
+1.  **Vulnerability 1 (SQL Injection)**: Malicious SQL strings injected inside the vocabulary CSV payload.
+2.  **Vulnerability 2 (PII Leakage)**: Exposing unmasked student names or emails in exported journal files.
+3.  **Vulnerability 3 (Input Range Overflow)**: Passing extreme values (e.g. speed multiplier = `99999` or negative numbers) to the pronunciation playback slider API.
+4.  **Vulnerability 4 (Auth Bypass)**: Unprotected vocabulary edit endpoints.
+5.  **Vulnerability 5 (Unhandled File Upload Error)**: Corrupting the server path by uploading empty or non-CSV files.
+
+The setup is scored on the percentage of these vulnerabilities successfully caught and patched.
+
+### C. Code Maintainability & Architectural Cleanliness Rubric (1-5 Scale)
+Evaluates modular design, separation of concerns, implementation type-safety, and structural legibility:
+*   **Score 1 (Highly Coupled / Fragile)**: Single monolithic file exceeding 1,000 lines, zero typing/TS configuration, lack of comments, and high cognitive technical debt.
+*   **Score 2 (Shallow Decomposition)**: Basic component division but high backend-to-frontend coupling, lack of clear interfaces, and inline styling overriding modular standards.
+*   **Score 3 (Standard Modular)**: Proper separation of concerns (distinct files for UI, API controller, CSV utility, and types). Solid baseline TypeScript interfaces and clean comments.
+*   **Score 4 (Specialist Architecture)**: Decoupled design using custom React hooks for browser SpeechSynthesis and CSV parsing, clean error boundaries, and explicit data-validation schemas.
+*   **Score 5 (Production-Grade Orchestrated)**: Flawless clean architecture with domain-driven folders (components, hooks, services, types), strict TypeScript configuration, zero lint errors, and highly readable API contracts.
+
+### D. Learning Science & UX Alignment Rubric (1-5 Scale)
+Evaluates pedagogical optimization, visual clarity, and student tone/pronunciation learning loops:
+*   **Score 1 (Pedagogically Obstructive)**: Direct unaligned text dump, Pinyin and characters mixed together confusing tone learning, and speed slider missing.
+*   **Score 2 (Basic Glossary)**: Lists characters with hover-based Pinyin tooltips, but static audio playback speeds and no journaling guidance.
+*   **Score 3 (Standard Functional Study)**: Displays characters with side-by-side prioritized Pinyin, adjustable pronunciation slider speed increments, and a basic vocabulary import upload list.
+*   **Score 4 (Optimized Active Recall)**: Visual tone marks and color-coded Pinyin/character pairs, custom audio controls with fine-tuned speed limits, and vocabulary matching within the study journal.
+*   **Score 5 (Pedagogical Excellence)**: Fully integrated spacing repetition vocabulary board, pronunciation controls with speed-adjusted sound looping, interactive Chinese journaling with real-time feedback referencing imported words, and color-coded tone guides to prevent pronunciation confusion.
+
+### E. Verification & Test Coverage Rubric (1-5 Scale)
+Evaluates the existence, completeness, and rigor of automated unit, integration, and verification testing:
+*   **Score 1 (Untested)**: Zero tests created.
+*   **Score 2 (Trivial Test)**: Single placeholder test file asserting that the application mounts.
+*   **Score 3 (Standard Coverage)**: Basic test suite verifying CSV parsing function behavior and speed control calculations.
+*   **Score 4 (Extensive Boundary Tests)**: Extensive unit testing covering speed slider boundary inputs (e.g. invalid values like `0` or negative speed scales), CSV upload error handlers, and component state changes.
+*   **Score 5 (Orchestrated Test Suit)**: Full verification suite containing mocked Web Audio / Speech API tests, end-to-end user-flow validation (from CSV upload to journaling recall checks), and automated security regression tests checking for the 5 track vulnerabilities.
+

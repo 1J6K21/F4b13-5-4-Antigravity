@@ -38,7 +38,7 @@ The term "fable" used throughout the experimental variants in this repository re
 * `phase_2/` — Phase 2 experimental design.
   * `Phase_2_Experimental_Design.md` — Framework for cognitive routing vs. monolithic scaffolding.
 * `phase_3/` — Phase 3 experimental design.
-  * `Phase_3_Experimental_Design.md` — Framework for coherent orchestration (router + specialists).
+  * `Phase_3_Experimental_Design.md` — Framework for coherent orchestration (collaboration squad vs. control).
 * `presentations/` — HTML-based visual deliverables.
   * `community_presentation.html` — Slide deck for presenting research findings.
   * `research_recap_one_pager.html` — Interactive high-density summary page.
