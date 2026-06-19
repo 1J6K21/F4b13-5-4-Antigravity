@@ -28,22 +28,22 @@ export function Home() {
         <div className="feature-card glass-panel">
           <div className="feature-icon"><Brain size={32} /></div>
           <h3>Constitutions vs. Skills</h3>
-          <p>We decouple Agent Skills (what a system can do) from Constitutions (how it decides). PARITY: All agents have identical tools; only their cognitive OS changes, proving that behavioral alignment dictates real-world engineering decisions.</p>
+          <p>We decouple Agent Skills (tools and capabilities) from Constitutions (rules and directives). Under strict capability parity, an agent's prompt operating system dictates its strategic choices, workflow execution, and output style.</p>
         </div>
         <div className="feature-card glass-panel">
           <div className="feature-icon"><Blocks size={32} /></div>
-          <h3>High Transferability</h3>
-          <p>Tone, formatting constraints, and cognitive workflows (like "Founder Mode") transfer highly consistently across different architectures and foundational models.</p>
+          <h3>Phase 1: Directive Portability</h3>
+          <p>Formatting constraints and reasoning checklists transfer consistently across different base models. However, prompts cannot bypass hardware limits; capabilities like long-term memory require architectural support.</p>
         </div>
         <div className="feature-card glass-panel">
           <div className="feature-icon"><Cpu size={32} /></div>
-          <h3>Hardware Limitations</h3>
-          <p>System prompts cannot magically grant capabilities that require fundamental architectural support, such as long-term recursive memory tracking. Memory is hardware.</p>
+          <h3>Phase 2: Cognitive Routing</h3>
+          <p>Routing tasks to specialized subagents reduces context leakage and prompt token overhead compared to monolithic configurations, maximizing prompt density and context isolation.</p>
         </div>
         <div className="feature-card glass-panel">
           <div className="feature-icon"><Layers size={32} /></div>
-          <h3>Cognitive Routing & Savings</h3>
-          <p>Routing coding and strategy tasks to isolated subagent profiles completely eliminates context contamination (0.0% overfitting) while reducing prompt token overhead by 99.55%, maximizing context density.</p>
+          <h3>Phase 3: Collaborative Teams</h3>
+          <p>Combining specialized roles (Coder, Systems Engineer, Scientist) in a shared workspace improves code maintainability and security resolution, but introduces higher clock latency and API cost.</p>
         </div>
       </section>
       

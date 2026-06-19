@@ -373,4 +373,63 @@
   line-height: 1.5;
 }
 
+/* Clickable glossary terms in text */
+.glossary-link {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.glossary-link:hover {
+  background: rgba(100, 200, 255, 0.1);
+  border-bottom-style: solid;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.bg-black-opacity {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-black-opacity {
+    background: rgba(255, 255, 255, 0.02);
+  }
+}
+
+.border-left-green {
+  border-left: 3px solid var(--accent-green);
+}
+
+.track-details-container {
+  margin-top: 2rem;
+}
+
+.track-detail-card {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 

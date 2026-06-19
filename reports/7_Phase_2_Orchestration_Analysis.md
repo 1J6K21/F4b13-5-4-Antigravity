@@ -72,9 +72,9 @@ To quantify the cost and efficiency benefits of **Cognitive Routing**, we measur
 *   **Prompt Character Count:** ~360 to 539 characters (~90 to 135 tokens) per call.
 *   **Total input cost for 10 simple tasks:** `135 * 10 = 1,350 tokens`.
 
-### C. Quantitative Savings Summary
-*   **Input Token Reduction:** Routing achieved a **99.55% reduction** in prompt token overhead for operational tasks.
-*   **Resource Allocation:** By stripping the 120KB global rulebook down to isolated, target-specific constitutions, we eliminated context contamination while saving substantial compute resource costs.
+### C. Quantitative Efficiency Summary
+*   **Token Efficiency Improvement:** Routing achieved a **~223x relative improvement** in input token efficiency compared to the monolithic setup.
+*   **Resource Allocation:** Stripping the 120KB global rulebook down to targeted, task-specific constitutions significantly reduces context leakage and prompt overhead.
 
 
 

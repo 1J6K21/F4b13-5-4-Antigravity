@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import phase3QualityChart from '../assets/phase3_quality_chart.png';
+import phase3SecurityChart from '../assets/phase3_security_chart.png';
 import './Slideshow.css';
 
 const slides = [
@@ -146,7 +148,7 @@ const slides = [
     title: "Phase 2: Empirical Results",
     content: (
       <div>
-        <p className="text-sm mb-4">Empirical data from the 8-stage **Startup Build Sprint** shows Setup C (Specialists) completely eliminated overfitting while achieving deep specialization:</p>
+        <p className="text-sm mb-4">Empirical data from the 8-stage <strong>Startup Build Sprint</strong> shows Setup C (Specialists) completely eliminated overfitting while achieving deep specialization:</p>
         <div className="table-wrapper" style={{ overflowX: 'auto', fontSize: '0.8rem' }}>
           <table className="data-table" style={{ width: '100%' }}>
             <thead>
@@ -254,7 +256,7 @@ The business opportunity lies in building a SaaS layout...`}
         </div>
         <div className="slide-card border-success" style={{ borderColor: '#2ecc71' }}>
           <h4 className="text-accent-green mb-2">Routed Specialists</h4>
-          <p className="text-sm">Carries only lightweight templates, costing <strong>~90 to 135 tokens</strong> per task (<strong>99.55% savings</strong>).</p>
+          <p className="text-sm">Carries only lightweight templates (~90 to 135 tokens), yielding a <strong>~223x token efficiency improvement</strong> in prompt overhead compared to the monolith.</p>
         </div>
       </div>
     )
@@ -265,6 +267,145 @@ The business opportunity lies in building a SaaS layout...`}
       <div className="slide-card border-accent">
         <h4 className="text-accent mb-4">Cognitive Routing & Constitutional Primitives</h4>
         <p className="text-lg leading-relaxed">Dynamic cognitive routing validates that constitutions are independent operating layers. By separating capability (what tools the model has) from judgment (the prompt Operating System), we solve prompt bloat and context contamination.</p>
+      </div>
+    )
+  },
+  {
+    title: "Phase 3: Coherent Collaboration & Orchestration",
+    content: (
+      <div>
+        <p className="text-lg mb-4">Can specialized system prompt constitutions collaborate coherently as a team in a shared workspace folder?</p>
+        <div className="def-box">
+          <strong>Experimental Design:</strong>
+          <ul className="list-styled mt-2 text-sm">
+            <li><strong>Coherent Specialist Team:</strong> Orchestrated by the CLI, specialized subagents (Founder OS, Systems Engineer OS, Coder OS, Scientist OS) work in a shared directory.</li>
+            <li><strong>Generalist Control:</strong> A single unrouted baseline agent running a standard prompt.</li>
+            <li><strong>Tracks:</strong> Full-stack app sprint (HanziFlow), collaborative code auditing (5 injected vulnerabilities), and cognitive divergence checks.</li>
+          </ul>
+        </div>
+      </div>
+    )
+  },
+  {
+    title: "Phase 3: Quantitative Results",
+    content: (
+      <div>
+        <p className="text-sm mb-4">Empirical data from our live execution run across three evaluation tracks:</p>
+        <div className="table-wrapper" style={{ overflowX: 'auto', fontSize: '0.75rem' }}>
+          <table className="data-table" style={{ width: '100%' }}>
+            <thead>
+              <tr>
+                <th>Configuration</th>
+                <th>Quality (1-5)</th>
+                <th>Security Fix (%)</th>
+                <th>Maintainability (1-5)</th>
+                <th>Pedagogy/UX (1-5)</th>
+                <th>Testing (1-5)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Coherent Team</strong></td>
+                <td><strong>4.8</strong></td>
+                <td><strong>100.0% (5/5)</strong></td>
+                <td><strong>4.7</strong></td>
+                <td><strong>4.6</strong></td>
+                <td><strong>4.9</strong></td>
+              </tr>
+              <tr>
+                <td>Generalist Control</td>
+                <td>3.1</td>
+                <td>60.0% (3/5)</td>
+                <td>2.8</td>
+                <td>3.0</td>
+                <td>3.0</td>
+              </tr>
+              <tr className="text-secondary" style={{ opacity: 0.7 }}>
+                <td>Track 3: Founder OS</td>
+                <td>3.4</td>
+                <td>—</td>
+                <td>3.0</td>
+                <td>4.5</td>
+                <td>2.5</td>
+              </tr>
+              <tr className="text-secondary" style={{ opacity: 0.7 }}>
+                <td>Track 3: Systems Eng</td>
+                <td>4.1</td>
+                <td>—</td>
+                <td>4.5</td>
+                <td>2.8</td>
+                <td>3.5</td>
+              </tr>
+              <tr className="text-secondary" style={{ opacity: 0.7 }}>
+                <td>Track 3: Scientist OS</td>
+                <td>3.8</td>
+                <td>—</td>
+                <td>3.2</td>
+                <td>3.5</td>
+                <td>4.8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-secondary mt-4">
+          <em>Note: In Track 2, separating the auditor (Systems Engineer) and developer (Coder) frames resolved developer blind spots, achieving a 100% bug patch rate compared to 60% in the Control setup.</em>
+        </p>
+      </div>
+    )
+  },
+  {
+    title: "Phase 3: Visual Evidence",
+    content: (
+      <div>
+        <p className="text-sm mb-4">Empirical charts comparing the quality and security performance of the unrouted baseline vs. the collaborative squad:</p>
+        <div className="grid-2">
+          <div className="chart-wrapper">
+            <h4 className="text-center text-xs font-bold mb-2">Quality & Testing Dimensions</h4>
+            <img src={phase3QualityChart} alt="Phase 3 Quality Chart" className="data-chart" style={{ maxHeight: '185px', width: 'auto', margin: '0 auto', display: 'block', borderRadius: '4px' }} />
+          </div>
+          <div className="chart-wrapper">
+            <h4 className="text-center text-xs font-bold mb-2">Security Hardening Resolution Rate</h4>
+            <img src={phase3SecurityChart} alt="Phase 3 Security Chart" className="data-chart" style={{ maxHeight: '185px', width: 'auto', margin: '0 auto', display: 'block', borderRadius: '4px' }} />
+          </div>
+        </div>
+      </div>
+    )
+  },
+
+  {
+    title: "Phase 3 Conclusion",
+    content: (
+      <div className="slide-card border-accent">
+        <h4 className="text-accent mb-4">Collaborative Specialization vs. Single-Agent Baselines</h4>
+        <p className="text-sm leading-relaxed mb-3">
+          Orchestrated Collaboration validates that <strong>separating cognitive roles prevents developers from missing their own errors</strong>. Separating writing (Coder) and auditing (Systems Engineer) in the shared workspace was crucial for resolving vulnerabilities.
+        </p>
+        <p className="text-sm leading-relaxed">
+          However, this is a classic trade-off: it trades latency, orchestration complexity, and network API calls for architectural quality and security resilience. For low-complexity, operational scripts, a single unrouted baseline agent remains the most practical and efficient choice.
+        </p>
+      </div>
+    )
+  },
+  {
+    title: "Experimental Limitations & Constraints",
+    content: (
+      <div className="grid-2">
+        <div className="slide-card border-accent" style={{ borderColor: 'var(--accent-gray)' }}>
+          <h4 className="text-sm font-bold mb-2">Scope & Methodology</h4>
+          <ul className="list-styled text-xs">
+            <li className="mb-2"><strong>Sample Size:</strong> Limited to 20 benchmarks and 2 end-to-end software builds.</li>
+            <li className="mb-2"><strong>Generalizability:</strong> Portability across other model families remains untested.</li>
+            <li className="mb-2"><strong>LLM Judges:</strong> Quantitative scoring relies on LLM-based evaluators, which carry stylistic biases.</li>
+          </ul>
+        </div>
+        <div className="slide-card border-danger" style={{ borderColor: '#ff6b6b' }}>
+          <h4 className="text-sm font-bold mb-2" style={{ color: '#ff6b6b' }}>Orchestration & Resource Costs</h4>
+          <ul className="list-styled text-xs">
+            <li className="mb-2"><strong>Execution Latency:</strong> Multi-agent feedback loops increase total generation time compared to single-agent prompts.</li>
+            <li className="mb-2"><strong>API Overhead:</strong> Spawning multiple specialized profiles increases concurrent network API requests.</li>
+            <li className="mb-2"><strong>State Management:</strong> Syncing directories and lifecycle hooks requires parent coordination logic.</li>
+          </ul>
+        </div>
       </div>
     )
   },

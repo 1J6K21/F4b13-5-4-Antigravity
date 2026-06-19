@@ -1,0 +1,33 @@
+{
+  "name": "hanziflow",
+  "version": "1.0.0",
+  "description": "HanziFlow - Chinese vocabulary studying and journaling application",
+  "main": "server/server.ts",
+  "scripts": {
+    "dev:frontend": "vite",
+    "build:frontend": "tsc && vite build",
+    "dev:server": "ts-node server/server.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/supertest": "^6.0.2",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
+}
