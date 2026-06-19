@@ -180,7 +180,7 @@
                 <tr><td>Autonomous Tool Searching</td><td>60% (Partial)</td></tr>
                 <tr><td>Recursive Self-Improvement</td><td>0% (Failed)</td></tr>
             </table>
-            <p style="font-size: 0.9rem; margin-top: 15px;"><em>Insight: Self-improvement failed because the prompt demanded cross-session memory tracking, which the base architecture does not support. Prompts cannot grant hardware-level capabilities.</em></p>
+            <p style="font-size: 0.9rem; margin-top: 15px;"><em>Insight: Self-improvement failed because the prompt demanded cross-session memory tracking, which system prompts alone cannot implement without database backing or application-level state synchronization.</em></p>
         </section>
 
         <section>
@@ -189,16 +189,16 @@
                 <li><strong>Compression Degradation:</strong> <code>fabled-prompted-compressed</code> scored the lowest (70.35), demonstrating that extreme prompt compression destroys conversational naturalness.</li>
                 <li><strong>Specialization Overfitting:</strong> <code>fable-prompted-innovating</code> overcomplicated simple queries by injecting unnecessary business leverage analysis.</li>
             </ul>
-        </section>
-
+        </section>         
+        
         <section>
-            <h2>Phase 1 Conclusion: OS Alignment & Behavioral Transferability</h2>
+            <h2>Phase 1 Conclusion: Scaffolding & Behavioral Transferability</h2>
             <div class="methodology-box" style="font-size: 0.9rem; text-align: left;">
                 <strong>Key Findings on Transferability:</strong>
                 <ul>
-                    <li><strong>Behavior is Highly Portable:</strong> Tone, style, formatting constraints, and strategic workflows (like "Founder Mode") transfer flawlessly across different models.</li>
-                    <li><strong>Capabilities are Bound to Weights:</strong> Prompts cannot magically grant missing hardware-level capabilities (like recursive self-improvement or persistent memory).</li>
-                    <li><strong>Constitutions as a Cognitive Overlay:</strong> System prompts function as a software layer running on hardware weights. They guide *how* the model directs its existing capabilities.</li>
+                    <li><strong>Behavior is Highly Portable:</strong> Tone, style, formatting constraints, and strategic workflows (like "Founder Mode") transfer consistently across different models.</li>
+                    <li><strong>Capabilities require State Management:</strong> Prompts cannot magically grant missing application-level state capabilities (like recursive self-improvement or persistent session memory).</li>
+                    <li><strong>Constitutions as Behavioral Scaffolding:</strong> System prompts function as a behavioral scaffolding layer. They guide *how* the model structures its reasoning.</li>
                 </ul>
             </div>
         </section>
@@ -405,20 +405,20 @@ will be achieved by integrating...</code></pre>
                     <ul>
                         <li>Carries only lightweight templates dynamically scoped by router.</li>
                         <li><strong>~90 to 135 input tokens</strong> per query.</li>
-                        <li><strong>~223x token efficiency improvement</strong> in input overhead.</li>
+                        <li><strong>~223x reduction in the system prompt component of the input payload size</strong> compared to monolithic setups.</li>
                     </ul>
                 </div>
             </div>
         </section>
  
         <section>
-            <h2>Phase 2 Conclusion: Cognitive Routing & Constitutional Primitives</h2>
+            <h2>Phase 2 Discussion: Cognitive Routing & Scaffolding</h2>
             <div class="methodology-box" style="font-size: 0.9rem; text-align: left;">
-                <strong>Key Architectural Conclusions:</strong>
+                <strong>Key Architectural Concepts:</strong>
                 <ul>
-                    <li><strong>Constitutions as Primitives:</strong> Prompts act as an independent OS layer shaping structural judgment separate from capability tools.</li>
+                    <li><strong>Scaffolding Hypotheses:</strong> Prompts can shape structural judgment separate from capability tools.</li>
                     <li><strong>Context Isolation:</strong> Isolating developer tasks prevents strategic contamination of operational code.</li>
-                    <li><strong>Prompt Efficiency:</strong> Scoping active prompts yields a <strong>~223x token efficiency improvement</strong> in input overhead compared to monolithic setups.</li>
+                    <li><strong>Payload Size Reduction:</strong> Scoping active prompts yields a <strong>~223x reduction in the system prompt component of the input payload size</strong> compared to monolithic setups.</li>
                 </ul>
             </div>
         </section>

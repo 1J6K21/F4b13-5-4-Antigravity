@@ -247,16 +247,21 @@ The business opportunity lies in building a SaaS layout...`}
     )
   },
   {
-    title: "Phase 2: Prompt Token Savings",
+    title: "Phase 2: System Prompt Size & Scoping",
     content: (
-      <div className="grid-2">
-        <div className="slide-card border-danger">
-          <h4 className="text-accent-red mb-2">Monolithic Overhead</h4>
-          <p className="text-sm">Carries the entire developer guidelines on every execution, costing <strong>~30,150 tokens</strong> per task.</p>
+      <div>
+        <div className="grid-2 mb-4">
+          <div className="slide-card border-danger">
+            <h4 className="text-accent-red mb-2">Monolithic Overhead</h4>
+            <p className="text-sm">Carries the entire developer guidelines on every execution, loading <strong>~30,150 tokens</strong> of prefill context per task.</p>
+          </div>
+          <div className="slide-card border-success" style={{ borderColor: '#2ecc71' }}>
+            <h4 className="text-accent-green mb-2">Routed Specialists</h4>
+            <p className="text-sm">Carries only lightweight templates (~90 to 135 tokens), yielding a <strong>~223x reduction in the system prompt payload size</strong> compared to the monolith.</p>
+          </div>
         </div>
-        <div className="slide-card border-success" style={{ borderColor: '#2ecc71' }}>
-          <h4 className="text-accent-green mb-2">Routed Specialists</h4>
-          <p className="text-sm">Carries only lightweight templates (~90 to 135 tokens), yielding a <strong>~223x token efficiency improvement</strong> in prompt overhead compared to the monolith.</p>
+        <div className="text-xs text-secondary mt-2 text-center" style={{ fontStyle: 'italic' }}>
+          Note: This tracks the static prompt template size loaded per turn, not cumulative runtime tokens. The routed setup requires additional classification calls and sequential coordination turns, which increase the overall execution token count.
         </div>
       </div>
     )
@@ -265,8 +270,8 @@ The business opportunity lies in building a SaaS layout...`}
     title: "Phase 2 Conclusion",
     content: (
       <div className="slide-card border-accent">
-        <h4 className="text-accent mb-4">Cognitive Routing & Constitutional Primitives</h4>
-        <p className="text-lg leading-relaxed">Dynamic cognitive routing validates that constitutions are independent operating layers. By separating capability (what tools the model has) from judgment (the prompt Operating System), we solve prompt bloat and context contamination.</p>
+        <h4 className="text-accent mb-4">Cognitive Routing & Scaffolding</h4>
+        <p className="text-lg leading-relaxed">Dynamic cognitive routing suggests a method for managing different agent configurations. By separating capability (what tools the model has) from judgment (the prompt configuration), we explore prompt density and context contamination.</p>
       </div>
     )
   },
@@ -378,7 +383,7 @@ The business opportunity lies in building a SaaS layout...`}
       <div className="slide-card border-accent">
         <h4 className="text-accent mb-4">Collaborative Specialization vs. Single-Agent Baselines</h4>
         <p className="text-sm leading-relaxed mb-3">
-          Orchestrated Collaboration validates that <strong>separating cognitive roles prevents developers from missing their own errors</strong>. Separating writing (Coder) and auditing (Systems Engineer) in the shared workspace was crucial for resolving vulnerabilities.
+          Our Track 2 evaluation run suggests that <strong>separating cognitive roles can reduce developer blind spots on target bugs</strong>. Separating writing (Coder) and auditing (Systems Engineer) in the shared workspace was associated with a higher patch rate during our trial.
         </p>
         <p className="text-sm leading-relaxed">
           However, this is a classic trade-off: it trades latency, orchestration complexity, and network API calls for architectural quality and security resilience. For low-complexity, operational scripts, a single unrouted baseline agent remains the most practical and efficient choice.

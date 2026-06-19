@@ -10,7 +10,7 @@ We evaluated five distinct system configurations—Setup A (Control), Setup B (M
 
 To ensure experimental isolation, every variant operated under absolute capability parity, sharing the same base model weights, environmental context window, and workspace file utilities. The only variable manipulated was the active **constitution (system prompt)**.
 
-The experiment successfully validated our core thesis: **System-level constitutions are an independent architectural primitive layer that governs behavioral judgment and decision-making, completely decoupled from capability specialization.**
+The experiment provided evidence for our hypothesis: **System-level constitutions function as behavioral scaffolds that shape behavioral judgment and decision-making, decoupled from capability tools.**
 
 ---
 
@@ -53,7 +53,7 @@ We observed massive **Decision-Making Divergence (Divergence Index: 84% - 90%)**
 
 1.  **Monolithic Inefficiency & Prompt Bloat**: Setup B was highly inefficient. By passing a massive context filled with instructions that were irrelevant to the immediate task, it suffered from a **2.8% Constitution Density** and high token costs.
 2.  **Specialization Decoupling**: Setup C achieved high density (86.7-88.8%) and low token footprints by dynamically scoping the active constitution. The high **Cognitive Specialization Score (up to 4.9/5)** indicates that the distinct operating systems were easily identifiable based solely on their architectural choices and code priorities.
-3.  **Behavior is Programmable**: The high Divergence Index proves that system prompts do not merely change text style—they dictate the core design choices and software architecture paths.
+3.  **Behavior is Steerable**: The high Divergence Index suggests that system prompts do not merely change text style—they influence the design choices and software architecture paths.
 
 ---
 
@@ -73,15 +73,13 @@ To quantify the cost and efficiency benefits of **Cognitive Routing**, we measur
 *   **Total input cost for 10 simple tasks:** `135 * 10 = 1,350 tokens`.
 
 ### C. Quantitative Efficiency Summary
-*   **Token Efficiency Improvement:** Routing achieved a **~223x relative improvement** in input token efficiency compared to the monolithic setup.
-*   **Resource Allocation:** Stripping the 120KB global rulebook down to targeted, task-specific constitutions significantly reduces context leakage and prompt overhead.
+*   **Input Prompt Payload Size Reduction:** Routing achieved a **~223x reduction in the system prompt component of the input payload size** compared to the monolithic setup. Note that overall runtime costs (including classification and sequential handoffs) were not quantitatively measured.
+*   **Resource Scoping:** Stripping the 120KB global rulebook down to targeted, task-specific constitutions significantly reduces context leakage and prompt overhead.
 
 
 
 ---
 
-## 7. Final Conclusion
+Phase 2 is consistent with the hypothesis that **system prompts function as a behavioral scaffolding layer**. While tool capability represents raw base weights capacity, the active constitution governs the allocation of that capacity. 
 
-Phase 2 confirms that **system prompts function as a Cognitive Operating System**. While tool capability represents raw hardware capacity, the active constitution governs the allocation of that capacity. 
-
-Dynamic Cognitive Routing successfully solves the specialist vs. generalist paradox, allowing AI systems to run highly specialized strategic workflows without contaminating simple operational tasks.
+Dynamic Cognitive Routing explores the specialist vs. generalist paradox, allowing AI systems to run specialized strategic workflows without contaminating simple operational tasks.

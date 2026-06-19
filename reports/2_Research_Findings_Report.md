@@ -16,7 +16,7 @@ The most valuable contribution of this experiment is the emerging evidence that 
 - **Underperformance**: `fabled-prompted-compressed`. Token compression techniques severely degraded the model's conversational naturalness, resulting in the lowest overall score. Without human-like connective tissue, the model felt robotic and untrustworthy.
 
 ## 2. Prompt Diff Analysis: What Actually Drove the Change?
-By comparing the `fable-prompted-innovating` prompt to the baseline `fable-prompted` prompt, we can explicitly trace cause and effect. 
+By comparing the `fable-prompted-innovating` prompt to the baseline `fable-prompted` prompt, we can observe the associated changes in behavior. 
 The innovating prompt introduced three strict behavioral directives:
 1. **Contrarian Research Assistant**: *"Every answer must contain: Consensus view, Strongest opposing view, Unknowns, What would change the conclusion."*
 2. **Opportunity Hunter**: *"Every response should identify hidden leverage."*

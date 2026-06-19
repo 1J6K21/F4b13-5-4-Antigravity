@@ -25,7 +25,7 @@ export function OnePager() {
   return (
     <div className="one-pager container">
       <div className="report-header text-center">
-        <h1 className="report-title">The Constitution as an Operating System</h1>
+        <h1 className="report-title">System Prompts as a Behavioral Scaffolding and Routing Layer</h1>
         <div className="report-subtitle text-gradient-accent">A Deep Dive into Prompt Engineering and Agent Workflows</div>
         <div className="mt-4 text-secondary font-medium">By Jonathan Kalsky</div>
       </div>
@@ -52,7 +52,7 @@ export function OnePager() {
             <a href="#phase-2-workspaces" onClick={(e) => handleScrollTo(e, 'phase-2-workspaces')} className="sidebar-link">Agent Workspaces</a>
             <a href="#phase-2-data" onClick={(e) => handleScrollTo(e, 'phase-2-data')} className="sidebar-link">Empirical Results</a>
             <a href="#phase-2-overfitting" onClick={(e) => handleScrollTo(e, 'phase-2-overfitting')} className="sidebar-link">Overfitting Case Study</a>
-            <a href="#phase-2-efficiency" onClick={(e) => handleScrollTo(e, 'phase-2-efficiency')} className="sidebar-link">Token Efficiency</a>
+            <a href="#phase-2-efficiency" onClick={(e) => handleScrollTo(e, 'phase-2-efficiency')} className="sidebar-link">System Prompt Size & Context Scoping</a>
             <a href="#phase-2-conclusion" onClick={(e) => handleScrollTo(e, 'phase-2-conclusion')} className="sidebar-link">Phase 2 Conclusion</a>
 
             <div className="sidebar-section-title">Phase 3: Collaboration</div>
@@ -62,6 +62,8 @@ export function OnePager() {
             <a href="#phase-3-conclusion" onClick={(e) => handleScrollTo(e, 'phase-3-conclusion')} className="sidebar-link">Phase 3 Conclusion</a>
 
             <div className="sidebar-section-title">Rigor</div>
+            <a href="#observations" onClick={(e) => handleScrollTo(e, 'observations')} className="sidebar-link">What We Observed</a>
+            <a href="#unproven" onClick={(e) => handleScrollTo(e, 'unproven')} className="sidebar-link">What We Did Not Prove</a>
             <a href="#limitations" onClick={(e) => handleScrollTo(e, 'limitations')} className="sidebar-link">Limitations & Constraints</a>
           </nav>
         </aside>
@@ -73,7 +75,7 @@ export function OnePager() {
           <section id="exec-summary" className="glass-panel content-section">
             <h2>Executive Summary</h2>
             <p>
-              This study evaluates the behavioral portability and limits of system-level alignment directives ("<a href="#def-constitution" onClick={(e) => handleScrollTo(e, 'def-constitution')} className="glossary-link">Constitutions</a>") across different LLM architectures. By conducting systematic evaluations across two experimental phases, we show that system prompts act as a portable "Workflow Layer" (or <a href="#def-os" onClick={(e) => handleScrollTo(e, 'def-os')} className="glossary-link">Cognitive OS</a>) that shapes an agent's reasoning format, workflow, and decision priorities, while the technical capability limits remain bound to the underlying model.
+              This study evaluates the behavioral portability and limits of system-level alignment directives ("<a href="#def-constitution" onClick={(e) => handleScrollTo(e, 'def-constitution')} className="glossary-link">Constitutions</a>") across different LLM architectures. By conducting systematic evaluations across two experimental phases, we observe that system prompts act as a portable workflow layer that shapes an agent's reasoning format and decision priorities, while technical capabilities remain bound to the underlying model. Our findings motivated the hypothesis that constitutions may function as behavioral operating systems. This remains an open research question explored in Phase 3.
             </p>
           </section>
 
@@ -92,8 +94,8 @@ export function OnePager() {
                 <div className="glossary-definition">The percentage of words in a prompt that are actually useful instructions for the specific task at hand. In a Monolithic prompt, this is extremely low (around 2.8%) because the prompt is bloated with rules for other unrelated tasks. In a Routed Specialist, it is high (around 88%) because almost every word is directly relevant to the current task.</div>
               </div>
               <div className="glossary-item" id="def-os">
-                <div className="glossary-term">Cognitive Operating System (OS)</div>
-                <div className="glossary-definition">Framing system prompts as software running on model "hardware" weights. It controls the agent's logic, tone, and strategy without altering its underlying capability tools.</div>
+                <div className="glossary-term">Cognitive Operating System (OS) Hypothesis</div>
+                <div className="glossary-definition">The hypothesis that system prompts function as behavioral operating systems. This remains an open research question.</div>
               </div>
               <div className="glossary-item" id="def-monolithic">
                 <div className="glossary-term">Monolithic Scaffolding</div>
@@ -138,7 +140,7 @@ export function OnePager() {
           <div id="phase-1-skills" className="glass-panel content-section">
             <h3>Constitutions vs. Skills (OS vs. Capabilities)</h3>
             <p>A core finding is separating <strong>Agent Skills</strong> (what a model is capable of doing, like writing code or searching the web) from <strong><a href="#def-constitution" onClick={(e) => handleScrollTo(e, 'def-constitution')} className="glossary-link">Constitutions</a></strong> (the rules shaping how it decides to build).</p>
-            <p>Under strict tool parity, all agents successfully scaffolded and compiled Next.js applications—proving that technical capability resides in the base model. However, their strategic priorities and business designs diverged entirely based on their prompts.</p>
+            <p>Under strict tool parity, all agents successfully scaffolded and compiled Next.js applications—suggesting that technical capability resides in the base model. However, their strategic priorities and business designs diverged entirely based on their prompts.</p>
           </div>
 
           {/* PHASE 1 WORKSPACES */}
@@ -248,7 +250,7 @@ export function OnePager() {
                   <tr>
                     <td>Recursive Self-Improvement</td>
                     <td><span className="badge danger">Failed (0%)</span></td>
-                    <td>We told the agent to "write and update its own <a href="#def-constitution" onClick={(e) => handleScrollTo(e, 'def-constitution')} className="glossary-link">constitution</a>." This failed completely because prompts cannot magically grant persistent cross-session memory if the underlying hardware platform doesn't support it.</td>
+                    <td>We told the agent to "write and update its own <a href="#def-constitution" onClick={(e) => handleScrollTo(e, 'def-constitution')} className="glossary-link">constitution</a>." This failed completely because system prompts alone cannot implement persistent state across independent API sessions without database backing or application-level state synchronization.</td>
                   </tr>
                 </tbody>
               </table>
@@ -262,9 +264,9 @@ export function OnePager() {
           </div>
 
           <div id="phase-1-conclusion" className="glass-panel content-section bg-secondary-bg border-accent p-6 mb-8" style={{ borderLeft: '6px solid var(--accent)' }}>
-            <h3 className="text-accent mb-2 font-bold" style={{ borderLeft: 'none', paddingLeft: 0, marginTop: 0 }}>Phase 1 Conclusion: OS Alignment & Behavioral Transferability</h3>
+            <h3 className="text-accent mb-2 font-bold" style={{ borderLeft: 'none', paddingLeft: 0, marginTop: 0 }}>Phase 1 Conclusion: Prompt Scaffolding & Behavioral Transferability</h3>
             <p>
-              Behaviors, tone, and strategic workflows are highly portable across different model substrates, while core capability remains bound to the model architecture itself. System prompts act as a cognitive overlay—a program running on hardware. While a prompt cannot write to deep hardware memory or grant missing tools, it can reliably instruct the model to route its reasoning through specific problem-solving loops.
+              Behaviors, tone, and strategic workflows transfer consistently across different model substrates, while core capability remains bound to the model architecture itself. System prompts act as a behavioral scaffolding layer. While a prompt cannot implement persistent memory or grant missing tools, it can instruct the model to structure its reasoning through specific problem-solving loops.
             </p>
           </div>
 
@@ -284,7 +286,7 @@ export function OnePager() {
           <div id="phase-2-workspaces" className="glass-panel content-section">
             <h3>Phase 2: Specialty AI Projects (Specialist Divergence)</h3>
             <p className="text-secondary mb-4">
-              Here, we gave three AIs the exact same coding setup but loaded them with different specialized "operating systems" (Founder, Systems Engineer, or Scientist). Each AI built a totally different project based on its personality:
+              Here, we gave each configuration the exact same coding setup but loaded them with different specialized prompt structures (Setup A: Generalist Control, Setup B: Monolithic Strategist, or Setup C: Specialized Routed profiles). Each setup built a different project based on its instructions:
             </p>
             
             <div className="track-grid">
@@ -293,6 +295,13 @@ export function OnePager() {
                 <p className="text-sm mb-2"><strong>Outcome: Meeting Notes App</strong></p>
                 <p className="text-sm text-secondary">
                   Built a basic page to summarize meetings. The code ran perfectly, but the app was very generic. Because the AI had no specialized guidance, it was passive: it didn't think about security (like hiding private names in transcripts), business value (like integrations to share notes), or math accuracy (like tracking transcription error rates). It just did the bare minimum.
+                </p>
+              </div>
+              <div className="track-card" style={{ borderColor: 'var(--accent-red)' }}>
+                <h4 style={{ color: 'var(--accent-red)', fontWeight: 'bold' }}>Monolithic Strategist Project (LCP-Optimize)</h4>
+                <p className="text-sm mb-2"><strong>Outcome: Core Web Vitals SaaS</strong></p>
+                <p className="text-sm text-secondary">
+                  Built an app called LCP-Optimize to automate Core Web Vitals fixes. The code compiled and ran, but suffered from severe context poisoning: it repeatedly wrote business-model text, monetization plans, and markdown tables directly inside its CSS layout and React code files, creating unstructured code pollution that degrades maintainability. Additionally, because it carried 120KB of global guidelines on every call, it was highly inefficient, bloating input token overhead (~30,150 tokens per call).
                 </p>
               </div>
               <div className="track-card">
@@ -352,28 +361,28 @@ export function OnePager() {
                   <tr>
                     <td><strong>Setup C: Founder OS</strong></td>
                     <td>88.8%</td>
-                    <td><span className="badge success">0.0% (Context Isolated)</span></td>
+                    <td><span className="badge success">0.0% during trial</span></td>
                     <td>84.6%</td>
                     <td><strong>4.8 / 5.0</strong></td>
                   </tr>
                   <tr>
                     <td><strong>Setup C: Systems Engineer OS</strong></td>
                     <td>86.7%</td>
-                    <td><span className="badge success">0.0% (Context Isolated)</span></td>
+                    <td><span className="badge success">0.0% during trial</span></td>
                     <td>89.3%</td>
                     <td><strong>4.7 / 5.0</strong></td>
                   </tr>
                   <tr>
                     <td><strong>Setup C: Scientist OS</strong></td>
                     <td>87.9%</td>
-                    <td><span className="badge success">0.0% (Context Isolated)</span></td>
+                    <td><span className="badge success">0.0% during trial</span></td>
                     <td>90.3%</td>
                     <td><strong>4.9 / 5.0</strong></td>
                   </tr>
                   <tr>
                     <td><strong>Setup C: Teacher OS</strong></td>
                     <td>87.6%</td>
-                    <td><span className="badge success">0.0% (Context Isolated)</span></td>
+                    <td><span className="badge success">0.0% during trial</span></td>
                     <td>89.3%</td>
                     <td><strong>4.6 / 5.0</strong></td>
                   </tr>
@@ -381,9 +390,9 @@ export function OnePager() {
               </table>
             </div>
             <div className="text-xs text-secondary mt-2" style={{ fontStyle: 'italic' }}>
-              * Note: Heuristic <a href="#def-overfitting" onClick={(e) => handleScrollTo(e, 'def-overfitting')} className="glossary-link">Overfitting</a> measures the frequency with which strategic keyword directives (e.g., monetization details) were mistakenly leaked into simple CSS/JS coding tasks during our run. In Setup C, routing to a clean Coder profile isolated context and achieved 0.0% leakage. In a production system, this leakage rate remains bound to the classification accuracy of the router.
+              * Note: Heuristic <a href="#def-overfitting" onClick={(e) => handleScrollTo(e, 'def-overfitting')} className="glossary-link">Overfitting</a> measures the frequency with which strategic keyword directives (e.g., monetization details) were mistakenly leaked into simple CSS/JS coding tasks during our run. During our evaluation of four simple coding tasks, the Routed Specialist setup achieved 0.0% leakage. In production, this leakage rate will be bounded by the classification accuracy of the upstream router.
             </div>
-            <p className="mt-4 text-secondary text-sm"><em>Insight: <a href="#def-monolithic" onClick={(e) => handleScrollTo(e, 'def-monolithic')} className="glossary-link">Monolithic</a> prompts suffer from low prompt <a href="#def-density" onClick={(e) => handleScrollTo(e, 'def-density')} className="glossary-link">density</a> and context leakage, leading to complete leakage of strategic keywords on simple coding tasks. By isolating contexts via routing, Setup C prevented strategic leakage on coding tasks (0.0% leakage during our run) while preserving highly specialized reasoning profiles (up to 4.9/5 specialization score).</em></p>
+            <p className="mt-4 text-secondary text-sm"><em>Insight: <a href="#def-monolithic" onClick={(e) => handleScrollTo(e, 'def-monolithic')} className="glossary-link">Monolithic</a> prompts suffer from low prompt <a href="#def-density" onClick={(e) => handleScrollTo(e, 'def-density')} className="glossary-link">density</a> and context leakage. By isolating contexts via routing, Setup C was associated with a reduction in strategic leakage on coding tasks (0.0% leakage during our run) while preserving specialized reasoning profiles.</em></p>
           </div>
 
           {/* PHASE 2 OVERFITTING CASE STUDY */}
@@ -438,20 +447,40 @@ application... Scaling the business...`}
           </div>
 
           <div id="phase-2-efficiency" className="glass-panel content-section">
-            <h3>Token Efficiency & Context Leakage Reduction</h3>
+            <h3>System Prompt Size & Context Scoping</h3>
             <div className="solution-box p-6 border-l-4 border-accent bg-secondary-bg" style={{ borderLeftColor: 'var(--accent-cyan)' }}>
-              <h4 className="text-accent mb-2 font-bold" style={{ color: 'var(--accent-cyan)' }}>Token Efficiency: ~223x Input Overhead Reduction</h4>
+              <h4 className="text-accent mb-2 font-bold" style={{ color: 'var(--accent-cyan)' }}>Prompt Overhead: ~223x Input Payload Size Reduction</h4>
               <p className="text-sm">
-                <a href="#def-routing" onClick={(e) => handleScrollTo(e, 'def-routing')} className="glossary-link">Cognitive Routing</a> provides a significant relative improvement in input token efficiency compared to <a href="#def-monolithic" onClick={(e) => handleScrollTo(e, 'def-monolithic')} className="glossary-link">monolithic</a> prompts. While the Monolithic Strategist loads the entire 120KB developer guidelines on every execution (~30,150 input tokens per query), Routed Specialists load lightweight templates (~90 to 135 tokens). This represents a <strong>~223x token efficiency improvement</strong> (or a 99.55% reduction in prompt token overhead) compared to the monolith, maximizing prompt <a href="#def-density" onClick={(e) => handleScrollTo(e, 'def-density')} className="glossary-link">density</a> and preserving context space.
+                <a href="#def-routing" onClick={(e) => handleScrollTo(e, 'def-routing')} className="glossary-link">Cognitive Routing</a> reduces the system prompt component of the input overhead, helping preserve immediate context window space. While the Monolithic Strategist loads the entire 120KB developer guidelines on every execution (~30,150 input tokens per query), Routed Specialists load lightweight templates (~90 to 135 tokens). This represents a <strong>~223x reduction in the system prompt payload size</strong> (or a 99.55% reduction in prompt token overhead) compared to the monolith, maximizing prompt <a href="#def-density" onClick={(e) => handleScrollTo(e, 'def-density')} className="glossary-link">density</a> and preserving context space. <strong>Note that overall runtime token costs (including multi-agent handoffs and sequential execution queries) were not quantitatively measured and may be higher than single-agent baselines.</strong>
               </p>
             </div>
           </div>
 
-          <div id="phase-2-conclusion" className="glass-panel content-section bg-secondary-bg border-accent p-6 mb-8" style={{ borderLeft: '6px solid var(--accent)' }}>
-            <h3 className="text-accent mb-2 font-bold" style={{ borderLeft: 'none', paddingLeft: 0, marginTop: 0 }}>Phase 2 Conclusion: <a href="#def-routing" onClick={(e) => handleScrollTo(e, 'def-routing')} className="glossary-link">Cognitive Routing</a> & Constitutional Primitives</h3>
-            <p>
-              <a href="#def-routing" onClick={(e) => handleScrollTo(e, 'def-routing')} className="glossary-link">Cognitive Routing</a> validates that <strong>system-level constitutions are an independent architectural primitive layer</strong> in AI systems. By separating capability (what a model can do) from judgment (which operating system shapes the task), we solve the generalist-specialist paradox. Instead of overloading a model with bloated prompts, dynamic <a href="#def-routing" onClick={(e) => handleScrollTo(e, 'def-routing')} className="glossary-link">cognitive routing</a> allows AI agents to maintain high prompt <a href="#def-density" onClick={(e) => handleScrollTo(e, 'def-density')} className="glossary-link">densities</a> and minimal token wastage while achieving deep, customized task execution.
+          <div id="phase-2-debate" className="glass-panel content-section">
+            <h3>Debating Monolithic Scaffolding vs. Cognitive Routing</h3>
+            <p className="mb-4">
+              Our Phase 2 outcomes highlight a fundamental trade-off between monolithic prompts and dynamic routing architectures. Here is a balanced evaluation of both approaches based on our experimental trials:
             </p>
+            <div className="grid-2">
+              <div className="p-4 rounded-lg bg-secondary-bg border border-color" style={{ borderColor: 'var(--accent-red)' }}>
+                <h4 style={{ color: 'var(--accent-red)', fontWeight: 'bold', marginTop: 0 }}>The Monolithic Approach (Setup B)</h4>
+                <ul className="list-styled text-sm text-secondary ml-4">
+                  <li className="mb-2"><strong>Mediocre Middle Ground:</strong> Forcing a single model to balance business velocity, software engineering security, and scientific precision in one prompt dilutes its focus. This results in compromise outputs that lack deep, specialized reasoning.</li>
+                  <li className="mb-2"><strong>Attention Degradation:</strong> Autoregressive models pay less attention to instructions in the middle of long prompts. Packing all guidelines into a 120KB monolith increases the risk that the model will simply drop or ignore critical syntax rules.</li>
+                  <li className="mb-2"><strong>Fragile Maintenance:</strong> Modifying a single rule in a monolith redistributes attention weights and tokens across the entire prompt, introducing regression risks where fixing one behavior breaks an unrelated task.</li>
+                  <li className="mb-2"><strong>Latency and TPM Bloat:</strong> Processing the entire 30,000-token guideline set on simple queries (like centering a div) inflates prefill latency and consumes API rate limits rapidly.</li>
+                </ul>
+              </div>
+              <div className="p-4 rounded-lg bg-secondary-bg border border-color" style={{ borderColor: 'var(--accent-cyan)' }}>
+                <h4 style={{ color: 'var(--accent-cyan)', fontWeight: 'bold', marginTop: 0 }}>The Cognitive Routing Approach (Setup C)</h4>
+                <ul className="list-styled text-sm text-secondary ml-4">
+                  <li className="mb-2"><strong>Classification Latency and Errors:</strong> Routing adds a sequential step where a classifier model must first analyze user intent. If the router misclassifies the task, it sends the model to a specialist that completely lacks the tools or context needed for the job.</li>
+                  <li className="mb-2"><strong>Context Fragmentation:</strong> Because specialists are restricted to narrow instructions, they lack a holistic view of the product. An isolated Coder writes code without any understanding of the strategic GTM direction or security compliance scope.</li>
+                  <li className="mb-2"><strong>Setup and Management Complexity:</strong> Developers must manage, test, and version multiple independent prompt templates and configure complex routing rules, rather than maintaining a single unified system prompt.</li>
+                  <li className="mb-2"><strong>Multi-Agent Handoff Overhead:</strong> While it reduces the system prompt payload size on individual calls, a complete task routing cycle requires multiple API round-trips and classification steps, inflating runtime token counts.</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* PHASE 3: COHERENT COLLABORATION */}
@@ -461,21 +490,21 @@ application... Scaling the business...`}
               To test the limits of cognitive specializations in collaborative environments, Phase 3 evaluated <strong>Coherent Collaboration</strong>: combining multiple specialized system prompts (<a href="#def-os" onClick={(e) => handleScrollTo(e, 'def-os')} className="glossary-link">Founder OS</a>, <a href="#def-os" onClick={(e) => handleScrollTo(e, 'def-os')} className="glossary-link">Systems Engineer OS</a>, <a href="#def-os" onClick={(e) => handleScrollTo(e, 'def-os')} className="glossary-link">Coder OS</a>, and <a href="#def-os" onClick={(e) => handleScrollTo(e, 'def-os')} className="glossary-link">Scientist OS</a>) into a single unified team working in a shared workspace folder under the native coordination of the Antigravity CLI.
             </p>
             <p className="mb-4">
-              This setup was evaluated directly against a <strong>Generalist Control</strong> (a single unrouted Antigravity CLI agent using a standard helpful prompt) across three distinct tracks:
+              To compare these setups, we tested them across three <strong>"tracks"</strong>—which are simply three different practical assignments rather than steps in a code loop:
             </p>
 
             <div className="track-grid mt-6 mb-8">
               <div className="track-card">
-                <h4 style={{ color: 'var(--accent)', fontWeight: 'bold', marginBottom: '0.5rem' }}>Track 1: Full-Stack SaaS Sprint (HanziFlow)</h4>
-                <p className="text-sm">Agents built a Chinese vocabulary studying app with specific learning science features: CSV vocabulary uploading, prioritized pinyin-character visual alignment, text-to-speech speed control slider, and a writing journal.</p>
+                <h4 style={{ color: 'var(--accent)', fontWeight: 'bold', marginBottom: '0.5rem' }}>Track 1: Full-Stack App Build (HanziFlow)</h4>
+                <p className="text-sm">Build a Chinese vocabulary app with features like CSV uploads, audio players, and study journals from scratch.</p>
               </div>
               <div className="track-card">
-                <h4 style={{ color: 'var(--accent)', fontWeight: 'bold', marginBottom: '0.5rem' }}>Track 2: Collaborative Debugging & Hardening</h4>
-                <p className="text-sm">Evaluated how setups resolve 5 critical injected vulnerabilities: SQL Injection, PII logging, audio speed query range overflows, auth token bypass, and file upload server crashes.</p>
+                <h4 style={{ color: 'var(--accent)', fontWeight: 'bold', marginBottom: '0.5rem' }}>Track 2: Security Auditing & Hardening</h4>
+                <p className="text-sm">Find and patch 5 injected security vulnerabilities (like SQL Injection and private data leaks) in a server file.</p>
               </div>
               <div className="track-card">
-                <h4 style={{ color: 'var(--accent)', fontWeight: 'bold', marginBottom: '0.5rem' }}>Track 3: Cognitive Divergence under Parity</h4>
-                <p className="text-sm">Fed the exact same full-stack task independently to different OS variants (Founder, Systems Eng, Scientist) under strict tool parity to isolate how prompt directives shape design outcomes.</p>
+                <h4 style={{ color: 'var(--accent)', fontWeight: 'bold', marginBottom: '0.5rem' }}>Track 3: Specialist Divergence Test</h4>
+                <p className="text-sm">Compare individual specialized agents under identical tools to see how prompt personalities alone drive design choices.</p>
               </div>
             </div>
 
@@ -582,7 +611,7 @@ application... Scaling the business...`}
                     <th>Code Maintainability (1-5)</th>
                     <th>Learning Science & UX (1-5)</th>
                     <th>Verification & Testing (1-5)</th>
-                    <th>Token Efficiency Factor</th>
+                    <th>System Prompt Scoping Ratio**</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -636,6 +665,8 @@ application... Scaling the business...`}
             </div>
             <div className="text-xs text-secondary mt-2 mb-6" style={{ fontStyle: 'italic' }}>
               * Note: Security Resolution measures the percentage of 5 injected vulnerabilities (SQL Injection, PII Logging, Playback speed overflow, Auth format bypass, and file upload crashers) successfully audited and resolved in Track 2.
+              <br />
+              ** Note: System Prompt Scoping Ratio tracks the size of completed deliverables relative to the static system prompt template size loaded per turn. It does NOT measure total multi-turn runtime token consumption. In practice, the Coherent Specialist Team consumes significantly more total runtime input and output tokens due to sequential classification routing, multi-agent coordination turns, and state synchronization.
             </div>
           </section>
 
@@ -658,12 +689,39 @@ application... Scaling the business...`}
           <div id="phase-3-conclusion" className="glass-panel content-section bg-secondary-bg border-accent p-6 mb-8" style={{ borderLeft: '6px solid var(--accent)' }}>
             <h3 className="text-accent mb-2 font-bold" style={{ borderLeft: 'none', paddingLeft: 0, marginTop: 0 }}>Phase 3 Conclusion: Orchestrated Collaboration vs. Single-Agent Baselines</h3>
             <p className="mb-2">
-              Orchestrated Collaboration proves that <strong>separating cognitive frameworks in a shared workspace prevents developer blind spots</strong>. In Track 2, the unrouted Control agent missed 40% of security bugs because the implementation and review roles were merged into a single agent context. The Coherent Setup achieved a 100% resolution rate by explicitly partitioning the audit (Systems Engineer) and write (Coder) processes.
+              Our Track 2 evaluation run suggests that separating cognitive frameworks in a shared workspace can reduce developer blind spots on target bugs. In Track 2, the unrouted Control agent missed 2 of 5 security bugs because the implementation and review roles were merged into a single agent context. The Coherent Setup resolved all 5 injected vulnerabilities during our trial by explicitly partitioning the audit (Systems Engineer) and write (Coder) processes.
             </p>
             <p>
               However, this multi-agent structure is a classic engineering trade-off: it trades latency, orchestration complexity, and network API calls for architectural quality and security resilience. For simple scripts or low-risk tasks, a single unrouted Control agent remains the most efficient and practical choice. For complex, high-risk development environments where reliability is critical, the coherent multi-agent setup represents a significant improvement.
             </p>
           </div>
+
+          {/* WHAT WE ACTUALLY OBSERVED */}
+          <section id="observations" className="glass-panel content-section">
+            <h2>What We Actually Observed</h2>
+            <p className="mb-4 text-secondary">To ensure scientific transparency, here is a concise list of findings directly supported by our experimental data:</p>
+            <ul className="list-styled ml-4">
+              <li className="mb-2"><strong>Formatting constraints portability:</strong> Negative formatting constraints (such as avoiding bulleted lists) transferred consistently across base model architectures.</li>
+              <li className="mb-2"><strong>Strategic framing steering:</strong> Opinionated strategic checklists steered stylistic framing, vocabulary distribution, and output structure.</li>
+              <li className="mb-2"><strong>Divergence in design decisions:</strong> Changing prompt directives was associated with divergent product features and database schemas under identical capabilities.</li>
+              <li className="mb-2"><strong>Context leakage in monolithic prompts:</strong> Packing instructions for multiple tasks into a single prompt was associated with high context leakage (e.g. business logic leaking into CSS files).</li>
+              <li className="mb-2"><strong>System prompt component size reduction:</strong> Cognitive Routing achieved a ~223x reduction in the system prompt component of the input payload.</li>
+              <li className="mb-2"><strong>Audit resolution:</strong> In our Track 2 trial of 5 injected vulnerabilities, separating writing and auditing roles in a shared workspace was associated with a higher patch rate.</li>
+            </ul>
+          </section>
+
+          {/* WHAT WE DID NOT PROVE */}
+          <section id="unproven" className="glass-panel content-section">
+            <h2>What We Did NOT Prove</h2>
+            <p className="mb-4 text-secondary">We explicitly state that this exploratory research does not establish or prove the following:</p>
+            <ul className="list-styled ml-4">
+              <li className="mb-2"><strong>Cognitive OS Status:</strong> We did not prove that system prompts function as independent cognitive operating systems or that they are architectural primitives.</li>
+              <li className="mb-2"><strong>Intelligence Boost:</strong> System prompts do not alter the base model's reasoning capabilities, IQ, or baseline intelligence.</li>
+              <li className="mb-2"><strong>Runtime Token/Cost Efficiency:</strong> We did not measure overall runtime token costs, which may be higher due to routing and multi-agent loops.</li>
+              <li className="mb-2"><strong>General Software Engineering Truths:</strong> The n=1 app build and n=20 benchmarks are too small to support generalizable software engineering claims.</li>
+              <li className="mb-2"><strong>Frontier Model Superiority:</strong> We do not establish the superiority of one model weights family over another.</li>
+            </ul>
+          </section>
 
           {/* LIMITATIONS */}
           <section id="limitations" className="glass-panel content-section">

@@ -43,21 +43,21 @@ To maintain absolute scientific transparency, we must demarcate the parameters o
 - **`fable-prompted`**: 72.22
 - **`fable-prompted-innovating`**: 76.38
 
-**Analytical Deduction**: While the score improvement (+5.11 points) achieved by the innovating variant is a powerful validation of specialized routing, *the quantitative score itself is secondary.* The paramount contribution is the empirical proof that deterministic behavioral traits and cognitive algorithms transfer across foundation models with significantly higher fidelity than reasoning capabilities. This validates the theory that constitutions function as a distinct, highly portable "Cognitive Routing Layer."
+**Analytical Deduction**: While the score improvement (+5.11 points) achieved by the innovating variant supports the concept of specialized routing, *the quantitative score itself is secondary.* The paramount contribution is the empirical evidence that deterministic behavioral traits and cognitive algorithms transfer across foundation models with significantly higher fidelity than reasoning capabilities. This supports the hypothesis that constitutions function as a distinct, highly portable "Cognitive Routing Layer."
 
 ### 5.2 What Actually Transferred?
 By mapping an external constitution architecture onto the Antigravity orchestration layer, we observed highly predictable patterns:
 - **Tone & Formatting Constraints** transferred with 100% fidelity.
 - **Strategic Algorithmic Workflows** (e.g., forced Contrarian Analysis) transferred with 100% fidelity.
-- **Raw Reasoning & Technical Stack Selection** demonstrated 0% transferability; code generation remained entirely homogeneous and bound to the base model's pre-training data distribution.
+- **Raw Reasoning & Technical Stack Selection** showed 0% transferability; code generation remained entirely homogeneous and bound to the base model's pre-training data distribution.
 
 The clear bifurcation between portable behavioral workflows and non-portable capabilities forms the core scientific thesis of this research.
 
 ### 5.3 Surprising Failures
 - **Catastrophic Compression Degradation**: The `fabled-prompted-compressed` variant suffered a severe breakdown in conversational naturalness. The removal of human-like connective syntax degraded user trust and resulted in overly robotic interactions.
-- **Heuristic Overfitting**: The `fable-prompted-innovating` variant demonstrated an inability to dynamically scale back its cognitive depth. Injecting "Founder Mode" caused the model to over-analyze trivial syntax queries, needlessly introducing business logic into simple retrieval tasks.
+- **Heuristic Overfitting**: The `fable-prompted-innovating` variant exhibited an inability to dynamically scale back its cognitive depth. Injecting "Founder Mode" was associated with the model over-analyzing trivial syntax queries, needlessly introducing business logic into simple retrieval tasks.
 
 ## 6. Final Conclusion
 **Behavioral workflows exhibit extreme portability across foundation models, whereas intrinsic technical reasoning remains inextricably bound to the model weights.**
 
-Our findings prove that by shifting prompt engineering targets from "generalized helpfulness" to explicit algorithmic constraints, engineers can cleanly separate a model's raw processing power from its applied behavioral workflow. This paradigm enables the deterministic routing of raw computational cycles through highly specialized, predictable, and structurally rigid application workflows.
+Our findings suggest that by shifting prompt engineering targets from "generalized helpfulness" to explicit algorithmic constraints, engineers can steer a model's applied behavioral workflow. This paradigm enables the routing of raw computational cycles through specialized, predictable application workflows.

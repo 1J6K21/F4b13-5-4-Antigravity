@@ -206,7 +206,7 @@ npm install && npm run dev   # Hosts the React application on http://localhost:5
             </div>
             <div>
               <h4 className="text-sm font-bold text-secondary uppercase tracking-wider mb-2">Design Decisions</h4>
-              <p>Focused on math and proof. It calculated statistical charts and data curves to prove that the AI answers were genuinely correct, rather than just lucky guesses.</p>
+              <p>Focused on math and evaluation. It calculated statistical charts and data curves to evaluate whether the AI answers were correct, rather than just lucky guesses.</p>
             </div>
           </div>
         </div>

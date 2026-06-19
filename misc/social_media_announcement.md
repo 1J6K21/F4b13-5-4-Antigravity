@@ -5,14 +5,14 @@ This document outlines tailored pitches for **X (Twitter)**, **LinkedIn**, and *
 ---
 
 ## 🧵 Option 1: X (Twitter) Thread
-*Best for: Developer community, high readability, and technical hype.*
+*Best for: Developer community, high readability, and technical insights.*
 
 ### Post 1 (Hook)
 One week ago, Anthropic released (and quickly retracted) the Claude Fable model. 
 
 Almost immediately, the system prompt leaked online. 
 
-I decided to take that leaked constitution and run an experiment. What happens when you treat system prompts as a "Cognitive OS"?
+I decided to take that leaked constitution and run an experiment. What happens when you use system prompts as a "behavioral scaffolding and routing layer"?
 
 A thread on what I found. 🧵👇
 
@@ -33,12 +33,12 @@ The results were fascinating:
 1. **Behavior Transfers, Capability Doesn't**: The Fable directives forced a +5.11 adherence improvement. The model adopted strategic frameworks flawlessly. But raw coding and tool execution converged right back to the limits of the base model weights.
 
 ### Post 5 (Where it Broke)
-2. **Recursive Self-Improvement is a Myth (For Now)**: Directives instructing the model to update its own internal constitution across sessions failed completely. Without physical memory architecture, system prompts cannot magically grant new runtime abilities.
+2. **Recursive Self-Improvement Limitations**: Directives instructing the model to update its own internal constitution across sessions failed. Without database backing or application-level state synchronization, system prompts alone cannot implement persistent state across independent API sessions.
 
 ### Post 6 (The Path Forward)
-The takeaway? Relying on one massive, monolithic system prompt is a mistake. 
+The takeaway? Relying on one massive, monolithic system prompt can lead to attention loss and prefill bloat. 
 
-The future is multi-agent: routing tasks dynamically from a lightweight coordinator to highly specialized subagents (e.g., a strategic "Founder" vs. a pure syntax "Coder").
+We explored routing tasks dynamically from a coordinator to specialized subagents, trading orchestration complexity and runtime token overhead for localized scoping.
 
 ### Post 7 (Call to Action)
 I’ve open-sourced the entire benchmark suite, report series, and research site. 
@@ -58,7 +58,7 @@ One week ago, the AI world was buzzing with the brief release and sudden shutdow
 
 I saw an opportunity to run an empirical case study.
 
-I wanted to answer a fundamental question: **Are system-level constitutions highly portable, and can they act as a true "Cognitive Operating System" independent of the underlying model weights?**
+I wanted to answer a fundamental question: **Are system-level constitutions highly portable, and can they act as a behavioral scaffolding and routing layer independent of the base model weights?**
 
 To find out, I built **Antigravity**—an evaluation project launching 80 autonomous subagents across a suite of complex system architecture benchmarks and end-to-end coding builds. 
 
@@ -67,11 +67,11 @@ Here are the key takeaways from the study:
 🚀 **1. Behavior is Portable, Capability is Fixed**
 Appending strategic frameworks (like "Founder Mode" and "Contrarian Analysis") improved evaluation scores by +5.11 points. The subagents successfully shifted their workflows from simple task-completers to strategic partners. However, their physical coding limits converged back to the base model weights. The prompt is the steering wheel; the weights are the engine.
 
-⚠️ **2. The Failure of Monolithic Prompts**
-When we compressed the prompt to save tokens, conversational naturalness collapsed (-6% score drop). Conversely, when we left the prompt highly specialized, it overfit—trying to apply "business leverage analysis" to simple CSS bugs.
+⚠️ **2. The Trade-Offs of Monolithic Prompts**
+While monolithic prompts keep everything in one place, they suffer from context leakage, attention loss, and prefill bloat. When we compressed the prompt to save tokens, conversational naturalness collapsed (-6% score drop). Conversely, when left highly specialized, it overfit—trying to apply "business leverage analysis" to simple CSS bugs.
 
-🔧 **3. The Multi-Agent Future**
-Our results show that the future of agentic workflows isn't in massive, single-system prompts. It is in multi-agent routing. We need lightweight routers handing tasks off to highly targeted specialist subagents.
+🔧 **3. Routing vs. Monolithic Trade-Offs**
+Instead of massive system prompts, cognitive routing uses lightweight templates (~223x reduction in the system prompt component). But it's a trade-off: it introduces setup complexity, classification error risks, and cumulative runtime token overhead from multi-agent coordination loops.
 
 I have open-sourced the full methodology, datasets, and interactive research website. If you are building agentic systems or researching context portability, check out the repository:
 
@@ -89,7 +89,7 @@ I have open-sourced the full methodology, datasets, and interactive research web
 * **Text**: I tested the leaked Claude Fable constitution on 80 autonomous agents. Here is what broke.
 
 ### Slide 2: The Backstory
-* **Text**: Last week, Anthropic briefly released and retracted a model variant. The system prompt leaked shortly after. I used the leak to test a theory: Can a system prompt act as an independent "Cognitive OS" on different models?
+* **Text**: Last week, Anthropic briefly released and retracted a model variant. The system prompt leaked shortly after. I used the leak to test how system prompts act as a behavioral scaffolding and routing layer across different models.
 
 ### Slide 3: The Experiment
 * **Text**: We launched 80 parallel agents across 20 hard system-design benchmarks and let them build complete React apps from scratch to see how different prompt variants changed behavior.
@@ -98,7 +98,7 @@ I have open-sourced the full methodology, datasets, and interactive research web
 * **Text**: **Directives are portable.** Injected frameworks like "Founder Mode" boosted adherence by +5.11 points. The models didn't get smarter; they just followed a much better workflow.
 
 ### Slide 5: Key Finding #2
-* **Text**: **Monoliths fail.** Giant system prompts either make models overcomplicate simple tasks, or degrade conversational naturalness when compressed. The future is multi-agent routing.
+* **Text**: **Monolith vs. Routing Trade-offs.** Giant system prompts suffer from prefill bloat and context leakage. Routing tasks to specialized subagents reduces prompt size but increases runtime token costs and setup complexity.
 
 ### Slide 6: Outro / CTA
 * **Text**: Want to see the full reports and interactive charts? The code and research site are live on GitHub! Link in bio. 🔗

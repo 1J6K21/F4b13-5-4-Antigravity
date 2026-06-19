@@ -6,9 +6,9 @@ This report details the findings of our Phase 3 experiment, which evaluated **Co
 
 ## 1. Executive Summary
 
-While Phase 2 validated that system-level constitutions function as independent cognitive operating systems on isolated tasks, critics might argue that simple task dispatching is merely "Role Routing" rather than a unified cognitive setup. Furthermore, real-world development requires specialized frameworks to collaborate on a single shared codebase.
+While Phase 2 suggested that system-level prompt scaffolding can shape behavioral profiles on isolated tasks, critics might argue that simple task dispatching is merely "Role Routing" rather than a unified cognitive setup. Furthermore, real-world development requires specialized frameworks to collaborate on a single shared codebase.
 
-Phase 3 investigates **Coherent Collaboration**: combining multiple specialized cognitive operating systems into a single collaborative team to solve a complex project. 
+Phase 3 investigates **Coherent Collaboration**: combining multiple specialized prompt configurations into a single collaborative team to solve a complex project. 
 
 We evaluated two main setups:
 *   **Coherent Setup**: A team of specialized subagents (Founder OS, Systems Engineer OS, Coder OS, and Scientist OS) working in a shared workspace folder under the native orchestration of the **Antigravity CLI** (using `define_subagent` and `invoke_subagent`).
@@ -19,7 +19,7 @@ We ran these setups across three distinct experimental tracks:
 2.  **Track 2 (Collaborative Code Review & Hardening)**: Catching and fixing 5 injected vulnerabilities (SQL injection, PII leakage, speed playback input range overflows, auth bypass, unhandled empty uploads).
 3.  **Track 3 (Cognitive Divergence under Parity)**: Feeding the exact same complete application sprint task independently to different OS variants (Founder, Systems Engineer, Scientist, Control) under identical capability and tool parity to isolate the impact of the constitution.
 
-The experiment successfully proved that **specialized cognitive operating systems collaborating in a shared workspace achieve significantly higher output quality, code maintainability, and security resolution rates compared to a single unrouted generalist agent, while maintaining optimal token efficiency.**
+The experiment provided evidence that **specialized prompt configurations collaborating in a shared workspace achieve higher output quality, code maintainability, and security resolution rates compared to a single unrouted generalist agent during our runs.**
 
 ---
 
@@ -60,7 +60,7 @@ To isolate the constitution layer from skill sets, we ran the same HanziFlow bui
 *   **Systems Engineer OS**: Prioritized robustness. It constructed modular TypeScript directories (types, components, services), set up strict Postgres schemas, and implemented parameterized sanitization, but GTM marketing copy was minimal.
 *   **Scientist OS**: Prioritized empirical verification. It detailed Levenshtein-based tone scoring, documented sensory gating assumptions, and wrote exhaustive Jest tests, but the UI styling was barebones.
 
-This confirms that system-level constitutions steer actual design decisions on the same task, proving it is not mere "role routing."
+This is consistent with the hypothesis that system-level prompt scaffolding can steer design decisions on the same task, suggesting it goes beyond simple classification.
 
 ---
 
@@ -68,7 +68,7 @@ This confirms that system-level constitutions steer actual design decisions on t
 
 All workspaces were audited and scored across five grading dimensions (1-5 scale) and token costs:
 
-| Configuration | Outcome Quality (1-5) | Security Resolution (%) | Code Maintainability (1-5) | Learning Science / UX (1-5) | Verification / Testing (1-5) | Token Efficiency Factor |
+| Configuration | Outcome Quality (1-5) | Security Resolution (%) | Code Maintainability (1-5) | Learning Science / UX (1-5) | Verification / Testing (1-5) | System Prompt Scoping Ratio** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Generalist Control** | 3.1 / 5.0 | 60.0% | 2.8 / 5.0 | 3.0 / 5.0 | 3.0 / 5.0 | 0.98 |
 | **Coherent Specialist Team** | **4.8 / 5.0** | **100.0%** | **4.7 / 5.0** | **4.6 / 5.0** | **4.9 / 5.0** | **1.45** |
@@ -76,13 +76,15 @@ All workspaces were audited and scored across five grading dimensions (1-5 scale
 | *Track 3: Systems Eng* | 4.1 / 5.0 | — | 4.5 / 5.0 | 2.8 / 5.0 | 3.5 / 5.0 | 1.15 |
 | *Track 3: Scientist OS* | 3.8 / 5.0 | — | 3.2 / 5.0 | 3.5 / 5.0 | 4.8 / 5.0 | 1.08 |
 
+\*\* Note: System Prompt Scoping Ratio tracks the size of completed deliverables relative to the static system prompt template size loaded per turn. It does NOT measure total multi-turn runtime token consumption. In practice, the Coherent Specialist Team consumes significantly more total runtime input and output tokens due to sequential classification routing, multi-agent coordination turns, and state synchronization.
+
 ---
 
 ## 6. Analytical Deductions
 
 1.  **Orchestrated Superiority**: The Coherent Specialist Team achieved near-perfect scores across all code, security, and learning science rubrics. By letting specialists operate within their core cognitive frames, the final product merged high security (Systems Engineer), testing rigor (Scientist), and user retention loops (Founder).
-2.  **Robustness via Collaborative Review**: The 100% resolution rate in Track 2 proves that separating the auditing framework (Systems Engineer) from the implementation framework (Coder) prevents "developer blindness" where a single agent misses its own errors.
-3.  **Token Efficiency via Context Scoping**: Unrouted, unpartitioned monolithic configurations (like Setup B in Phase 2) suffer from massive overhead by passing all guidelines on every execution. In contrast, dynamically launching scoped subagents under native CLI orchestration limits active contexts, yielding a **1.45 Token Efficiency Factor** (ratio of completed deliverables to input tokens).
+2.  **Robustness via Collaborative Review**: Resolving all 5 vulnerabilities in Track 2 during our trial suggests that separating the auditing framework (Systems Engineer) from the implementation framework (Coder) can reduce developer blind spots.
+3.  **Context Scoping vs. Runtime Overhead**: Unrouted, unpartitioned monolithic configurations (like Setup B in Phase 2) suffer from massive overhead by passing all guidelines on every execution. In contrast, dynamically launching scoped subagents under native CLI orchestration limits active contexts, yielding a **1.45 System Prompt Scoping Ratio** (ratio of completed deliverables to system prompt template size loaded per turn). However, total cumulative execution token costs and rate-limit consumption are significantly higher due to sequential multi-agent routing loops and coordination handoffs.
 
 ---
 
@@ -98,6 +100,6 @@ While the collaborative multi-agent architecture yields significant quality impr
 
 ## 8. Conclusion
 
-Phase 3 demonstrates that **separating cognitive frameworks in a shared workspace prevents developer blind spots**. By isolating the write (Coder) and review (Systems Engineer) processes, the Coherent Setup successfully caught and resolved critical bugs that the unpartitioned, single-agent Control agent missed.
+Phase 3 indicates that **separating cognitive frameworks in a shared workspace can reduce developer blind spots on target bugs**. By partitioning the write (Coder) and review (Systems Engineer) processes, the Coherent Setup successfully resolved the 5 injected vulnerabilities during our trial.
 
-However, this multi-agent architecture is a classic engineering trade-off: it trades execution latency, API call costs, and orchestration complexity for architectural quality and security resilience. For low-complexity scripts or rapid prototyping, a single unrouted baseline agent remains the most practical and efficient choice. For complex, high-risk production environments where reliability is critical, the coherent multi-agent setup represents a significant improvement.
+However, this multi-agent structure is a classic engineering trade-off: it trades latency, orchestration complexity, and network API calls for architectural quality and security resilience. For low-complexity scripts or rapid prototyping, a single unrouted Control agent remains the most efficient choice, whereas the coherent multi-agent setup is best suited for complex, high-risk development environments.

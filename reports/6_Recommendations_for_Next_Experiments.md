@@ -13,7 +13,7 @@
 - **Extreme Prompt Compression**: The hypothesis that you can heavily compress a prompt to save tokens without losing quality is falsified. The removal of human-like connective tissue (`fabled-prompted-compressed`) irreparably damages the model's ability to generate naturalistic, trustworthy conversational output.
 
 ## 2. The Most Important Discovery
-**The "Workflow Layer" Threshold**: Injecting explicit, step-by-step cognitive algorithms into the system prompt reliably forces the model to execute that sequence before generating a final answer. This proves that while a foundation model's raw computational intelligence cannot be magically upgraded via prompt engineering, its *workflow and application trajectory* are completely programmable.
+**The "Workflow Layer" Threshold**: Injecting explicit, step-by-step cognitive algorithms into the system prompt reliably forces the model to execute that sequence before generating a final answer. This suggests that while a foundation model's raw computational intelligence cannot be magically upgraded via prompt engineering, its *workflow and application trajectory* are highly steerable.
 
 ## 3. Next Steps for Research: Phase 2
 To address the limitations discovered in Phase 1, we have formalized the **Phase 2 Experimental Design**. 
