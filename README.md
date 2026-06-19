@@ -1,8 +1,21 @@
-# Antigravity: The Constitution Layer as an Agentic Operating System
-An empirical study on the behavioral portability and limits of model-level alignment directives across diverse LLM substrates.
+# Antigravity: System Prompts as a Behavioral Scaffolding and Routing Layer
+An empirical study on the behavioral portability and limits of model-level alignment directives across different LLM architectures.
 
 ---
-![Website home](./assets/website_home.png)
+
+<table width="100%">
+  <tr valign="top">
+    <td width="50%" align="center">
+      <strong>Research Walkthrough Website</strong><br /><br />
+      <img src="./assets/website_home.png" alt="Website Home" height="250" />
+    </td>
+    <td width="50%" align="center">
+      <strong>System Prompt Scaffolding Concept</strong><br /><br />
+      <img src="./assets/alignment_lens_focus.jpg" alt="Alignment Lens Focus" height="250" />
+    </td>
+  </tr>
+</table>
+
 <div align="center">
 
 ## [Hosted Walkthrough Website](https://1j6k21.github.io/F4b13-5-4-Antigravity/)
@@ -16,7 +29,17 @@ An empirical study on the behavioral portability and limits of model-level align
 ## Project Origin & Motive
 While the world was praising the raw performance of newly released base models, I was focused on a more practical question: *how much of that behavior could actually be ported to strengthen my daily workload?* 
 
-This inquiry drove this empirical study. We set out to evaluate whether system-level constitutions (behavioral rulesets) are truly portable across different model substrates, behaving like a "Cognitive Operating System" layered over raw model "hardware."
+This inquiry drove this empirical study. We set out to evaluate whether system-level constitutions (behavioral rulesets) are portable across different model substrates, acting as a portable workflow layer that shapes reasoning format and decision priorities, while raw capabilities remain bound to the underlying base model weights.
+
+---
+
+## Key Findings & Observations
+Our evaluations across multiple prompt setups and routing schemes yielded the following primary insights:
+* **Style and Format Portability**: Tone directives and negative constraints (such as avoiding bulleted lists) transferred consistently across base model architectures (+5.11 adherence improvement).
+* **Base Weight Convergence**: Injected strategic templates steered output layouts and vocabulary, but raw coding and execution capabilities remained bound to the underlying base model weights.
+* **Monolithic Prompt Trade-offs**: Massive, single system prompts suffered from attention loss, context leakage (e.g., strategic directives leaking into syntax files), and prefill token bloat.
+* **Cognitive Routing Scoping**: Splitting prompts into dynamic, targeted templates achieved a ~223x reduction in the system prompt component of the input payload, though overall runtime token overhead may be higher due to multi-turn routing steps.
+* **Audit Role Separation**: Partitioning development tasks into isolated implementation (Coder) and audit (Systems Engineer) roles in a shared workspace led to higher bug resolution rates.
 
 ---
 
@@ -58,22 +81,23 @@ The term "fable" used throughout the experimental variants in this repository re
 
 ---
 
-## Limitations
+## Limitations & Open Questions
 To maintain scientific rigor and transparency, the following constraints should be noted regarding these experimental results:
-* **Sample size limited**: The experiments were conducted over a specific set of 20 architecture benchmarks and 2 end-to-end software builds.
-* **Generalizability**: Results evaluate specific structural constitutions applied to a constant baseline model; portability across fundamentally different model weight families (e.g., Llama vs. Claude) remains hypothesized but untested in this repository.
+* **Cognitive OS Status**: We did not prove that system prompts function as independent cognitive operating systems or that they are architectural primitives.
+* **No Intelligence Boost**: System prompts guide *how* a model structures its reasoning and vocabulary, but they do not alter the base model's reasoning capabilities, IQ, or baseline intelligence.
+* **Runtime Token/Cost Efficiency**: We did not measure overall runtime token costs, which may be higher due to classification routing and multi-agent loops.
+* **Sample size limits**: The evaluation (n=20 benchmarks, n=1 application build) is exploratory. The sample sizes are too small to support generalized software engineering claims.
 * **LLM-as-a-Judge**: Quantitative scoring relies on LLM-based evaluators, which carry inherent stylistic biases and may not perfectly correlate with human developer preferences.
-* **Exploratory Nature**: The findings indicate strong behavioral portability, but they are exploratory rather than definitive.
 
 ---
 
-## Citation & Academic Reference
-If you build upon this research, utilize the datasets, or reference the "Constitution-as-an-OS" framing in your work, please cite the primary investigator:
+## Citation & Reference
+If you build upon this research, utilize the datasets, or reference the scaffolding and routing framing in your work, please cite:
 
 ```bibtex
 @misc{kalsky2026antigravity,
   author       = {Jonathan Kalsky},
-  title        = {Antigravity: The Constitution Layer as an Agentic Operating System},
+  title        = {Antigravity: System Prompts as a Behavioral Scaffolding and Routing Layer},
   year         = {2026},
   publisher    = {GitHub},
   journal      = {GitHub Repository},
