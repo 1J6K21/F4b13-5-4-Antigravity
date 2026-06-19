@@ -35,6 +35,10 @@ The term "fable" used throughout the experimental variants in this repository re
   * `5_Failure_Analysis.md` — Breakdown of system failure modes, including context-compression degradation.
   * `6_Recommendations_for_Next_Experiments.md` — Directions for future research iterations.
   * `research_methodology_and_analysis.md` — Details on the proposed experimental setup vs. observed results.
+* `phase_2/` — Phase 2 experimental design.
+  * `Phase_2_Experimental_Design.md` — Framework for cognitive routing vs. monolithic scaffolding.
+* `phase_3/` — Phase 3 experimental design.
+  * `Phase_3_Experimental_Design.md` — Framework for coherent orchestration (router + specialists).
 * `presentations/` — HTML-based visual deliverables.
   * `community_presentation.html` — Slide deck for presenting research findings.
   * `research_recap_one_pager.html` — Interactive high-density summary page.

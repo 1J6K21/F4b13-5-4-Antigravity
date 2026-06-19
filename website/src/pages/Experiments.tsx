@@ -137,6 +137,7 @@ export function Experiments() {
         </div>
       </div>
 
+
       {/* PHASE 1 WORKSPACES SECTION */}
       <h2 className="text-2xl font-bold mb-6 mt-12 text-center text-accent">Phase 1: Directive Transferability Workspaces</h2>
       <p className="text-center text-secondary max-w-2xl mx-auto mb-8">

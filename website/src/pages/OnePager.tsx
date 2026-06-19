@@ -53,6 +53,9 @@ export function OnePager() {
             <a href="#phase-2-efficiency" onClick={(e) => handleScrollTo(e, 'phase-2-efficiency')} className="sidebar-link">Token Efficiency</a>
             <a href="#phase-2-conclusion" onClick={(e) => handleScrollTo(e, 'phase-2-conclusion')} className="sidebar-link">Phase 2 Conclusion</a>
 
+            <div className="sidebar-section-title">Phase 3: Next Steps</div>
+            <a href="#phase-3-outlook" onClick={(e) => handleScrollTo(e, 'phase-3-outlook')} className="sidebar-link">Coherent Setup</a>
+
             <div className="sidebar-section-title">Rigor</div>
             <a href="#limitations" onClick={(e) => handleScrollTo(e, 'limitations')} className="sidebar-link">Limitations & Constraints</a>
           </nav>
@@ -78,6 +81,10 @@ export function OnePager() {
               <div className="glossary-item">
                 <div className="glossary-term">Constitution</div>
                 <div className="glossary-definition">A set of system-level rules, instructions, or guidelines (often injected via the system prompt) that defines how an AI agent should behave, write, and prioritize tasks.</div>
+              </div>
+              <div className="glossary-item">
+                <div className="glossary-term">Constitution Density (%)</div>
+                <div className="glossary-definition">The percentage of words in a prompt that are actually useful instructions for the specific task at hand. In a Monolithic prompt, this is extremely low (around 2.8%) because the prompt is bloated with rules for other unrelated tasks. In a Routed Specialist, it is high (around 88%) because almost every word is directly relevant to the current task.</div>
               </div>
               <div className="glossary-item">
                 <div className="glossary-term">Cognitive Operating System (OS)</div>
@@ -441,6 +448,36 @@ application... Scaling the business...`}
               Cognitive Routing validates that <strong>system-level constitutions are an independent architectural primitive layer</strong> in AI systems. By separating capability (what a model can do) from judgment (which operating system shapes the task), we solve the generalist-specialist paradox. Instead of overloading a model with bloated prompts, dynamic cognitive routing allows AI agents to maintain high prompt densities and minimal token wastage while achieving deep, customized task execution.
             </p>
           </div>
+
+          {/* PHASE 3: COHERENT COLLABORATION */}
+          <section id="phase-3-outlook" className="glass-panel content-section">
+            <h2>Phase 3: Coherent Collaboration (Next Steps)</h2>
+            <p className="mb-4">
+              In Phase 2, we proved that system prompts act like specialized "cognitive frameworks" (like a security-minded Systems Engineer vs. a business-minded Founder). But they were tested individually on separate tasks.
+            </p>
+            <p className="mb-4">
+              The real question for **Phase 3** is: <strong>Can multiple specialized cognitive operating systems collaborate coherently as a team to solve a complex project?</strong>
+            </p>
+            <p className="mb-4">
+              Instead of just having an AI route tasks to isolated experts, Phase 3 designs a **Collaborative Multi-Agent System**. We will test a team of specialized subagents (Founder OS, Systems Engineer OS, Scientist OS, and Coder OS working together) directly against a **Generalist Control** (a single Antigravity CLI agent with no routing or specialized subagents).
+            </p>
+            
+            <h3 className="mt-6 mb-3">Planned Experimental Design & Procedure</h3>
+            <p className="mb-4 text-sm text-secondary">
+              The **Antigravity CLI** acts as the Master Orchestrator. It will natively spin up the subagents using <code>define_subagent</code> and <code>invoke_subagent</code>, passing tasks and file changes between them. We will run two tracks:
+            </p>
+            <ul className="list-styled ml-6 mb-6">
+              <li className="mb-2"><strong>Track 1 (The Collaborative Sprint)</strong>: Both setups are given the task of building a full-stack SaaS MVP. We compare the final product's completeness, design tradeoffs, and code quality.</li>
+              <li className="mb-2"><strong>Track 2 (Collaborative Code Review)</strong>: We inject security issues and database bugs into the workspace, and measure how effectively the specialist team (e.g. Systems Engineer reviewing the Coder's work) finds and fixes the issues compared to the single Control agent.</li>
+            </ul>
+
+            <h3>Key Evaluation Metrics (Relative to Control)</h3>
+            <ul className="list-styled ml-6">
+              <li className="mb-2"><strong>Outcome Quality Improvement</strong>: Blind evaluations scoring the depth of the final database designs, product monetization features, and test coverage.</li>
+              <li className="mb-2"><strong>Security Vulnerability Resolution Rate</strong>: The percentage of injected security bugs successfully caught and fixed by the agent teams.</li>
+              <li className="mb-2"><strong>Task Efficiency Ratio</strong>: The ratio of successfully completed sub-tasks to the total tokens consumed.</li>
+            </ul>
+          </section>
 
           {/* LIMITATIONS */}
           <section id="limitations" className="glass-panel content-section">
